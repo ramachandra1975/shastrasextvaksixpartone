@@ -3,406 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Grammar the Body Forgot — White Paper</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#faf7f0; --paper-raised:#f2ecdf; --line:#ddd3bd;
-  --ink:#242019; --ink-dim:#5c5443; --ink-faint:#948a72;
-  --accent:#8a3324; --accent-soft:#c9a24b;
-  --display:'Fraunces',serif; --body:'Source Sans 3',sans-serif; --mono:'IBM Plex Mono',monospace;
-  --deva:'Noto Sans Devanagari',sans-serif;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.7;}
-::selection{background:var(--accent-soft); color:var(--ink);}
-
-.layout{display:grid; grid-template-columns:270px 1fr; max-width:1280px; margin:0 auto;}
-@media (max-width:900px){ .layout{grid-template-columns:1fr;} }
-
-nav.toc{position:sticky; top:0; align-self:start; height:100vh; overflow-y:auto; padding:2.4rem 1.6rem 2rem 2rem; border-right:1px solid var(--line);}
-@media (max-width:900px){ nav.toc{position:static; height:auto; border-right:none; border-bottom:1px solid var(--line);} }
-.toc-kicker{font-family:var(--mono); font-size:0.64rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:1.2rem;}
-.toc-title{font-family:var(--display); font-weight:600; font-size:1.15rem; margin:0 0 1.6rem; line-height:1.35;}
-.toc a{display:block; font-size:0.86rem; color:var(--ink-dim); text-decoration:none; padding:0.32rem 0; border-left:2px solid transparent; padding-left:0.7rem; margin-left:-0.7rem; transition:all .15s;}
-.toc a:hover{color:var(--accent); border-left-color:var(--accent-soft);}
-.toc a.part{font-weight:600; color:var(--ink); margin-top:0.9rem;}
-.toc a.sub{padding-left:1.4rem; margin-left:-0.7rem; font-size:0.82rem;}
-
-main{padding:3.4rem 6vw 6rem; max-width:760px;}
-@media (min-width:900px){ main{padding:3.4rem 4.5rem 6rem;} }
-
-.kicker{font-family:var(--mono); font-size:0.72rem; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent);}
-h1.title{font-family:var(--display); font-weight:700; font-size:clamp(2rem,4.6vw,3rem); margin:0.5em 0 0.3em; line-height:1.1;}
-p.subtitle{font-family:var(--display); font-style:italic; font-weight:500; font-size:1.25rem; color:var(--ink-dim); margin:0 0 1.6rem; max-width:600px;}
-p.dek{font-size:1.02rem; color:var(--ink-dim); max-width:600px; margin-bottom:1rem;}
-.meta{font-family:var(--mono); font-size:0.78rem; color:var(--ink-faint); margin-bottom:3rem;}
-
-hr.rule{border:none; border-top:1px solid var(--line); margin:3rem 0;}
-
-section{scroll-margin-top:2rem;}
-h2{font-family:var(--display); font-weight:700; font-size:1.7rem; color:var(--ink); margin:2.6rem 0 0.9rem; padding-top:0.4rem; border-top:3px solid var(--accent);}
-h3{font-family:var(--display); font-weight:600; font-size:1.22rem; color:var(--ink); margin:2rem 0 0.7rem;}
-p{margin:0 0 1.15em;}
-strong{color:var(--ink);}
-
-blockquote{margin:1.6rem 0; padding:0.2rem 0 0.2rem 1.3rem; border-left:3px solid var(--accent-soft); font-family:var(--display); font-style:italic; font-size:1.08rem; color:var(--ink-dim);}
-blockquote cite{display:block; margin-top:0.5rem; font-family:var(--mono); font-style:normal; font-size:0.74rem; color:var(--ink-faint);}
-
-ul.plain{margin:0 0 1.2em; padding-left:1.3rem;}
-ul.plain li{margin-bottom:0.55rem;}
-
-.callout{background:var(--paper-raised); border:1px solid var(--line); border-radius:4px; padding:1.1rem 1.4rem; margin:1.6rem 0; font-size:0.95rem;}
-.callout-tag{font-family:var(--mono); font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:0.5rem;}
-
-.shloka-appendix-box{background:var(--paper-raised); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:4px; padding:1.1rem 1.4rem; margin:1.4rem 0;}
-.shloka-appendix-box .dev{font-family:var(--deva); font-size:1.1rem; margin:0 0 0.4rem;}
-.shloka-appendix-box .iast{font-style:italic; color:var(--ink-dim); margin:0 0 0.7rem;}
-.shloka-appendix-box p{font-size:0.92rem; margin:0 0 0.5rem;}
-.shloka-appendix-box p:last-child{margin-bottom:0;}
-.shloka-appendix-box .lbl{font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:0.3rem;}
-
-.glossary dt{font-family:var(--display); font-weight:600; margin-top:1.1rem;}
-.glossary dd{margin:0.2rem 0 0; color:var(--ink-dim);}
-
-.refs{font-size:0.92rem; color:var(--ink-dim); padding-left:1.3rem;}
-.refs li{margin-bottom:0.6rem;}
-
-.crosslink{margin:2rem 0; text-align:left;}
-.crosslink a{font-family:var(--mono); font-size:0.82rem; color:var(--accent); text-decoration:none; border-bottom:1px dashed var(--accent-soft);}
-.crosslink a:hover{color:var(--ink);}
-
-footer.doc-footer{border-top:1px solid var(--line); padding:2rem 6vw; text-align:center; font-family:var(--mono); font-size:0.68rem; letter-spacing:0.08em; color:var(--ink-faint); text-transform:uppercase;}
-
-@media print{
-  nav.toc{display:none;}
-  .layout{display:block;}
-  main{max-width:100%; padding:0 0.4in;}
-  a{color:inherit; text-decoration:none;}
-}
-</style>
-</head>
-<body>
-
-<div class="layout">
-
-<nav class="toc">
-  <div class="toc-kicker">On This Page</div>
-  <div class="toc-title">The Grammar the Body Forgot</div>
-  <a href="#method">A Note on Method</a>
-  <a href="#summary">Executive Summary</a>
-  <a class="part" href="#part1">Part I — What the Tradition Claims</a>
-  <a class="sub" href="#p11">1.1 Vaikharī and the Extension</a>
-  <a class="sub" href="#p12">1.2 Sphoṭa's Three Features</a>
-  <a class="sub" href="#p13">1.3 Hasta/Varṇa: Real but Partial</a>
-  <a class="sub" href="#p14">1.4 Coordination, Not Independence</a>
-  <a class="sub" href="#p15">1.5 Linguistic Status</a>
-  <a class="sub" href="#p16">1.6 Dhvani Over Sphoṭa</a>
-  <a class="part" href="#part2">Part II — Where It Was Lost</a>
-  <a class="sub" href="#p21">2.1 Label Without Argument</a>
-  <a class="sub" href="#p22">2.2 Vocabulary Without Grammar</a>
-  <a class="sub" href="#p23">2.3 Expressive vs. Linguistic</a>
-  <a class="sub" href="#p24">2.4 Loss of Coordination</a>
-  <a class="sub" href="#p25">2.5 The Cost</a>
-  <a class="part" href="#part3">Part III — Why It Matters Now</a>
-  <a class="sub" href="#p31">3.1 Sign-Language Linguistics</a>
-  <a class="sub" href="#p32">3.2 Embodied Cognition</a>
-  <a class="sub" href="#p33">3.3 Gesture Studies</a>
-  <a class="sub" href="#p34">3.4 HCI &amp; Gesture Recognition</a>
-  <a class="sub" href="#p35">3.5 Movement Therapy</a>
-  <a class="part" href="#part4">Part IV — Applications</a>
-  <a class="part" href="#part5">Part V — Recovery Framework</a>
-  <a href="#limitations">Limitations</a>
-  <a href="#conclusion">Conclusion</a>
-  <a href="#shlokas">Mūla Śloka Appendix</a>
-  <a href="#glossary">Glossary</a>
-  <a href="#references">References</a>
-</nav>
-
-<main>
-  <div class="kicker">White Paper</div>
-  <h1 class="title">The Grammar the Body Forgot</h1>
-  <p class="subtitle">Vaikharī, Sphoṭa, and Dhvani: Recovering the Semiotics of Gesture for Contemporary Practice</p>
-  <p class="dek">A study of the documented commentarial argument that codified gesture (abhinaya) extends vaikharī — spoken language's own externalizing act — together with an honest, feature-by-feature test of how far that extension holds, why the understanding has eroded in contemporary practice, and what recovering it enables.</p>
-  <div class="meta">July 2026</div>
-  <div class="crosslink"><a href="./three-channels-vaikhari-extension.html">&larr; Companion piece: the 40-chapter tabbed reading, "Three Channels Through the Vaikharī-Extension"</a></div>
-
-  <section id="method">
-    <h2>A Note on Method</h2>
-    <p>This paper draws on a documented commentarial tradition — Bhartṛhari's <em>Vākyapadīya</em>, the <em>Nāṭyaśāstra</em>, Abhinavagupta's <em>Abhinavabhāratī</em>, and Ānandavardhana's <em>Dhvanyāloka</em> — rather than on general cultural impression. Each claim below is tested against a stated evidentiary standard before it is accepted: a claim is treated as established only where a named technical term, a locatable textual passage, and an articulable argument from that passage's own premises can be produced together. Where a claim fails this standard, or succeeds only partially, that is reported plainly. This discipline is what separates the argument that follows from the slogans this paper argues against.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="summary">
-    <h2>Executive Summary</h2>
-    <p>Classical Indian linguistic philosophy developed one of the most rigorous accounts anywhere of how meaning moves from an inner, unspoken grasp to a form another person can perceive. Bhartṛhari's grammar names the terminal stage of that movement <strong>vaikharī</strong>: full externalization into a form perceptible to another. Centuries later, a specific and well-documented commentarial argument — found in Abhinavagupta's <em>Abhinavabhāratī</em> — extends this category to codified physical gesture (<strong>abhinaya</strong>), treating it as a further instance of the same externalizing act rather than a separate, merely decorative accompaniment to speech.</p>
-    <p>This white paper reconstructs that argument to its own evidentiary standard and tests it, feature by feature, against the tradition's strongest further claims: that gesture manifests meaning the way <strong>sphoṭa</strong> theory says sound does; that a fixed gestural vocabulary combines as productively as a phoneme inventory does; that gesture can generate full sentence-level meaning independent of speech; and that it therefore qualifies as fully linguistic. The honest finding is not a flat yes or no. Gesture is licensed as vaikharī's further reach with respect to one specific property. It is conventionally coded, not naturally manifestational, in the sphoṭa sense. It shares a phoneme inventory's shape but not its combinatorial productivity. It operates in coordination with speech, not independently of it. And it is best modeled by <strong>dhvani</strong> — suggested meaning evoked for a qualified perceiver — rather than by the stronger claims often popularly attributed to it.</p>
-    <p>This precision has largely been lost, replaced by two opposite failures: romantic overclaiming ("every gesture is a word") and dismissive underclaiming (gesture as mere decoration). Both have costs — for pedagogy, for how "expressiveness" is judged, for gesture-recognition technology, and for cultural policy. This paper argues for a third position: gesture is a real, rigorously describable, partially-linguistic system, and understanding exactly what it can and cannot do is more valuable than either exaggerating or dismissing it.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="part1">
-    <h2>Part I — What the Tradition Actually Claims</h2>
-
-    <h3 id="p11">1.1 Vaikharī and the Extension to Gesture</h3>
-    <p>Bhartṛhari's <em>Vākyapadīya</em> describes speech unfolding through four stages, from an undifferentiated intuition (paśyantī) through an internally rehearsed but still unspoken form (madhyamā) to vaikharī — audible, externalized speech, complete and perceptible to another. Vaikharī's defining property, on this account, is not its acoustic substrate as such but its function: it is the stage at which an internally grasped meaning becomes available to someone else.</p>
-
-    <div class="shloka-appendix-box">
-      <span class="lbl">Mūla Śloka</span>
-      <p class="dev">वैखर्या हि कृतो नादः परश्रवणगोचरः । मध्यमया कृतो नादः स्फोटव्यञ्जक उच्यते ॥</p>
-      <p class="iast">vaikharyā hi kṛto nādaḥ paraśravaṇagocaraḥ | madhyamayā kṛto nādaḥ sphoṭavyañjaka ucyate ||</p>
-      <p><strong>Source:</strong> Cited across the Vākyapadīya commentarial tradition, in the immediate vicinity of Vākyapadīya 1.144 on the vaikharī/madhyamā relation to sphoṭa. Verify the exact kārikā number against your working edition (Rau or Iyer) before final print — this paper cites it as a well-attested but not independently re-verified verse number.</p>
-      <p><strong>Translation:</strong> "The sound produced by vaikharī is what falls within the range of another's hearing; the sound produced by madhyamā is said to be the revealer (vyañjaka) of the sphoṭa."</p>
-      <p><strong>Why it matters here:</strong> The verse states vaikharī's defining job in exactly the terms Abhinavagupta's extension-argument needs: perceptibility <em>for another</em> (paraśravaṇagocaraḥ). It also quietly separates vaikharī's audibility-function from madhyamā's sphoṭa-revealing function — a distinction Part I.2 below depends on.</p>
-    </div>
-
-    <p>Centuries later, Abhinavagupta's <em>Abhinavabhāratī</em> — his commentary on the <em>Nāṭyaśāstra</em>'s treatment of dramatic gesture — makes a specific, locatable, and technically named argument: that codified gesture (abhinaya) is an <strong>aupacārika prayoga</strong>, a figurative but substantive extension of vaikharī's own category. The argument is not from resemblance and not from shared aesthetic effect. It is from vaikharī's own defining property: gesture, like audible speech, externalizes an internally grasped meaning into a form another can perceive — differing only in which sense-channel receives it.</p>
-    <blockquote>A functional-equivalence argument on one defining property licenses extension with respect to that property specifically — not automatically with respect to every further property vaikharī happens to have.<cite>the discipline this paper follows throughout</cite></blockquote>
-    <p>This is a real, evidenced philosophical claim, not folklore. It is also, deliberately, a narrow one: it licenses treating gesture as vaikharī's further reach for one specific reason, and nothing more, until each further property is separately tested.</p>
-
-    <h3 id="p12">1.2 Sphoṭa: What It Requires, and Why Gesture Doesn't Simply Inherit It</h3>
-    <p>Sphoṭa theory is Bhartṛhari's account of how a sequence of transient sounds manifests a single, unified meaning-bearing unit. It carries three load-bearing features: (a) the manifesting cause is a temporally sequenced, discretely segmented string of sound-events; (b) the manifested unit is grasped as a single, unanalyzed whole, not assembled piece by piece; and (c) the relationship between sound and meaning is one of manifestation — the sound reveals a real universal — rather than arbitrary convention alone.</p>
-
-    <div class="shloka-appendix-box">
-      <span class="lbl">Mūla Śloka</span>
-      <p class="dev">चत्वारि वाक् परिमिता पदानि तानि विदुर्ब्राह्मणा ये मनीषिणः । गुहा त्रीणि निहिता नेङ्गयन्ति तुरीयं वाचो मनुष्या वदन्ति ॥</p>
-      <p class="iast">catvāri vāk parimitā padāni tāni vidur brāhmaṇā ye manīṣiṇaḥ | guhā trīṇi nihitā neṅgayanti turīyaṃ vāco manuṣyā vadanti ||</p>
-      <p><strong>Source:</strong> Ṛgveda 1.164.45 — the scriptural seed the grammarian tradition reads as grounding a graded, multi-stage model of speech.</p>
-      <p><strong>Translation:</strong> "Speech is measured in four steps; the wise who have insight know them. Three, hidden in the cave, do not move; men speak the fourth [step] of speech."</p>
-      <p><strong>Why it matters here:</strong> Sphoṭa's three features (feature a especially) describe properties of the relationship <em>between</em> the hidden inner stages and the spoken outer one. Gesture was extended from vaikharī's outer, audible-to-another function (1.1 above) — not from the inner paśyantī–madhyamā relationship sphoṭa depends on. That is why two of the three features can fail for gesture below without contradicting the extension argument itself.</p>
-    </div>
-
-    <p>Tested independently against codified gesture, each feature fares differently. Feature (a) holds only partially: a held hand-configuration has no internal temporal sequence at all, and even a moving gestural phrase unfolds continuously rather than in the discrete, digitally segmented steps a phoneme string requires. Feature (b) is plausibly satisfied — trained observers appear to grasp a gesture's meaning holistically rather than parsing it piece by piece — but this rests on pedagogical description and structural analogy rather than direct experimental confirmation.</p>
-    <p>Feature (c) is decisive, and it fails for the general case. The classical hasta-inventory is documented as taught name by name, meaning by meaning — the pattern one would expect of a conventional (saṅketa-governed) sign-system, not one where the shape itself discloses its meaning. A small, bounded minority of directly iconic gestures partially escapes this — much as onomatopoeia is a bounded exception within an otherwise arbitrary spoken vocabulary — but a marked exception does not overturn a documented general rule.</p>
-    <div class="callout"><span class="callout-tag">Finding</span>Sphoṭa, in its full technical sense, does not transfer to gesture. This is not a deflationary finding — it is the finding that motivates a better-fitting model later in this paper.</div>
-
-    <h3 id="p13">1.3 The Hasta/Varṇa Parallel: Real, but Partial</h3>
-    <p>The Sanskrit phoneme inventory (varṇamālā) and the classical hand-gesture inventory (hasta) share genuine structural features: both are finite, both are individually named and taught as a closed curriculum, and both are categorized digitally rather than on a continuous gradient.</p>
-    <p>The parallel breaks on the feature that gives spoken language its expressive reach: productivity. Roughly fifty phonemes generate, through rule-governed combination, the entirety of the Sanskrit lexicon. The hasta inventory does not do this. Individual gestures typically carry their meaning directly, and narrative sequences are documented as <strong>concatenative</strong> — independently meaningful units stitched into a scene by the audience's own narrative inference — rather than generative, capable of producing meanings never previously listed or heard.</p>
-    <p>Benchmarked against other digital sign-systems, the hasta inventory's profile resembles heraldry or a fixed signal system far more than a numeral system or a phonological grammar, both of which achieve real productivity from a small digital base.</p>
-
-    <h3 id="p14">1.4 Coordination, Not Independence</h3>
-    <p>The <em>Nāṭyaśāstra</em> defines abhinaya, from the point of first definition, as constitutively fourfold: āṅgika (bodily), vācika (verbal), āhārya (costume), and sāttvika (involuntary psychophysical states) — not a later elaboration, but built into the term's own definition, with all four channels ordinarily deployed together.</p>
-
-    <div class="shloka-appendix-box">
-      <span class="lbl">Mūla Śloka</span>
-      <p class="dev">भवेदभिनयोऽवस्थानुकारः स चतुर्विधः । आङ्गिको वाचिकश्चैवमाहार्यः सात्त्विकस्तथा ॥</p>
-      <p class="iast">bhaved abhinayo 'vasthānukāraḥ sa caturvidhaḥ | āṅgiko vācikaś caiva māhāryaḥ sāttvikas tathā ||</p>
-      <p><strong>Source:</strong> The standard definitional restatement of abhinaya's fourfold division carried through the alaṃkāra-śāstra tradition (compare Sāhityadarpaṇa 6.274), consistent with the Nāṭyaśāstra's own constitutive fourfold treatment.</p>
-      <p><strong>Translation:</strong> "Acting is the imitation of a state, and it is of four kinds: bodily, verbal, costume-based, and involuntary-psychophysical."</p>
-      <p><strong>Why it matters here:</strong> Fourfold <em>at the point of definition</em> is what licenses reading āṅgika as one coordinated channel among four, rather than a free-standing language substituting for the rest. The widely performed dhyāna verse <em>āṅgikaṃ bhuvanaṃ yasya vācikaṃ sarva-vāṅmayam</em> — "whose body is the universe, whose speech is all language" — shows this same fourfold scheme still functioning as a living unit in performance culture, not only as scholastic classification.</p>
-    </div>
-
-    <p>This coordinated-not-independent reading survives its hardest documented test. Solo, gesture-forward traditions relocate the verbal channel — a vocalist sings the narrative while the performer's hands and face carry gesture — rather than eliminating it. And in the rare segments where gesture approaches pure nṛtya with no verbal channel at all, meaning narrows toward mood and affect rather than sustaining sentence-level narrative content.</p>
-    <p>Crucially, this is not a claim that gesture in general cannot be full grammar. Natural sign languages are established in the linguistics literature as full grammatical systems — spatial verb agreement, classifier constructions, non-manual grammatical markers — engaging the same left-perisylvian language networks as spoken language. The deciding factor for linguistic status is documented grammatical structure, not channel, and codified dramatic gesture has not been shown to possess that structure.</p>
-
-    <h3 id="p15">1.5 Linguistic Status: Conventional, Not Fully Generative</h3>
-    <p>The <em>Nāṭyaśāstra</em>'s own <strong>lokadharmī / nāṭyadharmī</strong> distinction — ordinary worldly behavior versus stylized dramatic convention — bears directly here. A codified sorrow-gesture does not resemble sorrow the way an unstylized expression does; its meaning must be learned. This satisfies a genuine necessary condition for linguistic status: the sign is conventionally, not naturally, paired with its meaning. Necessary is not sufficient, however — the sphoṭa-style manifestation relationship and generative productivity are both independently tested above and both found wanting. Gesture clears one bar and not the others.</p>
-
-    <h3 id="p16">1.6 The Better Model: Dhvani Over Sphoṭa</h3>
-    <p>If sphoṭa's manifestation-relationship and generative productivity don't describe how gesture carries meaning, a different model is needed. <strong>Dhvani</strong> theory, developed by Ānandavardhana, names a suggested sense (vyaṅgya) an expression (vyañjaka) evokes without stating it directly. Unlike sphoṭa, dhvani does not require a discretely segmented manifesting cause — a held expression suggests as well as an unfolding one. It is built to accommodate context-dependent polysemy as a central case, matching the documented phenomenon of one hasta carrying several senses resolved by context. And it explicitly requires a qualified perceiver (<strong>sahṛdaya</strong>), matching the tradition's own emphasis on trained spectatorship.</p>
-
-    <div class="shloka-appendix-box">
-      <span class="lbl">Mūla Śloka</span>
-      <p class="dev">काव्यस्यात्मा ध्वनिः ।</p>
-      <p class="iast">kāvyasyātmā dhvaniḥ |</p>
-      <p><strong>Source:</strong> Ānandavardhana, <em>Dhvanyāloka</em>, opening kārikā 1.1.</p>
-      <p><strong>Translation:</strong> "The soul of poetry is dhvani (suggestion)."</p>
-      <p><strong>Why it matters here:</strong> Four words, and they replace the entire load-bearing requirement sphoṭa imposed. Dhvani needs no discretely sequenced manifesting cause and no manifestation-over-convention relationship — a held configuration suggests as legitimately as an unfolding one, and one sign carrying different senses in different contexts is dhvani's expected case, not an anomaly. Ānandavardhana's own threefold division — vastu-dhvani, alaṃkāra-dhvani, rasa-dhvani — gives a precise home to a hasta's context-resolved senses.</p>
-    </div>
-
-    <p>This paper treats dhvani-over-sphoṭa as the tradition's own best synthetic proposal — clearly flagged as a scholarly proposal built on convergent evidence, not a classical equivalence the texts state outright.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="part2">
-    <h2>Part II — Where the Understanding Has Been Lost</h2>
-
-    <h3 id="p21">2.1 From Rigorous Argument to Inherited Label</h3>
-    <p>The documented reception history of the vaikharī-extension argument shows exactly how precision erodes. Abhinavagupta's original argument engages specific, checkable conditions. Later, more widely circulated practical manuals inherit the label without re-arguing, or even restating, its grounds. The rigorous version survives mostly in theoretical commentary a working performer or general audience rarely encounters.</p>
-
-    <h3 id="p22">2.2 Symptom One: Gesture Taught as Vocabulary Without Grammar</h3>
-    <p>A pedagogy that teaches "this hasta means this" without teaching register, combinatorial limits, or the coordination principle is teaching vocabulary without grammar — the gestural equivalent of memorizing word-meaning pairs without ever learning how words combine into sentences.</p>
-
-    <h3 id="p23">2.3 Symptom Two: Conflating "Expressive" With "Linguistic"</h3>
-    <p>Slogans like "dance is a universal language" assert a strong, technical claim on the evidence for a weaker, aesthetic one. The cost runs both ways: it invites easy debunking, and that debunking then gets mistakenly applied to the real, more modest claim the evidence does support.</p>
-
-    <h3 id="p24">2.4 Symptom Three: Loss of the Coordinated Model in Practice</h3>
-    <p>Some contemporary staging presents gesture as free-standing "storytelling without words," implicitly claiming the coordinated system's full narrative content survives when its coordinating verbal channel is removed. The evidence suggests otherwise: what an audience receives in that condition narrows toward mood and affect.</p>
-
-    <h3 id="p25">2.5 The Cost of the Lost Precision</h3>
-    <ul class="plain">
-      <li><strong>Cultural:</strong> transmission drifts from a living, reasoned system toward a fixed aesthetic surface.</li>
-      <li><strong>Scientific:</strong> a rich set of testable distinctions goes largely untested in cognitive science — an underused source of hypotheses.</li>
-      <li><strong>Technological:</strong> gesture-recognition design frequently re-derives, without acknowledgment, distinctions this tradition worked out centuries earlier.</li>
-    </ul>
-  </section>
-
-  <hr class="rule">
-
-  <section id="part3">
-    <h2>Part III — Why This Matters Now: Modern Parallels and Stakes</h2>
-
-    <h3 id="p31">3.1 Sign Language Linguistics: Proof the Channel Was Never the Limit</h3>
-    <p>William Stokoe's demonstration that American Sign Language is a full grammatical system — developed further by Bellugi, Klima, Sandler, and Lillo-Martin — is the single most important external check available. Natural sign languages possess exactly the features codified dramatic gesture lacks: productive combinatorial morphology, formal grammatical marking, and the capacity for genuinely novel propositions. The question is never channel; it is documented structure.</p>
-
-    <h3 id="p32">3.2 Embodied Cognition and Multisensory Integration</h3>
-    <p>Decades of audiovisual speech-perception research — the McGurk effect and its follow-up literature — demonstrate that spoken and gestural channels are ordinarily processed as one bound communicative event. This independently confirms the coordination principle the fourfold abhinaya scheme argues for.</p>
-
-    <h3 id="p33">3.3 Gesture Studies: An Independently Convergent Framework</h3>
-    <p>David McNeill's research on co-speech gesture — developed independently of the Sanskrit material — concludes that gesture and speech form a single, integrated system. Two entirely independent traditions of inquiry converging on a coordinated model is a data point worth taking seriously.</p>
-
-    <h3 id="p34">3.4 Human-Computer Interaction and Gesture-Recognition Design</h3>
-    <p>Practical gesture-recognition systems must decide whether a vocabulary is discrete (classifiable) or continuous (estimable along a gradient) — precisely the digital-versus-analog distinction this tradition drew centuries ago, and one it applied unevenly and carefully rather than uniformly.</p>
-
-    <h3 id="p35">3.5 Movement and Dance Therapy</h3>
-    <p>Clinical and therapeutic movement literature increasingly calls for precise, describable vocabularies of gesture-meaning rather than impressionistic language about "authentic expression" — exactly the toolkit this framework already offers.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="part4">
-    <h2>Part IV — Applications: What Rigorous Understanding Enables</h2>
-    <h3>For Performing Arts Pedagogy</h3>
-    <p>Training should teach the coordination principle and register distinctions alongside vocabulary, equipping performers to explain their art form with precision rather than slogans.</p>
-    <h3>For Cognitive and Linguistic Science</h3>
-    <p>The tradition's own distinctions are already well-specified, testable hypotheses — an invitation for direct experimental work, particularly on holistic-versus-componential gesture perception.</p>
-    <h3>For Technology Design</h3>
-    <p>Gesture-recognition systems should distinguish discrete/digital vocabularies from continuous/analog channels at the design stage, informed by this same distinction.</p>
-    <h3>For Cultural Policy</h3>
-    <p>Preservation frameworks should recognize these traditions as rigorous semiotic systems worthy of serious scholarly study, not only as heritage or folklore categories.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="part5">
-    <h2>Part V — A Framework for Recovery</h2>
-    <h3>Guiding Principles</h3>
-    <ul class="plain">
-      <li><strong>Precision over slogan:</strong> state what the evidence actually supports.</li>
-      <li><strong>Register-awareness:</strong> distinguish naturalistic from stylized representation.</li>
-      <li><strong>Coordination-awareness:</strong> be honest about what is lost when one channel is removed.</li>
-      <li><strong>Qualified-perceiver awareness:</strong> train audiences, not only performers.</li>
-      <li><strong>Testability:</strong> treat the tradition's distinctions as hypotheses, not settled doctrine.</li>
-    </ul>
-    <h3>Recommendations by Stakeholder</h3>
-    <ul class="plain">
-      <li><strong>Performers and teachers:</strong> incorporate register and coordination principles explicitly into training.</li>
-      <li><strong>Scholars and scientists:</strong> design direct empirical tests of the tradition's own stated distinctions.</li>
-      <li><strong>Technologists:</strong> consult the digital/analog and productivity distinctions in interaction design.</li>
-      <li><strong>Cultural institutions and policymakers:</strong> fund and frame these traditions as intellectually substantive systems.</li>
-    </ul>
-  </section>
-
-  <hr class="rule">
-
-  <section id="limitations">
-    <h2>Limitations and Counterarguments</h2>
-    <p>The dhvani-over-sphoṭa conclusion is this paper's own considered synthesis of convergent evidence, not a classical equivalence the source texts state outright — it should be taught as a well-evidenced proposal, not settled doctrine.</p>
-    <p>The parallels drawn to sign-language linguistics, embodied cognition, and gesture studies are genuine, but readers should not mistake structural resemblance for proof that every classical claim is scientifically validated. Sphoṭa's manifestation-relationship, for instance, is a metaphysical commitment not straightforwardly testable by neuroscience at all.</p>
-    <p>This paper centers on one textual line — the <em>Nāṭyaśāstra</em> through Abhinavagupta to Ānandavardhana — and living regional traditions vary considerably; a finding here should not be assumed to hold identically everywhere without separate examination.</p>
-    <p>Finally, some readers may reasonably feel a linguistically precise analysis undersells the aesthetic or devotional dimensions of these art forms. This paper's aim is to add rigor to how gesture's communicative structure is described, not to reduce these traditions to only what passes a linguistics examination.</p>
-    <p>On the four mūla śloka citations added throughout this paper: each is a well-documented verse checked against secondary scholarly sources during this revision, but exact kārikā/chapter numbers for the Vākyapadīya and Abhinavabhāratī citations should be cross-checked against your working critical editions before this goes to print or peer review. Precision claimed here is precision as far as it was independently verifiable in this pass — not a substitute for checking against primary editions.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="conclusion">
-    <h2>Conclusion</h2>
-    <p>The claim that codified gesture extends spoken language's own externalizing function is real, documented, and evidenced — and it is also, honestly examined, narrower and more precise than either its enthusiasts or its skeptics usually credit. Gesture is not simply speech in another channel, and it is not mere decoration either. It is a conventionally coded, coordinated, dhvani-style suggestive system — structurally comparable in shape to a phonemic inventory but not in combinatorial power — best understood on its own precisely stated terms rather than through borrowed slogans. Recovering that precision is the difference between transmitting a living, reasoned system to the next generation and transmitting only its surface.</p>
-  </section>
-
-  <hr class="rule">
-
-  <section id="shlokas">
-    <h2>Appendix — Mūla Śloka Reference Set</h2>
-    <p>The four source verses cited in Part I, gathered here for quick reference.</p>
-    <div class="shloka-appendix-box">
-      <span class="lbl">1 — On Vaikharī and Madhyamā</span>
-      <p class="dev">वैखर्या हि कृतो नादः परश्रवणगोचरः । मध्यमया कृतो नादः स्फोटव्यञ्जक उच्यते ॥</p>
-      <p class="iast">vaikharyā hi kṛto nādaḥ paraśravaṇagocaraḥ | madhyamayā kṛto nādaḥ sphoṭavyañjaka ucyate ||</p>
-      <p>Vākyapadīya tradition, near 1.144 — grounds §1.1.</p>
-    </div>
-    <div class="shloka-appendix-box">
-      <span class="lbl">2 — On the Four Steps of Speech</span>
-      <p class="dev">चत्वारि वाक् परिमिता पदानि तानि विदुर्ब्राह्मणा ये मनीषिणः । गुहा त्रीणि निहिता नेङ्गयन्ति तुरीयं वाचो मनुष्या वदन्ति ॥</p>
-      <p class="iast">catvāri vāk parimitā padāni tāni vidur brāhmaṇā ye manīṣiṇaḥ | guhā trīṇi nihitā neṅgayanti turīyaṃ vāco manuṣyā vadanti ||</p>
-      <p>Ṛgveda 1.164.45 — grounds §1.2.</p>
-    </div>
-    <div class="shloka-appendix-box">
-      <span class="lbl">3 — On the Fourfold Abhinaya</span>
-      <p class="dev">भवेदभिनयोऽवस्थानुकारः स चतुर्विधः । आङ्गिको वाचिकश्चैवमाहार्यः सात्त्विकस्तथा ॥</p>
-      <p class="iast">bhaved abhinayo 'vasthānukāraḥ sa caturvidhaḥ | āṅgiko vācikaś caiva māhāryaḥ sāttvikas tathā ||</p>
-      <p>Alaṃkāra-śāstra restatement (cf. Sāhityadarpaṇa 6.274) — grounds §1.4.</p>
-    </div>
-    <div class="shloka-appendix-box">
-      <span class="lbl">4 — On Dhvani</span>
-      <p class="dev">काव्यस्यात्मा ध्वनिः ।</p>
-      <p class="iast">kāvyasyātmā dhvaniḥ |</p>
-      <p>Dhvanyāloka 1.1 — grounds §1.6.</p>
-    </div>
-  </section>
-
-  <hr class="rule">
-
-  <section id="glossary">
-    <h2>Appendix — Glossary of Key Terms</h2>
-    <dl class="glossary">
-      <dt>Vaikharī</dt><dd>The final stage in Bhartṛhari's account of speech: fully externalized, audible language, perceptible to another person.</dd>
-      <dt>Sphoṭa</dt><dd>The single, unified meaning-bearing unit that a sequence of sounds is held to manifest.</dd>
-      <dt>Dhvani</dt><dd>Suggested sense (vyaṅgya) evoked by an expression (vyañjaka) beyond direct denotation; the central concept of Ānandavardhana's poetics.</dd>
-      <dt>Abhinaya</dt><dd>Dramatic expression in the fourfold sense: bodily (āṅgika), verbal (vācika), costume-based (āhārya), and psychophysical (sāttvika).</dd>
-      <dt>Hasta / Mudrā</dt><dd>A codified hand-configuration in classical Indian dance and drama, drawn from a fixed, named inventory.</dd>
-      <dt>Aupacārika Prayoga</dt><dd>Figurative or extended application of an established category to a new case — the mechanism by which gesture extends vaikharī.</dd>
-      <dt>Lokadharmī / Nāṭyadharmī</dt><dd>Representation modeled on ordinary worldly behavior versus stylized dramatic convention.</dd>
-      <dt>Nṛtta / Nṛtya</dt><dd>Pure, non-representational rhythmic movement versus expressive, meaning-bearing movement.</dd>
-      <dt>Sahṛdaya</dt><dd>The "same-hearted" qualified perceiver dhvani theory requires.</dd>
-      <dt>Saṅketa</dt><dd>Convention: an agreed, learned pairing between a sign and its meaning, as opposed to a natural relationship.</dd>
-    </dl>
-  </section>
-
-  <hr class="rule">
-
-  <section id="references">
-    <h2>References and Further Reading</h2>
-    <ol class="refs">
-      <li>Bhartṛhari, <em>Vākyapadīya</em>, Kāṇḍa I–II.</li>
-      <li>Bharata, <em>Nāṭyaśāstra</em>, Ch. 6–9 and 13; trans. Manomohan Ghosh.</li>
-      <li>Abhinavagupta, <em>Abhinavabhāratī</em> ad Nāṭyaśāstra 8.</li>
-      <li>Ānandavardhana, <em>Dhvanyāloka</em>, with the <em>Locana</em> of Abhinavagupta; trans. Ingalls, Masson, and Patwardhan.</li>
-      <li>Nandikeśvara, <em>Abhinaya Darpaṇa</em>.</li>
-      <li>Coward, Harold G. <em>The Sphoṭa Theory of Language</em>.</li>
-      <li>Matilal, B.K. <em>The Word and the World</em>.</li>
-      <li>Kunjunni Raja, K. <em>Indian Theories of Meaning</em>.</li>
-      <li>Vatsyayan, Kapila. <em>Bharata, the Nāṭyaśāstra</em>; <em>Indian Classical Dance</em>.</li>
-      <li>Zarrilli, Phillip B. <em>Kathakali Dance-Drama</em>.</li>
-      <li>Coomaraswamy, A.K., and G.K. Duggirala (trans.). <em>The Mirror of Gesture</em>.</li>
-      <li>Cardona, George. <em>Pāṇini: His Work and Its Traditions</em>.</li>
-      <li>Stokoe, William C. <em>Sign Language Structure</em>.</li>
-      <li>Klima, Edward S., and Ursula Bellugi. <em>The Signs of Language</em>.</li>
-      <li>Sandler, Wendy, and Diane Lillo-Martin. <em>Sign Language and Linguistic Universals</em>.</li>
-      <li>Emmorey, Karen. <em>Language, Cognition, and the Brain</em>.</li>
-      <li>McNeill, David. <em>Hand and Mind: What Gestures Reveal About Thought</em>.</li>
-      <li>McGurk, Harry, and John MacDonald. "Hearing Lips and Seeing Voices." <em>Nature</em>, 1976.</li>
-      <li>Gerow, Edwin. <em>Indian Poetics</em>; <em>A Glossary of Indian Figures of Speech</em>.</li>
-      <li>Pollock, Sheldon. <em>The Language of the Gods in the World of Men</em>; <em>A Rasa Reader</em>.</li>
-    </ol>
-  </section>
-
-</main>
-</div>
-<footer class="doc-footer">The Grammar the Body Forgot · White Paper · July 2026</footer>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Three Channels &middot; A Scientific Reading of the Vaikhar&#299;-Extension</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1653,6 +1253,406 @@ footer.doc-footer{border-top:1px solid var(--line); padding:2rem 6vw; text-align
 
 </section>
 <!-- =================== END SITE ADDENDUM =================== -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Grammar the Body Forgot — White Paper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#faf7f0; --paper-raised:#f2ecdf; --line:#ddd3bd;
+  --ink:#242019; --ink-dim:#5c5443; --ink-faint:#948a72;
+  --accent:#8a3324; --accent-soft:#c9a24b;
+  --display:'Fraunces',serif; --body:'Source Sans 3',sans-serif; --mono:'IBM Plex Mono',monospace;
+  --deva:'Noto Sans Devanagari',sans-serif;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--body); font-size:17px; line-height:1.7;}
+::selection{background:var(--accent-soft); color:var(--ink);}
+
+.layout{display:grid; grid-template-columns:270px 1fr; max-width:1280px; margin:0 auto;}
+@media (max-width:900px){ .layout{grid-template-columns:1fr;} }
+
+nav.toc{position:sticky; top:0; align-self:start; height:100vh; overflow-y:auto; padding:2.4rem 1.6rem 2rem 2rem; border-right:1px solid var(--line);}
+@media (max-width:900px){ nav.toc{position:static; height:auto; border-right:none; border-bottom:1px solid var(--line);} }
+.toc-kicker{font-family:var(--mono); font-size:0.64rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--accent); margin-bottom:1.2rem;}
+.toc-title{font-family:var(--display); font-weight:600; font-size:1.15rem; margin:0 0 1.6rem; line-height:1.35;}
+.toc a{display:block; font-size:0.86rem; color:var(--ink-dim); text-decoration:none; padding:0.32rem 0; border-left:2px solid transparent; padding-left:0.7rem; margin-left:-0.7rem; transition:all .15s;}
+.toc a:hover{color:var(--accent); border-left-color:var(--accent-soft);}
+.toc a.part{font-weight:600; color:var(--ink); margin-top:0.9rem;}
+.toc a.sub{padding-left:1.4rem; margin-left:-0.7rem; font-size:0.82rem;}
+
+main{padding:3.4rem 6vw 6rem; max-width:760px;}
+@media (min-width:900px){ main{padding:3.4rem 4.5rem 6rem;} }
+
+.kicker{font-family:var(--mono); font-size:0.72rem; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent);}
+h1.title{font-family:var(--display); font-weight:700; font-size:clamp(2rem,4.6vw,3rem); margin:0.5em 0 0.3em; line-height:1.1;}
+p.subtitle{font-family:var(--display); font-style:italic; font-weight:500; font-size:1.25rem; color:var(--ink-dim); margin:0 0 1.6rem; max-width:600px;}
+p.dek{font-size:1.02rem; color:var(--ink-dim); max-width:600px; margin-bottom:1rem;}
+.meta{font-family:var(--mono); font-size:0.78rem; color:var(--ink-faint); margin-bottom:3rem;}
+
+hr.rule{border:none; border-top:1px solid var(--line); margin:3rem 0;}
+
+section{scroll-margin-top:2rem;}
+h2{font-family:var(--display); font-weight:700; font-size:1.7rem; color:var(--ink); margin:2.6rem 0 0.9rem; padding-top:0.4rem; border-top:3px solid var(--accent);}
+h3{font-family:var(--display); font-weight:600; font-size:1.22rem; color:var(--ink); margin:2rem 0 0.7rem;}
+p{margin:0 0 1.15em;}
+strong{color:var(--ink);}
+
+blockquote{margin:1.6rem 0; padding:0.2rem 0 0.2rem 1.3rem; border-left:3px solid var(--accent-soft); font-family:var(--display); font-style:italic; font-size:1.08rem; color:var(--ink-dim);}
+blockquote cite{display:block; margin-top:0.5rem; font-family:var(--mono); font-style:normal; font-size:0.74rem; color:var(--ink-faint);}
+
+ul.plain{margin:0 0 1.2em; padding-left:1.3rem;}
+ul.plain li{margin-bottom:0.55rem;}
+
+.callout{background:var(--paper-raised); border:1px solid var(--line); border-radius:4px; padding:1.1rem 1.4rem; margin:1.6rem 0; font-size:0.95rem;}
+.callout-tag{font-family:var(--mono); font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:0.5rem;}
+
+.shloka-appendix-box{background:var(--paper-raised); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:4px; padding:1.1rem 1.4rem; margin:1.4rem 0;}
+.shloka-appendix-box .dev{font-family:var(--deva); font-size:1.1rem; margin:0 0 0.4rem;}
+.shloka-appendix-box .iast{font-style:italic; color:var(--ink-dim); margin:0 0 0.7rem;}
+.shloka-appendix-box p{font-size:0.92rem; margin:0 0 0.5rem;}
+.shloka-appendix-box p:last-child{margin-bottom:0;}
+.shloka-appendix-box .lbl{font-family:var(--mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:0.3rem;}
+
+.glossary dt{font-family:var(--display); font-weight:600; margin-top:1.1rem;}
+.glossary dd{margin:0.2rem 0 0; color:var(--ink-dim);}
+
+.refs{font-size:0.92rem; color:var(--ink-dim); padding-left:1.3rem;}
+.refs li{margin-bottom:0.6rem;}
+
+.crosslink{margin:2rem 0; text-align:left;}
+.crosslink a{font-family:var(--mono); font-size:0.82rem; color:var(--accent); text-decoration:none; border-bottom:1px dashed var(--accent-soft);}
+.crosslink a:hover{color:var(--ink);}
+
+footer.doc-footer{border-top:1px solid var(--line); padding:2rem 6vw; text-align:center; font-family:var(--mono); font-size:0.68rem; letter-spacing:0.08em; color:var(--ink-faint); text-transform:uppercase;}
+
+@media print{
+  nav.toc{display:none;}
+  .layout{display:block;}
+  main{max-width:100%; padding:0 0.4in;}
+  a{color:inherit; text-decoration:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="layout">
+
+<nav class="toc">
+  <div class="toc-kicker">On This Page</div>
+  <div class="toc-title">The Grammar the Body Forgot</div>
+  <a href="#method">A Note on Method</a>
+  <a href="#summary">Executive Summary</a>
+  <a class="part" href="#part1">Part I — What the Tradition Claims</a>
+  <a class="sub" href="#p11">1.1 Vaikharī and the Extension</a>
+  <a class="sub" href="#p12">1.2 Sphoṭa's Three Features</a>
+  <a class="sub" href="#p13">1.3 Hasta/Varṇa: Real but Partial</a>
+  <a class="sub" href="#p14">1.4 Coordination, Not Independence</a>
+  <a class="sub" href="#p15">1.5 Linguistic Status</a>
+  <a class="sub" href="#p16">1.6 Dhvani Over Sphoṭa</a>
+  <a class="part" href="#part2">Part II — Where It Was Lost</a>
+  <a class="sub" href="#p21">2.1 Label Without Argument</a>
+  <a class="sub" href="#p22">2.2 Vocabulary Without Grammar</a>
+  <a class="sub" href="#p23">2.3 Expressive vs. Linguistic</a>
+  <a class="sub" href="#p24">2.4 Loss of Coordination</a>
+  <a class="sub" href="#p25">2.5 The Cost</a>
+  <a class="part" href="#part3">Part III — Why It Matters Now</a>
+  <a class="sub" href="#p31">3.1 Sign-Language Linguistics</a>
+  <a class="sub" href="#p32">3.2 Embodied Cognition</a>
+  <a class="sub" href="#p33">3.3 Gesture Studies</a>
+  <a class="sub" href="#p34">3.4 HCI &amp; Gesture Recognition</a>
+  <a class="sub" href="#p35">3.5 Movement Therapy</a>
+  <a class="part" href="#part4">Part IV — Applications</a>
+  <a class="part" href="#part5">Part V — Recovery Framework</a>
+  <a href="#limitations">Limitations</a>
+  <a href="#conclusion">Conclusion</a>
+  <a href="#shlokas">Mūla Śloka Appendix</a>
+  <a href="#glossary">Glossary</a>
+  <a href="#references">References</a>
+</nav>
+
+<main>
+  <div class="kicker">White Paper</div>
+  <h1 class="title">The Grammar the Body Forgot</h1>
+  <p class="subtitle">Vaikharī, Sphoṭa, and Dhvani: Recovering the Semiotics of Gesture for Contemporary Practice</p>
+  <p class="dek">A study of the documented commentarial argument that codified gesture (abhinaya) extends vaikharī — spoken language's own externalizing act — together with an honest, feature-by-feature test of how far that extension holds, why the understanding has eroded in contemporary practice, and what recovering it enables.</p>
+  <div class="meta">July 2026</div>
+  <div class="crosslink"><a href="./three-channels-vaikhari-extension.html">&larr; Companion piece: the 40-chapter tabbed reading, "Three Channels Through the Vaikharī-Extension"</a></div>
+
+  <section id="method">
+    <h2>A Note on Method</h2>
+    <p>This paper draws on a documented commentarial tradition — Bhartṛhari's <em>Vākyapadīya</em>, the <em>Nāṭyaśāstra</em>, Abhinavagupta's <em>Abhinavabhāratī</em>, and Ānandavardhana's <em>Dhvanyāloka</em> — rather than on general cultural impression. Each claim below is tested against a stated evidentiary standard before it is accepted: a claim is treated as established only where a named technical term, a locatable textual passage, and an articulable argument from that passage's own premises can be produced together. Where a claim fails this standard, or succeeds only partially, that is reported plainly. This discipline is what separates the argument that follows from the slogans this paper argues against.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="summary">
+    <h2>Executive Summary</h2>
+    <p>Classical Indian linguistic philosophy developed one of the most rigorous accounts anywhere of how meaning moves from an inner, unspoken grasp to a form another person can perceive. Bhartṛhari's grammar names the terminal stage of that movement <strong>vaikharī</strong>: full externalization into a form perceptible to another. Centuries later, a specific and well-documented commentarial argument — found in Abhinavagupta's <em>Abhinavabhāratī</em> — extends this category to codified physical gesture (<strong>abhinaya</strong>), treating it as a further instance of the same externalizing act rather than a separate, merely decorative accompaniment to speech.</p>
+    <p>This white paper reconstructs that argument to its own evidentiary standard and tests it, feature by feature, against the tradition's strongest further claims: that gesture manifests meaning the way <strong>sphoṭa</strong> theory says sound does; that a fixed gestural vocabulary combines as productively as a phoneme inventory does; that gesture can generate full sentence-level meaning independent of speech; and that it therefore qualifies as fully linguistic. The honest finding is not a flat yes or no. Gesture is licensed as vaikharī's further reach with respect to one specific property. It is conventionally coded, not naturally manifestational, in the sphoṭa sense. It shares a phoneme inventory's shape but not its combinatorial productivity. It operates in coordination with speech, not independently of it. And it is best modeled by <strong>dhvani</strong> — suggested meaning evoked for a qualified perceiver — rather than by the stronger claims often popularly attributed to it.</p>
+    <p>This precision has largely been lost, replaced by two opposite failures: romantic overclaiming ("every gesture is a word") and dismissive underclaiming (gesture as mere decoration). Both have costs — for pedagogy, for how "expressiveness" is judged, for gesture-recognition technology, and for cultural policy. This paper argues for a third position: gesture is a real, rigorously describable, partially-linguistic system, and understanding exactly what it can and cannot do is more valuable than either exaggerating or dismissing it.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="part1">
+    <h2>Part I — What the Tradition Actually Claims</h2>
+
+    <h3 id="p11">1.1 Vaikharī and the Extension to Gesture</h3>
+    <p>Bhartṛhari's <em>Vākyapadīya</em> describes speech unfolding through four stages, from an undifferentiated intuition (paśyantī) through an internally rehearsed but still unspoken form (madhyamā) to vaikharī — audible, externalized speech, complete and perceptible to another. Vaikharī's defining property, on this account, is not its acoustic substrate as such but its function: it is the stage at which an internally grasped meaning becomes available to someone else.</p>
+
+    <div class="shloka-appendix-box">
+      <span class="lbl">Mūla Śloka</span>
+      <p class="dev">वैखर्या हि कृतो नादः परश्रवणगोचरः । मध्यमया कृतो नादः स्फोटव्यञ्जक उच्यते ॥</p>
+      <p class="iast">vaikharyā hi kṛto nādaḥ paraśravaṇagocaraḥ | madhyamayā kṛto nādaḥ sphoṭavyañjaka ucyate ||</p>
+      <p><strong>Source:</strong> Cited across the Vākyapadīya commentarial tradition, in the immediate vicinity of Vākyapadīya 1.144 on the vaikharī/madhyamā relation to sphoṭa. Verify the exact kārikā number against your working edition (Rau or Iyer) before final print — this paper cites it as a well-attested but not independently re-verified verse number.</p>
+      <p><strong>Translation:</strong> "The sound produced by vaikharī is what falls within the range of another's hearing; the sound produced by madhyamā is said to be the revealer (vyañjaka) of the sphoṭa."</p>
+      <p><strong>Why it matters here:</strong> The verse states vaikharī's defining job in exactly the terms Abhinavagupta's extension-argument needs: perceptibility <em>for another</em> (paraśravaṇagocaraḥ). It also quietly separates vaikharī's audibility-function from madhyamā's sphoṭa-revealing function — a distinction Part I.2 below depends on.</p>
+    </div>
+
+    <p>Centuries later, Abhinavagupta's <em>Abhinavabhāratī</em> — his commentary on the <em>Nāṭyaśāstra</em>'s treatment of dramatic gesture — makes a specific, locatable, and technically named argument: that codified gesture (abhinaya) is an <strong>aupacārika prayoga</strong>, a figurative but substantive extension of vaikharī's own category. The argument is not from resemblance and not from shared aesthetic effect. It is from vaikharī's own defining property: gesture, like audible speech, externalizes an internally grasped meaning into a form another can perceive — differing only in which sense-channel receives it.</p>
+    <blockquote>A functional-equivalence argument on one defining property licenses extension with respect to that property specifically — not automatically with respect to every further property vaikharī happens to have.<cite>the discipline this paper follows throughout</cite></blockquote>
+    <p>This is a real, evidenced philosophical claim, not folklore. It is also, deliberately, a narrow one: it licenses treating gesture as vaikharī's further reach for one specific reason, and nothing more, until each further property is separately tested.</p>
+
+    <h3 id="p12">1.2 Sphoṭa: What It Requires, and Why Gesture Doesn't Simply Inherit It</h3>
+    <p>Sphoṭa theory is Bhartṛhari's account of how a sequence of transient sounds manifests a single, unified meaning-bearing unit. It carries three load-bearing features: (a) the manifesting cause is a temporally sequenced, discretely segmented string of sound-events; (b) the manifested unit is grasped as a single, unanalyzed whole, not assembled piece by piece; and (c) the relationship between sound and meaning is one of manifestation — the sound reveals a real universal — rather than arbitrary convention alone.</p>
+
+    <div class="shloka-appendix-box">
+      <span class="lbl">Mūla Śloka</span>
+      <p class="dev">चत्वारि वाक् परिमिता पदानि तानि विदुर्ब्राह्मणा ये मनीषिणः । गुहा त्रीणि निहिता नेङ्गयन्ति तुरीयं वाचो मनुष्या वदन्ति ॥</p>
+      <p class="iast">catvāri vāk parimitā padāni tāni vidur brāhmaṇā ye manīṣiṇaḥ | guhā trīṇi nihitā neṅgayanti turīyaṃ vāco manuṣyā vadanti ||</p>
+      <p><strong>Source:</strong> Ṛgveda 1.164.45 — the scriptural seed the grammarian tradition reads as grounding a graded, multi-stage model of speech.</p>
+      <p><strong>Translation:</strong> "Speech is measured in four steps; the wise who have insight know them. Three, hidden in the cave, do not move; men speak the fourth [step] of speech."</p>
+      <p><strong>Why it matters here:</strong> Sphoṭa's three features (feature a especially) describe properties of the relationship <em>between</em> the hidden inner stages and the spoken outer one. Gesture was extended from vaikharī's outer, audible-to-another function (1.1 above) — not from the inner paśyantī–madhyamā relationship sphoṭa depends on. That is why two of the three features can fail for gesture below without contradicting the extension argument itself.</p>
+    </div>
+
+    <p>Tested independently against codified gesture, each feature fares differently. Feature (a) holds only partially: a held hand-configuration has no internal temporal sequence at all, and even a moving gestural phrase unfolds continuously rather than in the discrete, digitally segmented steps a phoneme string requires. Feature (b) is plausibly satisfied — trained observers appear to grasp a gesture's meaning holistically rather than parsing it piece by piece — but this rests on pedagogical description and structural analogy rather than direct experimental confirmation.</p>
+    <p>Feature (c) is decisive, and it fails for the general case. The classical hasta-inventory is documented as taught name by name, meaning by meaning — the pattern one would expect of a conventional (saṅketa-governed) sign-system, not one where the shape itself discloses its meaning. A small, bounded minority of directly iconic gestures partially escapes this — much as onomatopoeia is a bounded exception within an otherwise arbitrary spoken vocabulary — but a marked exception does not overturn a documented general rule.</p>
+    <div class="callout"><span class="callout-tag">Finding</span>Sphoṭa, in its full technical sense, does not transfer to gesture. This is not a deflationary finding — it is the finding that motivates a better-fitting model later in this paper.</div>
+
+    <h3 id="p13">1.3 The Hasta/Varṇa Parallel: Real, but Partial</h3>
+    <p>The Sanskrit phoneme inventory (varṇamālā) and the classical hand-gesture inventory (hasta) share genuine structural features: both are finite, both are individually named and taught as a closed curriculum, and both are categorized digitally rather than on a continuous gradient.</p>
+    <p>The parallel breaks on the feature that gives spoken language its expressive reach: productivity. Roughly fifty phonemes generate, through rule-governed combination, the entirety of the Sanskrit lexicon. The hasta inventory does not do this. Individual gestures typically carry their meaning directly, and narrative sequences are documented as <strong>concatenative</strong> — independently meaningful units stitched into a scene by the audience's own narrative inference — rather than generative, capable of producing meanings never previously listed or heard.</p>
+    <p>Benchmarked against other digital sign-systems, the hasta inventory's profile resembles heraldry or a fixed signal system far more than a numeral system or a phonological grammar, both of which achieve real productivity from a small digital base.</p>
+
+    <h3 id="p14">1.4 Coordination, Not Independence</h3>
+    <p>The <em>Nāṭyaśāstra</em> defines abhinaya, from the point of first definition, as constitutively fourfold: āṅgika (bodily), vācika (verbal), āhārya (costume), and sāttvika (involuntary psychophysical states) — not a later elaboration, but built into the term's own definition, with all four channels ordinarily deployed together.</p>
+
+    <div class="shloka-appendix-box">
+      <span class="lbl">Mūla Śloka</span>
+      <p class="dev">भवेदभिनयोऽवस्थानुकारः स चतुर्विधः । आङ्गिको वाचिकश्चैवमाहार्यः सात्त्विकस्तथा ॥</p>
+      <p class="iast">bhaved abhinayo 'vasthānukāraḥ sa caturvidhaḥ | āṅgiko vācikaś caiva māhāryaḥ sāttvikas tathā ||</p>
+      <p><strong>Source:</strong> The standard definitional restatement of abhinaya's fourfold division carried through the alaṃkāra-śāstra tradition (compare Sāhityadarpaṇa 6.274), consistent with the Nāṭyaśāstra's own constitutive fourfold treatment.</p>
+      <p><strong>Translation:</strong> "Acting is the imitation of a state, and it is of four kinds: bodily, verbal, costume-based, and involuntary-psychophysical."</p>
+      <p><strong>Why it matters here:</strong> Fourfold <em>at the point of definition</em> is what licenses reading āṅgika as one coordinated channel among four, rather than a free-standing language substituting for the rest. The widely performed dhyāna verse <em>āṅgikaṃ bhuvanaṃ yasya vācikaṃ sarva-vāṅmayam</em> — "whose body is the universe, whose speech is all language" — shows this same fourfold scheme still functioning as a living unit in performance culture, not only as scholastic classification.</p>
+    </div>
+
+    <p>This coordinated-not-independent reading survives its hardest documented test. Solo, gesture-forward traditions relocate the verbal channel — a vocalist sings the narrative while the performer's hands and face carry gesture — rather than eliminating it. And in the rare segments where gesture approaches pure nṛtya with no verbal channel at all, meaning narrows toward mood and affect rather than sustaining sentence-level narrative content.</p>
+    <p>Crucially, this is not a claim that gesture in general cannot be full grammar. Natural sign languages are established in the linguistics literature as full grammatical systems — spatial verb agreement, classifier constructions, non-manual grammatical markers — engaging the same left-perisylvian language networks as spoken language. The deciding factor for linguistic status is documented grammatical structure, not channel, and codified dramatic gesture has not been shown to possess that structure.</p>
+
+    <h3 id="p15">1.5 Linguistic Status: Conventional, Not Fully Generative</h3>
+    <p>The <em>Nāṭyaśāstra</em>'s own <strong>lokadharmī / nāṭyadharmī</strong> distinction — ordinary worldly behavior versus stylized dramatic convention — bears directly here. A codified sorrow-gesture does not resemble sorrow the way an unstylized expression does; its meaning must be learned. This satisfies a genuine necessary condition for linguistic status: the sign is conventionally, not naturally, paired with its meaning. Necessary is not sufficient, however — the sphoṭa-style manifestation relationship and generative productivity are both independently tested above and both found wanting. Gesture clears one bar and not the others.</p>
+
+    <h3 id="p16">1.6 The Better Model: Dhvani Over Sphoṭa</h3>
+    <p>If sphoṭa's manifestation-relationship and generative productivity don't describe how gesture carries meaning, a different model is needed. <strong>Dhvani</strong> theory, developed by Ānandavardhana, names a suggested sense (vyaṅgya) an expression (vyañjaka) evokes without stating it directly. Unlike sphoṭa, dhvani does not require a discretely segmented manifesting cause — a held expression suggests as well as an unfolding one. It is built to accommodate context-dependent polysemy as a central case, matching the documented phenomenon of one hasta carrying several senses resolved by context. And it explicitly requires a qualified perceiver (<strong>sahṛdaya</strong>), matching the tradition's own emphasis on trained spectatorship.</p>
+
+    <div class="shloka-appendix-box">
+      <span class="lbl">Mūla Śloka</span>
+      <p class="dev">काव्यस्यात्मा ध्वनिः ।</p>
+      <p class="iast">kāvyasyātmā dhvaniḥ |</p>
+      <p><strong>Source:</strong> Ānandavardhana, <em>Dhvanyāloka</em>, opening kārikā 1.1.</p>
+      <p><strong>Translation:</strong> "The soul of poetry is dhvani (suggestion)."</p>
+      <p><strong>Why it matters here:</strong> Four words, and they replace the entire load-bearing requirement sphoṭa imposed. Dhvani needs no discretely sequenced manifesting cause and no manifestation-over-convention relationship — a held configuration suggests as legitimately as an unfolding one, and one sign carrying different senses in different contexts is dhvani's expected case, not an anomaly. Ānandavardhana's own threefold division — vastu-dhvani, alaṃkāra-dhvani, rasa-dhvani — gives a precise home to a hasta's context-resolved senses.</p>
+    </div>
+
+    <p>This paper treats dhvani-over-sphoṭa as the tradition's own best synthetic proposal — clearly flagged as a scholarly proposal built on convergent evidence, not a classical equivalence the texts state outright.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="part2">
+    <h2>Part II — Where the Understanding Has Been Lost</h2>
+
+    <h3 id="p21">2.1 From Rigorous Argument to Inherited Label</h3>
+    <p>The documented reception history of the vaikharī-extension argument shows exactly how precision erodes. Abhinavagupta's original argument engages specific, checkable conditions. Later, more widely circulated practical manuals inherit the label without re-arguing, or even restating, its grounds. The rigorous version survives mostly in theoretical commentary a working performer or general audience rarely encounters.</p>
+
+    <h3 id="p22">2.2 Symptom One: Gesture Taught as Vocabulary Without Grammar</h3>
+    <p>A pedagogy that teaches "this hasta means this" without teaching register, combinatorial limits, or the coordination principle is teaching vocabulary without grammar — the gestural equivalent of memorizing word-meaning pairs without ever learning how words combine into sentences.</p>
+
+    <h3 id="p23">2.3 Symptom Two: Conflating "Expressive" With "Linguistic"</h3>
+    <p>Slogans like "dance is a universal language" assert a strong, technical claim on the evidence for a weaker, aesthetic one. The cost runs both ways: it invites easy debunking, and that debunking then gets mistakenly applied to the real, more modest claim the evidence does support.</p>
+
+    <h3 id="p24">2.4 Symptom Three: Loss of the Coordinated Model in Practice</h3>
+    <p>Some contemporary staging presents gesture as free-standing "storytelling without words," implicitly claiming the coordinated system's full narrative content survives when its coordinating verbal channel is removed. The evidence suggests otherwise: what an audience receives in that condition narrows toward mood and affect.</p>
+
+    <h3 id="p25">2.5 The Cost of the Lost Precision</h3>
+    <ul class="plain">
+      <li><strong>Cultural:</strong> transmission drifts from a living, reasoned system toward a fixed aesthetic surface.</li>
+      <li><strong>Scientific:</strong> a rich set of testable distinctions goes largely untested in cognitive science — an underused source of hypotheses.</li>
+      <li><strong>Technological:</strong> gesture-recognition design frequently re-derives, without acknowledgment, distinctions this tradition worked out centuries earlier.</li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section id="part3">
+    <h2>Part III — Why This Matters Now: Modern Parallels and Stakes</h2>
+
+    <h3 id="p31">3.1 Sign Language Linguistics: Proof the Channel Was Never the Limit</h3>
+    <p>William Stokoe's demonstration that American Sign Language is a full grammatical system — developed further by Bellugi, Klima, Sandler, and Lillo-Martin — is the single most important external check available. Natural sign languages possess exactly the features codified dramatic gesture lacks: productive combinatorial morphology, formal grammatical marking, and the capacity for genuinely novel propositions. The question is never channel; it is documented structure.</p>
+
+    <h3 id="p32">3.2 Embodied Cognition and Multisensory Integration</h3>
+    <p>Decades of audiovisual speech-perception research — the McGurk effect and its follow-up literature — demonstrate that spoken and gestural channels are ordinarily processed as one bound communicative event. This independently confirms the coordination principle the fourfold abhinaya scheme argues for.</p>
+
+    <h3 id="p33">3.3 Gesture Studies: An Independently Convergent Framework</h3>
+    <p>David McNeill's research on co-speech gesture — developed independently of the Sanskrit material — concludes that gesture and speech form a single, integrated system. Two entirely independent traditions of inquiry converging on a coordinated model is a data point worth taking seriously.</p>
+
+    <h3 id="p34">3.4 Human-Computer Interaction and Gesture-Recognition Design</h3>
+    <p>Practical gesture-recognition systems must decide whether a vocabulary is discrete (classifiable) or continuous (estimable along a gradient) — precisely the digital-versus-analog distinction this tradition drew centuries ago, and one it applied unevenly and carefully rather than uniformly.</p>
+
+    <h3 id="p35">3.5 Movement and Dance Therapy</h3>
+    <p>Clinical and therapeutic movement literature increasingly calls for precise, describable vocabularies of gesture-meaning rather than impressionistic language about "authentic expression" — exactly the toolkit this framework already offers.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="part4">
+    <h2>Part IV — Applications: What Rigorous Understanding Enables</h2>
+    <h3>For Performing Arts Pedagogy</h3>
+    <p>Training should teach the coordination principle and register distinctions alongside vocabulary, equipping performers to explain their art form with precision rather than slogans.</p>
+    <h3>For Cognitive and Linguistic Science</h3>
+    <p>The tradition's own distinctions are already well-specified, testable hypotheses — an invitation for direct experimental work, particularly on holistic-versus-componential gesture perception.</p>
+    <h3>For Technology Design</h3>
+    <p>Gesture-recognition systems should distinguish discrete/digital vocabularies from continuous/analog channels at the design stage, informed by this same distinction.</p>
+    <h3>For Cultural Policy</h3>
+    <p>Preservation frameworks should recognize these traditions as rigorous semiotic systems worthy of serious scholarly study, not only as heritage or folklore categories.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="part5">
+    <h2>Part V — A Framework for Recovery</h2>
+    <h3>Guiding Principles</h3>
+    <ul class="plain">
+      <li><strong>Precision over slogan:</strong> state what the evidence actually supports.</li>
+      <li><strong>Register-awareness:</strong> distinguish naturalistic from stylized representation.</li>
+      <li><strong>Coordination-awareness:</strong> be honest about what is lost when one channel is removed.</li>
+      <li><strong>Qualified-perceiver awareness:</strong> train audiences, not only performers.</li>
+      <li><strong>Testability:</strong> treat the tradition's distinctions as hypotheses, not settled doctrine.</li>
+    </ul>
+    <h3>Recommendations by Stakeholder</h3>
+    <ul class="plain">
+      <li><strong>Performers and teachers:</strong> incorporate register and coordination principles explicitly into training.</li>
+      <li><strong>Scholars and scientists:</strong> design direct empirical tests of the tradition's own stated distinctions.</li>
+      <li><strong>Technologists:</strong> consult the digital/analog and productivity distinctions in interaction design.</li>
+      <li><strong>Cultural institutions and policymakers:</strong> fund and frame these traditions as intellectually substantive systems.</li>
+    </ul>
+  </section>
+
+  <hr class="rule">
+
+  <section id="limitations">
+    <h2>Limitations and Counterarguments</h2>
+    <p>The dhvani-over-sphoṭa conclusion is this paper's own considered synthesis of convergent evidence, not a classical equivalence the source texts state outright — it should be taught as a well-evidenced proposal, not settled doctrine.</p>
+    <p>The parallels drawn to sign-language linguistics, embodied cognition, and gesture studies are genuine, but readers should not mistake structural resemblance for proof that every classical claim is scientifically validated. Sphoṭa's manifestation-relationship, for instance, is a metaphysical commitment not straightforwardly testable by neuroscience at all.</p>
+    <p>This paper centers on one textual line — the <em>Nāṭyaśāstra</em> through Abhinavagupta to Ānandavardhana — and living regional traditions vary considerably; a finding here should not be assumed to hold identically everywhere without separate examination.</p>
+    <p>Finally, some readers may reasonably feel a linguistically precise analysis undersells the aesthetic or devotional dimensions of these art forms. This paper's aim is to add rigor to how gesture's communicative structure is described, not to reduce these traditions to only what passes a linguistics examination.</p>
+    <p>On the four mūla śloka citations added throughout this paper: each is a well-documented verse checked against secondary scholarly sources during this revision, but exact kārikā/chapter numbers for the Vākyapadīya and Abhinavabhāratī citations should be cross-checked against your working critical editions before this goes to print or peer review. Precision claimed here is precision as far as it was independently verifiable in this pass — not a substitute for checking against primary editions.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>The claim that codified gesture extends spoken language's own externalizing function is real, documented, and evidenced — and it is also, honestly examined, narrower and more precise than either its enthusiasts or its skeptics usually credit. Gesture is not simply speech in another channel, and it is not mere decoration either. It is a conventionally coded, coordinated, dhvani-style suggestive system — structurally comparable in shape to a phonemic inventory but not in combinatorial power — best understood on its own precisely stated terms rather than through borrowed slogans. Recovering that precision is the difference between transmitting a living, reasoned system to the next generation and transmitting only its surface.</p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="shlokas">
+    <h2>Appendix — Mūla Śloka Reference Set</h2>
+    <p>The four source verses cited in Part I, gathered here for quick reference.</p>
+    <div class="shloka-appendix-box">
+      <span class="lbl">1 — On Vaikharī and Madhyamā</span>
+      <p class="dev">वैखर्या हि कृतो नादः परश्रवणगोचरः । मध्यमया कृतो नादः स्फोटव्यञ्जक उच्यते ॥</p>
+      <p class="iast">vaikharyā hi kṛto nādaḥ paraśravaṇagocaraḥ | madhyamayā kṛto nādaḥ sphoṭavyañjaka ucyate ||</p>
+      <p>Vākyapadīya tradition, near 1.144 — grounds §1.1.</p>
+    </div>
+    <div class="shloka-appendix-box">
+      <span class="lbl">2 — On the Four Steps of Speech</span>
+      <p class="dev">चत्वारि वाक् परिमिता पदानि तानि विदुर्ब्राह्मणा ये मनीषिणः । गुहा त्रीणि निहिता नेङ्गयन्ति तुरीयं वाचो मनुष्या वदन्ति ॥</p>
+      <p class="iast">catvāri vāk parimitā padāni tāni vidur brāhmaṇā ye manīṣiṇaḥ | guhā trīṇi nihitā neṅgayanti turīyaṃ vāco manuṣyā vadanti ||</p>
+      <p>Ṛgveda 1.164.45 — grounds §1.2.</p>
+    </div>
+    <div class="shloka-appendix-box">
+      <span class="lbl">3 — On the Fourfold Abhinaya</span>
+      <p class="dev">भवेदभिनयोऽवस्थानुकारः स चतुर्विधः । आङ्गिको वाचिकश्चैवमाहार्यः सात्त्विकस्तथा ॥</p>
+      <p class="iast">bhaved abhinayo 'vasthānukāraḥ sa caturvidhaḥ | āṅgiko vācikaś caiva māhāryaḥ sāttvikas tathā ||</p>
+      <p>Alaṃkāra-śāstra restatement (cf. Sāhityadarpaṇa 6.274) — grounds §1.4.</p>
+    </div>
+    <div class="shloka-appendix-box">
+      <span class="lbl">4 — On Dhvani</span>
+      <p class="dev">काव्यस्यात्मा ध्वनिः ।</p>
+      <p class="iast">kāvyasyātmā dhvaniḥ |</p>
+      <p>Dhvanyāloka 1.1 — grounds §1.6.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="glossary">
+    <h2>Appendix — Glossary of Key Terms</h2>
+    <dl class="glossary">
+      <dt>Vaikharī</dt><dd>The final stage in Bhartṛhari's account of speech: fully externalized, audible language, perceptible to another person.</dd>
+      <dt>Sphoṭa</dt><dd>The single, unified meaning-bearing unit that a sequence of sounds is held to manifest.</dd>
+      <dt>Dhvani</dt><dd>Suggested sense (vyaṅgya) evoked by an expression (vyañjaka) beyond direct denotation; the central concept of Ānandavardhana's poetics.</dd>
+      <dt>Abhinaya</dt><dd>Dramatic expression in the fourfold sense: bodily (āṅgika), verbal (vācika), costume-based (āhārya), and psychophysical (sāttvika).</dd>
+      <dt>Hasta / Mudrā</dt><dd>A codified hand-configuration in classical Indian dance and drama, drawn from a fixed, named inventory.</dd>
+      <dt>Aupacārika Prayoga</dt><dd>Figurative or extended application of an established category to a new case — the mechanism by which gesture extends vaikharī.</dd>
+      <dt>Lokadharmī / Nāṭyadharmī</dt><dd>Representation modeled on ordinary worldly behavior versus stylized dramatic convention.</dd>
+      <dt>Nṛtta / Nṛtya</dt><dd>Pure, non-representational rhythmic movement versus expressive, meaning-bearing movement.</dd>
+      <dt>Sahṛdaya</dt><dd>The "same-hearted" qualified perceiver dhvani theory requires.</dd>
+      <dt>Saṅketa</dt><dd>Convention: an agreed, learned pairing between a sign and its meaning, as opposed to a natural relationship.</dd>
+    </dl>
+  </section>
+
+  <hr class="rule">
+
+  <section id="references">
+    <h2>References and Further Reading</h2>
+    <ol class="refs">
+      <li>Bhartṛhari, <em>Vākyapadīya</em>, Kāṇḍa I–II.</li>
+      <li>Bharata, <em>Nāṭyaśāstra</em>, Ch. 6–9 and 13; trans. Manomohan Ghosh.</li>
+      <li>Abhinavagupta, <em>Abhinavabhāratī</em> ad Nāṭyaśāstra 8.</li>
+      <li>Ānandavardhana, <em>Dhvanyāloka</em>, with the <em>Locana</em> of Abhinavagupta; trans. Ingalls, Masson, and Patwardhan.</li>
+      <li>Nandikeśvara, <em>Abhinaya Darpaṇa</em>.</li>
+      <li>Coward, Harold G. <em>The Sphoṭa Theory of Language</em>.</li>
+      <li>Matilal, B.K. <em>The Word and the World</em>.</li>
+      <li>Kunjunni Raja, K. <em>Indian Theories of Meaning</em>.</li>
+      <li>Vatsyayan, Kapila. <em>Bharata, the Nāṭyaśāstra</em>; <em>Indian Classical Dance</em>.</li>
+      <li>Zarrilli, Phillip B. <em>Kathakali Dance-Drama</em>.</li>
+      <li>Coomaraswamy, A.K., and G.K. Duggirala (trans.). <em>The Mirror of Gesture</em>.</li>
+      <li>Cardona, George. <em>Pāṇini: His Work and Its Traditions</em>.</li>
+      <li>Stokoe, William C. <em>Sign Language Structure</em>.</li>
+      <li>Klima, Edward S., and Ursula Bellugi. <em>The Signs of Language</em>.</li>
+      <li>Sandler, Wendy, and Diane Lillo-Martin. <em>Sign Language and Linguistic Universals</em>.</li>
+      <li>Emmorey, Karen. <em>Language, Cognition, and the Brain</em>.</li>
+      <li>McNeill, David. <em>Hand and Mind: What Gestures Reveal About Thought</em>.</li>
+      <li>McGurk, Harry, and John MacDonald. "Hearing Lips and Seeing Voices." <em>Nature</em>, 1976.</li>
+      <li>Gerow, Edwin. <em>Indian Poetics</em>; <em>A Glossary of Indian Figures of Speech</em>.</li>
+      <li>Pollock, Sheldon. <em>The Language of the Gods in the World of Men</em>; <em>A Rasa Reader</em>.</li>
+    </ol>
+  </section>
+
+</main>
+</div>
+<footer class="doc-footer">The Grammar the Body Forgot · White Paper · July 2026</footer>
 </body>
 </html>
 
