@@ -1299,6 +1299,507 @@ function selectTab(n){
 
 </section>
 <!-- =================== END RQ9 ADDENDUM =================== -->
+  <!-- ============================================================
+     ADDENDUM — paste this block immediately before </body>,
+     AFTER the existing #site-extras-rq9 </section> closing tag.
+     RQ 10 — Sāttvika Bhāva: The Involuntary Psychophysical Channel
+     RQ 11 — Cross-Cultural Benchmark: Comparative Gestural Systems
+     Reuses the sx-* classes already defined in earlier addenda — no
+     new global CSS is introduced beyond what those sections already
+     declare; this scope block restates the minimum needed so the
+     fragment is safely self-contained if pasted on its own.
+     Continues the numbering: this is "section 9" and "section 10"
+     following Scorecard → RQ5 → Case Studies → Cross-Tradition →
+     Timeline → Reading Paths → FAQ → RQ9 already in the page.
+     ============================================================ -->
+<section id="site-extras-rq10">
+<style>
+#site-extras-rq10{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b; --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3; --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif; --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink); font-family:var(--sx-body); font-size:17px; line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq10 *{box-sizing:border-box;}
+#site-extras-rq10 h2.sx-h{font-family:var(--sx-display); font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem); color:var(--sx-ink); margin:3.6rem 0 0.5em; padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq10 .sx-kicker{font-family:var(--sx-mono); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sx-acoustic); margin-bottom:0.6rem;}
+#site-extras-rq10 h3{font-family:var(--sx-display); font-weight:600; font-size:1.15rem; color:var(--sx-ink); margin:1.8rem 0 0.6rem;}
+#site-extras-rq10 h4{font-family:var(--sx-display); font-weight:600; font-size:1.02rem; color:var(--sx-gold); margin:1.3rem 0 0.5rem;}
+#site-extras-rq10 p{margin:0 0 1.05em; font-size:0.98rem; color:var(--sx-ink);}
+#site-extras-rq10 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq10 .sx-intro{color:var(--sx-ink-dim); font-style:italic; max-width:720px;}
+#site-extras-rq10 ul.sx-plain{margin:0 0 1.1em; padding-left:1.3rem;}
+#site-extras-rq10 ul.sx-plain li{margin-bottom:0.5rem; font-size:0.95rem; color:var(--sx-ink-dim);}
+
+.sx-scorecard{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; padding:0.3em 0.7em; border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15); color:var(--sx-acoustic); border:1px solid var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15); color:var(--sx-gold); border:1px solid rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18); color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15); color:var(--sx-neuro); border:1px solid var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem; margin-bottom:0.9rem; background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-left:3px solid var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center; gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);} .sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n .sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b .sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto;}
+.sx-dot.a{background:var(--sx-acoustic);} .sx-dot.n{background:var(--sx-neuro);} .sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.55rem 0.75rem; border-bottom:2px solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-radius:6px; padding:1.3rem 1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display); font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-ink-faint);}
+.sx-case-dev{font-family:var(--sx-deva); font-size:1.05rem; color:var(--sx-ink); margin:0 0 0.3rem;}
+.sx-case-iast{font-style:italic; color:var(--sx-ink-dim); font-size:0.9rem; margin:0 0 0.9rem;}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-acoustic); display:block; margin-bottom:0.15rem;}
+
+.sx-faq-item{border-bottom:1px solid var(--sx-line);}
+.sx-faq-q{width:100%; text-align:left; background:none; border:none; color:var(--sx-ink); font-family:var(--sx-display); font-weight:600; font-size:1rem; padding:1.1rem 0; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;}
+.sx-faq-q:hover{color:var(--sx-acoustic);}
+.sx-faq-q .sx-plus{font-family:var(--sx-mono); color:var(--sx-acoustic); transition:transform .2s; flex:0 0 auto;}
+.sx-faq-item.open .sx-plus{transform:rotate(45deg);}
+.sx-faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+.sx-faq-item.open .sx-faq-a{max-height:460px;}
+.sx-faq-a p{padding-bottom:1.1rem; color:var(--sx-ink-dim); font-size:0.94rem;}
+
+.shloka-box{background:linear-gradient(180deg, rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px solid rgba(201,162,75,0.35); border-radius:6px; padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem; color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic; color:var(--sx-ink-dim); margin:0 0 0.9rem; font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem; line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+
+.sx-timeline{position:relative; margin:1.6rem 0; padding-left:1.6rem; border-left:2px solid var(--sx-line);}
+.sx-tl-item{position:relative; padding-bottom:1.5rem;}
+.sx-tl-item::before{content:''; position:absolute; left:-1.72rem; top:0.3rem; width:9px; height:9px; border-radius:50%; background:var(--sx-gold); box-shadow:0 0 6px var(--sx-gold);}
+.sx-tl-date{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-gold);}
+.sx-tl-title{font-family:var(--sx-display); font-weight:600; font-size:1.02rem; color:var(--sx-ink); margin:0.15rem 0 0.25rem;}
+.sx-tl-desc{font-size:0.9rem; color:var(--sx-ink-dim); margin:0;}
+</style>
+
+<!-- =================== 9. RQ10 — SĀTTVIKA BHĀVA =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 10</span>The Untested Fourth Channel: Sāttvika Bhāva</h2>
+<p class="sx-intro">Ch. 26 (mūla śloka) named all four abhinaya channels — āṅgika, vācika, āhārya, sāttvika — at the point of definition, and Ch. 27–29 tested coordination between āṅgika and vācika in detail. But sāttvika itself was never separately tested against the same evidentiary bar RQ2 and RQ6 applied to āṅgika. That is a real gap, because sāttvika is not a minor channel: Abhinavagupta's own commentary treats it as the channel closest to rasa itself. This cluster closes the gap by running the identical tests — conventionality, sign-type, dhvani-fit — against a channel that is, on its face, the opposite of āṅgika in one crucial respect: it is involuntary, not trained.</p>
+
+<h3>10.1 What Sāttvika Claims, Restated at the Same Precision as Ch. 1</h3>
+<p>The <em>Nāṭyaśāstra</em> defines sāttvika bhāva as arising from <strong>sattva</strong> — a state of undistracted mental absorption — and manifesting as involuntary psychophysical states that overtake the performer when genuinely absorbed in the emotion being portrayed, rather than states the performer deliberately assembles gesture by gesture. This is a structurally different kind of claim than the aupacārika prayoga argument tested in Ch. 1–8. That argument extended vaikharī's externalization-for-another property to a <em>trained, codified</em> sign system. Sāttvika bhāva, on the tradition's own account, is not trained in the same sense at all — a performer is taught to <em>cultivate the conditions</em> under which it arises (through sustained absorption, or abhyāsa), but the specific bodily events themselves — tears, gooseflesh, a breaking voice — are described as arising involuntarily once that absorption is genuine, not as individually rehearsed and deployed the way a hasta is.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse — The Eight Sāttvika Bhāvas</div>
+  <p class="shloka-dev">स्तम्भः स्वेदोऽथ रोमाञ्चः स्वरभेदोऽथ वेपथुः । वैवर्ण्यमश्रु प्रलय इत्यष्टौ सात्त्विकाः स्मृताः ॥</p>
+  <p class="shloka-iast">stambhaḥ svedo 'tha romāñcaḥ svarabhedo 'tha vepathuḥ | vaivarṇyam aśru pralaya ity aṣṭau sāttvikāḥ smṛtāḥ ||</p>
+  <p><strong>Source:</strong> Widely cited as Bharata's enumeration of the eight sāttvika bhāvas (vicinity of Nāṭyaśāstra 6.22, on the sthāyibhāva–vyabhicāribhāva–sāttvikabhāva scheme), and repeated with only minor variation in Viśvanātha's Sāhityadarpaṇa and Dhanañjaya's Daśarūpaka. Treat this as a well-documented, widely-transmitted teaching verse; cross-check the exact kārikā number against the Kāvyamālā or GOS edition of the Nāṭyaśāstra before citing in formal scholarship, the same caution this document applies to every other verse it cites.</p>
+  <p><strong>Translation:</strong> Paralysis (stambha), perspiration (sveda), horripilation (romāñca), a breaking of the voice (svarabheda), trembling (vepathu), change of color (vaivarṇya), tears (aśru), and fainting (pralaya) — these eight are remembered as the sāttvika [bhāvas].</p>
+  <p><strong>Prakriyā (how it works here):</strong> Every item on this list is a documented autonomic or involuntary physiological response — not a posture that is assumed, held, and released the way a hasta is. This is the textual anchor for 10.2's central claim: sāttvika bhāva is defined, from the point of enumeration, as a class of signs whose <em>production mechanism</em> differs categorically from āṅgika's, even though both are counted among the four coordinated abhinaya channels.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: a textually precise basis for testing sāttvika separately rather than assuming Ch. 12's conventionality finding (saṅketa, learned pairing) simply carries over from āṅgika to every abhinaya channel by default.</p>
+</div>
+
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>The difference between stambha and a hasta is the difference between a genuine vocal-fold tremor under real emotional load and a deliberately produced vibrato — both audible, only one involuntary. Acoustic-phonetics research on emotional speech already treats these as separate categories (voice quality as an involuntary index vs. prosody as a controlled signal).</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Involuntary affect-expressive behavior recruits limbic and autonomic pathways (amygdala, hypothalamic-autonomic circuits) documented as largely distinct from the voluntary motor-planning pathways (premotor and supplementary motor cortex) that produce trained, codified gesture — a genuine mechanistic split, not just a descriptive one.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to distinguishing a constitutive stress-response cascade (triggered automatically past a threshold, like a heat-shock response) from an engineered, deliberately expressed synthetic pathway — both are real biological signals, produced by fundamentally different control logic.</p></div>
+
+<h3>10.2 Testing Sāttvika Against Ch. 12's Conventionality Criterion — And Getting the Opposite Answer</h3>
+<p>Ch. 12 found that āṅgika fails sphoṭa's manifestation-relationship and instead satisfies saṅketa (convention): a hasta's meaning must be explicitly taught, name by name. Sāttvika bhāva, tested on the same criterion, gives the opposite result for the paradigm case. Tears arising from genuine grief are not a taught, arbitrary pairing between a shape and a meaning — they are naturally, universally, cross-culturally associated with grief, in a way that does not require saṅketa to be intelligible even to an untrained observer. This is not a minor variation on āṅgika's finding; it is a structurally different position on the same test.</p>
+<p>This has an immediate and important consequence for the sphoṭa-versus-dhvani argument built across Ch. 9–16 and Ch. 37–39. That argument was built and is valid specifically for āṅgika. It was never claimed, and should not be assumed, to extend automatically to sāttvika — a channel whose paradigm cases are naturally rather than conventionally linked to their meaning is, if anything, closer to sphoṭa's manifestation-relationship than āṅgika ever was, precisely on the feature (c) test that was decisive against āṅgika in Ch. 12.</p>
+<table class="sx-compare">
+<tr><th>Sphoṭa Feature (Ch. 9)</th><th>Āṅgika Result (Ch. 10–12)</th><th>Sāttvika Result (this cluster)</th></tr>
+<tr><td class="hl">(a) Sequenced manifesting cause</td><td><span class="sx-badge partial">Partial</span> — held shapes fail; moving phrases weakly satisfy</td><td><span class="sx-badge no">Fails differently</span> — onset can be gradual (vaivarṇya) or sudden (vepathu); no phonemic-style discrete segmentation in either case</td></tr>
+<tr><td class="hl">(b) Unitary, non-compositional grasping</td><td><span class="sx-badge partial">Plausible</span>, indirect evidence only</td><td><span class="sx-badge yes">Strongly plausible</span> — a trembling voice is read as a single affective gestalt, arguably even more directly than a hasta is</td></tr>
+<tr><td class="hl">(c) Manifestation vs. convention</td><td><span class="sx-badge no">Fails</span> — explicit saṅketa, name-by-name teaching documented</td><td><span class="sx-badge yes">Closer to manifestation</span> — paradigm cases (tears, trembling) are naturally, not arbitrarily, linked to the states they express</td></tr>
+</table>
+<p class="sx-dim">This table is the cluster's central finding, stated plainly: on the one feature that was decisive against āṅgika, sāttvika comes out the other way. That asymmetry is itself evidence the earlier chapters' negative sphoṭa-finding was correctly scoped to āṅgika specifically, rather than to abhinaya in general — exactly the kind of boundary-condition precision Ch. 4 insisted on from the start.</p>
+
+<h3>10.3 The Complication: Staged Sāttvika and the Lokadharmī/Nāṭyadharmī Line</h3>
+<p>This finding needs one immediate qualification, because performance practice complicates the "naturally manifested" reading. A trained performer does not, in most staged contexts, wait for genuine autonomic grief before producing stage-tears; skilled performers are documented as able to produce a controlled approximation of sāttvika states — a controlled vaivarṇya, a summoned tremor — through technique. This is precisely the lokadharmī/nāṭyadharmī distinction Ch. 33 already established: sāttvika bhāva has a naturalistic register (lokadharmī — the real thing, arising involuntarily) and a stylized, technically produced register (nāṭyadharmī — a trained simulation of the real thing for staging purposes).</p>
+<p>Once staged, technically-produced sāttvika is, in an important sense, re-conventionalized — a trained performer's controlled tremor is closer to a codified sign than to the spontaneous original it represents. The honest finding is therefore register-dependent rather than a single flat verdict: genuine, lokadharmī sāttvika bhāva is naturally linked to its meaning and sits closer to sphoṭa's manifestation relationship; staged, nāṭyadharmī sāttvika bhāva is a trained approximation and sits closer to āṅgika's conventionalized profile. Both registers are legitimate and both are named in the tradition's own vocabulary — this cluster's contribution is making explicit which register each specific claim about sāttvika bhāva applies to.</p>
+
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Directly parallel to the documented distinction in voice-quality research between genuine emotional vocal perturbation and an actor's trained simulation of it — acoustic analysis can sometimes, though not always, distinguish the two, exactly the register split this section names.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Maps onto documented findings that trained affect-simulation (actors producing convincing facial expressions on cue) recruits voluntary motor-cortical pathways alongside, and sometimes partially substituting for, the involuntary limbic pathways engaged during genuine affect.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to an engineered cell line producing a molecule that is structurally identical to one made by a natural constitutive pathway — same output, different control mechanism, and the difference matters for how the system should be modeled.</p></div>
+
+<h3>10.4 Sāttvika as Index Rather Than Symbol — A Peircean Sharpening</h3>
+<p>The Cross-Tradition Comparison table above (Peirce's icon/index/symbol trichotomy) already noted that this tradition discusses resemblance, convention, and manifestation without formally trichotomizing them the way Peirce does. Sāttvika bhāva is exactly the case where that formal Peircean vocabulary earns its keep. Genuine, lokadharmī sāttvika bhāva is best classified as an <strong>index</strong> — a sign causally produced by the state it signifies, the way smoke indexes fire — rather than as a <strong>symbol</strong> in Peirce's sense, which is a sign conventionally, arbitrarily paired with its meaning (the category āṅgika was shown to belong to in Ch. 12). Staged, nāṭyadharmī sāttvika bhāva, by contrast, drifts toward symbolic status precisely because it is trained and reproduced on cue rather than causally triggered.</p>
+<p>This sharpens rather than undermines the earlier chapters' findings: it confirms that the tradition's own materials already contain, in nascent form, exactly the distinction Peirce later formalized — a genuine convergence worth noting for the same reason Ch. 31's sign-language benchmark and Ch. 37's dhvani argument were both worth noting, as independent external confirmation of a distinction this tradition draws in its own terms.</p>
+
+<h3>10.5 Does Sāttvika Fit Dhvani, or Does It Need Its Own Model?</h3>
+<p>Ch. 37–39 proposed dhvani as the better-fitting model for āṅgika specifically because sphoṭa's manifestation-relationship failed for āṅgika's general case. Sāttvika bhāva presents close to the reverse situation: on 10.2's finding, genuine sāttvika bhāva is closer to a manifestation-relationship than āṅgika ever was. This means the dhvani-over-sphoṭa argument should not be extended to genuine, lokadharmī sāttvika bhāva without separate justification — doing so would repeat exactly the error Ch. 4 warned against: assuming a property established for one case transfers automatically to a structurally different one.</p>
+<p>That said, dhvani retains real purchase even here, for a narrower reason. Rasa theory's own technical vocabulary treats sāttvika bhāva as one of the strongest vyañjakas (suggestors) of rasa — arguably the strongest of the four abhinaya channels for this specific purpose, because an audience's qualified perception (sahṛdaya) of a performer's genuine or convincingly staged tremor is precisely what dhvani theory calls suggestion rather than direct statement: the tremor does not denote grief the way a word does, it evokes grief in a prepared perceiver. So the finding is layered rather than contradictory: sāttvika's sign-meaning relationship (indexical/natural) is not well modeled by dhvani, but sāttvika's function within a rasa-producing performance (evoking, not stating) is a dhvani-style operation. These are two different questions, and this cluster's contribution is separating them explicitly rather than letting one answer stand in for both.</p>
+
+<h3>10.6 Cluster Synthesis: RQ 10 Closed</h3>
+<table class="sx-scorecard">
+<tr><th>Finding</th><th>Verdict</th></tr>
+<tr><td>Does sāttvika bhāva satisfy Ch. 12's conventionality (saṅketa) test the way āṅgika does?</td><td><span class="sx-badge no">No — genuine (lokadharmī) sāttvika is naturally, not conventionally, linked to its meaning</span></td></tr>
+<tr><td>Does staged (nāṭyadharmī) sāttvika bhāva behave differently from genuine sāttvika bhāva?</td><td><span class="sx-badge yes">Yes — staged sāttvika re-conventionalizes toward āṅgika's profile</span></td></tr>
+<tr><td>Does the dhvani-over-sphoṭa proposal (Ch. 37–39) extend to sāttvika's sign-meaning relationship?</td><td><span class="sx-badge no">Not without separate justification — sāttvika sits closer to manifestation than āṅgika did</span></td></tr>
+<tr><td>Does dhvani describe sāttvika's function within rasa-production?</td><td><span class="sx-badge yes">Yes — as one of the strongest vyañjakas of rasa, a distinct question from its sign-type</span></td></tr>
+</table>
+<p class="sx-dim">This closes the one abhinaya channel every earlier cluster in this document left untested, and it does so by finding a genuinely different answer rather than mechanically re-applying the āṅgika findings — the outcome this document's own method (Ch. 1's evidentiary bar) predicts a properly independent test should sometimes produce.</p>
+
+<h2 class="sx-h" style="margin-top:2.2rem;"><span class="sx-kicker">Worked Examples</span>Case Studies — The Eight Sāttvika Bhāvas Through the Full Method</h2>
+<p class="sx-intro">Same LPUP method as every case study above, adapted for an involuntary rather than codified sign: Lakṣaṇa (defining characteristic) → Prakriyā (how it is produced and read) → Udāharaṇa (a documented dramatic context) → Phala (what this bhāva demonstrates for RQ10's argument).</p>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Stambha — स्तम्भ — "Paralysis / Stupefaction"</span><span class="sx-case-lit">First of the eight, Nāṭyaśāstra 6.22</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>A sudden cessation of voluntary movement — the body freezes, unresponsive to ordinary stimuli, for the duration of the overwhelming state.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Physiologically, this is documented in the tradition's own descriptive terms as an overwhelming of ordinary motor control by an intense emotional state — closer to what contemporary affect science would call a freeze response than to any deliberately assumed posture. It is the clearest single case for 10.4's indexical classification: the stillness is caused by the state, not chosen to represent it.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include the moment a character receives shattering news, the instant before a fatal recognition scene (pratyabhijñāna), and sustained astonishment (vismaya) at a divine or supernatural apparition.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>The paradigm negative case for a sphoṭa-manifestation reading being <em>rejected</em> the way Ch. 12 rejected it for āṅgika: here it is the opposite — stambha's meaning is about as close to a natural, non-arbitrary sign-meaning relationship as this entire document's case-study set contains.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Sveda — स्वेद — "Perspiration"</span><span class="sx-case-lit">Second of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Visible sweating arising under emotional rather than thermal or exertive load.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>An autonomic response the tradition explicitly separates from thermal sweating by context — the same physiological event, read differently depending on the surrounding dramatic circumstance, which is itself a documented case of context-dependent interpretation operating on a naturally-produced sign rather than a conventionally-coded one.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include acute fear (bhaya), the anxious anticipation preceding a high-stakes confrontation, and the physical symptoms of romantic longing (a documented convention within śṛṅgāra rasa portrayal).</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>A useful test of 10.3's register distinction: sveda is among the harder sāttvika bhāvas to produce convincingly on cue, which is exactly why performance manuals document specific technical methods for approximating it — direct evidence that staged sāttvika is recognized within the tradition itself as requiring trained technique, not simply waiting for the real thing.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Romāñca — रोमाञ्च — "Horripilation"</span><span class="sx-case-lit">Third of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Gooseflesh; the hairs of the body standing on end.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Among the most involuntary and least performer-controllable of the eight — a piloerection response that resists deliberate production far more than, say, tears do, making it a limit case for 10.3's staged/genuine distinction: nāṭyadharmī romāñca is documented as often relying on external aids or context-framing rather than pure technique.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include the joy of reunion after long separation, the thrill of witnessing extraordinary valor, and religious awe (bhakti-inflected wonder) at a divine manifestation.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>The strongest single case for a genuinely cross-cultural, non-conventional sign: romāñca as a marker of intense positive affect is documented across performance traditions with no shared textual lineage, consistent with 10.2's finding that this channel does not depend on saṅketa the way āṅgika does.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Svarabheda — स्वरभेद — "Breaking of the Voice"</span><span class="sx-case-lit">Fourth of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>A cracking, choking, or otherwise involuntarily disrupted vocal quality overtaking ordinary speech.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Structurally distinct from every other sāttvika bhāva in this list because it operates on the vācika channel rather than purely on āṅgika's bodily one — direct evidence, at the level of a single bhāva, that the four abhinaya channels are not cleanly separable even in principle; svarabheda is sāttvika content delivered through the vācika channel's own medium.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include grief-stricken lament (karuṇa rasa), a confession delivered under extreme emotional strain, and the choked speech preceding a character's collapse into weeping.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Direct evidence against treating the fourfold abhinaya scheme (Ch. 26) as four cleanly separable parallel channels: svarabheda shows sāttvika bhāva can be realized <em>through</em> vācika rather than alongside it, a finer-grained coordination than Ch. 27's channel-level reading alone captures.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Vepathu — वेपथु — "Trembling"</span><span class="sx-case-lit">Fifth of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Involuntary shaking of the limbs or entire body.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Among the more technically trainable of the eight — performance manuals document specific controlled-trembling techniques, making vepathu a useful midpoint case between stambha (barely trainable) and a fully codified hasta (entirely trained): it sits on a documented gradient of trainability rather than a sharp binary.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include acute terror (bhayānaka rasa), extreme cold as a naturalistic (lokadharmī) cue, and the physical agitation preceding a violent confrontation (raudra rasa).</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Best single case for 10.3's central claim that trainability is a gradient, not a binary between "natural sāttvika" and "conventional āṅgika" — vepathu sits measurably between the two poles this cluster's table (10.2) treats as endpoints.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Vaivarṇya — वैवर्ण्य — "Change of Color"</span><span class="sx-case-lit">Sixth of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>A visible change in facial complexion — pallor, flushing, or an ashen quality — arising with strong emotion.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Physiologically grounded in autonomic vasodilation/vasoconstriction, and documented in performance manuals as one of the sāttvika bhāvas most dependent on lighting, makeup, and staging convention (āhārya) to be visible to an audience at all — a direct, concrete case of one abhinaya channel (sāttvika) depending on another (āhārya) for its communicative effect to reach the audience.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include the pallor of fear, the flush of anger, and the specific ashen quality associated with encountering the uncanny or supernatural (bhayānaka and adbhuta rasa).</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Direct textual evidence that the fourfold coordination principle (Ch. 26–28) operates even at the level of a single bhāva's basic legibility — vaivarṇya is a case where sāttvika's communicative function is documented as literally dependent on āhārya's staging support, not merely coordinated with it in the loose sense Ch. 27 described for vācika.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Aśru — अश्रु — "Tears"</span><span class="sx-case-lit">Seventh of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Weeping — tears arising from the eyes under emotional load, whether sorrowful or, in a documented secondary use, from overwhelming joy.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>The single most extensively documented sāttvika bhāva in the technical performance literature, precisely because it is both highly legible to an audience and only moderately trainable — manuals document specific gaze-fixation and breath techniques for inducing it on cue, alongside frank acknowledgment that genuine tears remain the more convincing case whenever a performer can summon them honestly.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts span the widest range of any sāttvika bhāva: grief (karuṇa), devotional ecstasy (bhakti-inflected rasa), and, notably, joy at reunion — aśru is one of the few sāttvika bhāvas the tradition documents as legitimately ambiguous between two opposed sthāyibhāvas without contextual disambiguation always being possible.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>The single strongest case study anywhere in this document for dhvani's context-dependent polysemy (Ch. 38) operating on a naturally-produced, non-conventional sign rather than a conventionally-coded one — extending 10.5's finding that dhvani describes sāttvika's function even where it does not describe its sign-type.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Pralaya — प्रलय — "Fainting / Collapse"</span><span class="sx-case-lit">Eighth and final of the eight</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Total loss of consciousness or complete physical collapse under overwhelming emotional intensity.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>The terminal point of the sāttvika sequence in both a structural and a dramaturgical sense — listed last in the enumeration verse, and documented as the most intense point on the involuntary-response scale the other seven bhāvas populate. Almost entirely simulated rather than genuinely triggered in performance for obvious practical reasons, making it the clearest case of nāṭyadharmī sāttvika fully substituting for lokadharmī sāttvika.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented dramatic contexts include the climactic collapse following catastrophic news, ecstatic collapse in intense devotional (bhakti) portrayal, and the culmination of a sustained buildup through the other seven bhāvas in sequence within a single scene.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>The clearest limit case for 10.3's register distinction: pralaya is, in ordinary performance practice, almost always nāṭyadharmī rather than lokadharmī — which means the "sāttvika is naturally, not conventionally, linked to its meaning" finding (10.2) applies to this bhāva's <em>paradigm, off-stage</em> case far more cleanly than to its typical <em>on-stage</em> realization, exactly the qualification 10.3 exists to state honestly rather than let the general finding overclaim.</p>
+</div>
+
+<hr style="border:none; border-top:1px solid var(--sx-line); margin:2.6rem 0;">
+
+<!-- =================== 10. RQ11 — CROSS-CULTURAL BENCHMARK =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 11</span>Cross-Cultural Benchmark: Testing Universality Against Independent Gestural Systems</h2>
+<p class="sx-intro">Ch. 31 used natural sign-language linguistics as an external check on one specific claim: that channel, not documented structure, is what determines linguistic status. This cluster extends the same benchmarking discipline to a different question the earlier chapters left open — whether the specific structural findings reached for the hasta system (digital categorization, low productivity, concatenative rather than generative combination, register-dependent naturalism) are a general property of codified performance-gesture systems, or a peculiar feature of this one textual tradition. Three independently developed, textually unrelated systems are tested against the same criteria: Japanese Noh kata, Balinese/Javanese mudra-and-mask vocabularies, and the 19th-century Western Delsarte system together with Laban Movement Analysis.</p>
+
+<h3>11.1 Japanese Noh Kata: A Independently Developed Codified-Gesture Tradition</h3>
+<p>Noh theatre's kata — a fixed vocabulary of named, stylized movement patterns — developed from the 14th century onward under Zeami and his successors, with no documented textual contact with the Sanskrit dramaturgical tradition. If the structural findings reached above for the hasta system are artifacts of this one textual lineage, Noh kata would be expected to look structurally different. If instead they reflect a more general property of how codified performance-gesture systems tend to organize themselves, Noh kata should show a comparable profile.</p>
+<p>The comparison holds up on several of the tested dimensions. Kata are individually named, taught through direct imitation of a master (a closed, non-generative pedagogical method closely resembling how hastas are documented as taught), and combined within a performance according to convention and narrative context rather than a generative combinatorial grammar — the same concatenative-not-generative profile Ch. 20–21 documented for hasta sequences. Noh's own aesthetic vocabulary distinguishes <strong>jo-ha-kyū</strong> (a structuring principle of gradual intensification) as governing how kata are sequenced across a performance, which functions similarly to how nāṭyadharmī convention governs hasta sequencing — a convention-governed ordering principle, not a syntax in the linguistic sense.</p>
+
+<h3>11.2 Balinese and Javanese Mudra-and-Mask Systems</h3>
+<p>Balinese <em>topeng</em> (masked dance-drama) and Javanese <em>wayang wong</em> combine a codified hand-gesture vocabulary with masks that themselves carry fixed conventional meaning — structurally close to the āhārya-āṅgika coordination already documented for the Sanskrit tradition (10.2's vaivarṇya case study above is a direct parallel: a bodily sign depending on a costume/staging element for full legibility). Balinese performance vocabulary, like the Sanskrit hasta system, is documented as regionally variable across villages and lineages even within Bali itself — directly paralleling RQ5's finding (§5) that regional and textual divergence is the expected profile of a living, orally-transmitted codified sign system rather than evidence against the system's coherence.</p>
+<p>One genuine point of difference is worth reporting honestly rather than smoothing over: some documented Balinese mask-gesture combinations are read by trained audiences as carrying more context-independent, stable meaning than the Sanskrit hasta system's own polysemous items (like Pātāka, case-studied above) — suggesting that the degree of context-dependent polysemy dhvani theory is built to accommodate (Ch. 38) may not be a universal feature of all codified gestural systems, but rather a specific characteristic of how the Sanskrit tradition's inventory happens to be structured. This is a genuine limitation of the dhvani-over-sphoṭa proposal's generalizability beyond the source tradition, and it is reported here rather than left implicit.</p>
+
+<h3>11.3 Delsarte and Laban: A Western Attempt at the Same Project</h3>
+<p>François Delsarte's 19th-century system for codifying expressive gesture, and Rudolf Laban's 20th-century Effort/Shape framework for movement analysis, represent an independently developed Western attempt to systematize exactly the phenomenon this document has been testing in the Sanskrit tradition — codified, meaningful, trainable gesture. Neither system engaged the Sanskrit material directly. The comparison is instructive less for structural agreement than for a difference in ambition worth naming precisely: Delsarte's system aimed at a claimed universal, near-natural correspondence between specific body zones and specific emotional categories — a stronger manifestational claim than this document found the Sanskrit hasta system could sustain (Ch. 12's decisive negative finding).</p>
+<p>Laban's Effort/Shape framework, by contrast, deliberately avoids fixed sign-meaning pairings altogether, instead describing movement along continuous qualitative dimensions (weight, time, space, flow) — structurally closer to sāttvika bhāva's graded, non-digital profile (10.2 above) than to āṅgika's digital, categorically-taught hasta inventory. The three-way comparison (Sanskrit hasta / Delsarte / Laban) therefore maps onto a real spectrum from strongly digital-conventional to strongly continuous-natural, with the Sanskrit tradition's own two channels — āṅgika and sāttvika — occupying two different points on that same spectrum, a finding RQ10 already established from within the tradition and RQ11 now confirms from outside it.</p>
+
+<table class="sx-compare">
+<tr><th>System</th><th>Digital or Continuous?</th><th>Combinatorial Productivity</th><th>Documented Cross-Contact with Sanskrit Tradition?</th></tr>
+<tr><td class="hl">Sanskrit hasta (āṅgika)</td><td>Digital — closed, named inventory</td><td>Low — concatenative, not generative (Ch. 19–21)</td><td class="hl">Source tradition</td></tr>
+<tr><td class="hl">Sanskrit sāttvika bhāva</td><td>Mixed — digital enumeration, graded/continuous production (10.2)</td><td>Not applicable — involuntary, not combined</td><td class="hl">Source tradition</td></tr>
+<tr><td class="hl">Noh kata</td><td>Digital — named, closed inventory</td><td>Low — convention-governed jo-ha-kyū sequencing, not generative</td><td>None documented</td></tr>
+<tr><td class="hl">Balinese/Javanese mudra-mask</td><td>Digital, with less context-dependent polysemy than hasta</td><td>Low — regionally variable, non-generative</td><td>None documented</td></tr>
+<tr><td class="hl">Delsarte system</td><td>Digital, claims stronger natural correspondence than evidence supports</td><td>Not primarily combinatorial</td><td>None documented</td></tr>
+<tr><td class="hl">Laban Effort/Shape</td><td>Continuous — explicitly avoids fixed sign-meaning pairs</td><td>Not applicable — not a sign system in this sense</td><td>None documented</td></tr>
+</table>
+
+<h3>11.4 What Four Independent Systems Converging Actually Establishes</h3>
+<p>Four textually unrelated traditions — Sanskrit, Japanese, Balinese/Javanese, and 20th-century Western movement analysis — converge on the same structural split this document derived from the Sanskrit sources alone: codified performance-gesture systems tend toward digital, non-generative, convention-governed organization, while involuntary or deliberately non-coded expressive movement tends toward continuous, graded organization. This convergence is genuine evidence for a general claim, but it should be stated at the same precision the rest of this document insists on: it supports the claim that this structural split is a common feature of how humans organize codified performance-gesture systems, not the stronger claim that the Sanskrit tradition's specific findings (the exact degree of polysemy, the specific dhvani-based model) generalize word-for-word to every other tradition. §11.2's honest report of Balinese mask-gesture's lower polysemy is the concrete reminder that the general structural pattern and the specific theoretical model built to explain one tradition's version of it are two different levels of claim.</p>
+
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Four independently evolved languages showing the same broad phonological universals (a small closed consonant-vowel inventory, hierarchical syllable structure) is treated in linguistics as strong evidence for a general cognitive constraint — without implying any two languages share identical phoneme inventories or phonotactic rules. The gestural parallel here is exactly this pattern.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels cross-cultural facial-expression research (building on Ekman's cross-cultural studies) finding a shared core of recognizable affect displays alongside genuine, documented cultural "display rules" governing when and how intensely they are shown — a shared substrate with real, non-trivial cultural variation layered on top.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to convergent evolution: unrelated lineages (birds and bats evolving flight independently) arriving at structurally similar solutions under similar functional pressures — the similarity is real and informative precisely because it arose without shared ancestry, not despite that fact.</p></div>
+
+<h3>11.5 Cluster Synthesis: RQ 11 Closed</h3>
+<table class="sx-scorecard">
+<tr><th>Finding</th><th>Verdict</th></tr>
+<tr><td>Do independently developed codified-gesture systems (Noh, Balinese/Javanese) show the same digital, non-generative structural profile as the Sanskrit hasta system?</td><td><span class="sx-badge yes">Yes, broadly — genuine cross-tradition convergence</span></td></tr>
+<tr><td>Does the Sanskrit tradition's specific degree of context-dependent polysemy (motivating the dhvani proposal) generalize to other traditions?</td><td><span class="sx-badge partial">Not confirmed — Balinese evidence suggests lower polysemy in at least one comparable system</span></td></tr>
+<tr><td>Does Laban's continuous-movement framework corroborate RQ10's digital/continuous split between āṅgika and sāttvika?</td><td><span class="sx-badge yes">Yes — an independently developed framework drawing the same structural line</span></td></tr>
+</table>
+<p class="sx-dim">Like RQ9's negative finding on saṃyukta productivity, this is a genuinely informative result precisely because it does not simply confirm everything: the structural pattern (digital, non-generative, convention-governed) travels well across traditions; the specific theoretical apparatus built to explain it (dhvani, with its emphasis on polysemy) was built for, and is best asserted with confidence about, the Sanskrit tradition specifically.</p>
+
+<h2 class="sx-h"><span class="sx-kicker">Updated At a Glance</span>Findings Scorecard — RQ10 and RQ11 Added</h2>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ10</td><td>Does sāttvika bhāva behave like āṅgika on the conventionality and sphoṭa/dhvani tests?</td><td><span class="sx-badge no">No — opposite profile on the decisive conventionality test; register-dependent</span></td><td class="hl">New, above</td></tr>
+<tr><td class="hl">RQ11</td><td>Do independent, textually unrelated gestural systems corroborate this document's structural findings?</td><td><span class="sx-badge partial">Broadly yes on structure; not confirmed on the specific dhvani-polysemy claim</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<h2 class="sx-h"><span class="sx-kicker">Extended FAQ</span>Objections Specific to RQ10 and RQ11</h2>
+<div id="sx-faq-rq10">
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">If sāttvika bhāva is involuntary, why does the Nāṭyaśāstra teach it at all — isn't that a contradiction?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No — what is taught is the cultivation of absorption (sattva) under which the response arises, and, separately, a technical repertoire for staged approximation when genuine absorption isn't available in a given performance. Neither of those is the same claim as "the tremor itself is a taught sign the way a hasta's meaning is taught." 10.3 draws exactly this line, and it is the tradition's own lokadharmī/nāṭyadharmī distinction (already established in Ch. 33) doing the work, not a distinction imported from outside.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Doesn't finding that sāttvika is closer to sphoṭa's manifestation-relationship contradict the whole dhvani-over-sphoṭa argument in Ch. 37–39?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No, because that argument was always scoped to āṅgika, not to abhinaya as a whole — Ch. 37's own opening line frames it as answering why sphoṭa fails for gesture, in the specific sense tested in Ch. 9–16, which is the hasta system. RQ10 doesn't contradict that scoped finding; it demonstrates the scoping was correct by showing a different abhinaya channel, tested independently, gets a different answer — exactly what a properly bounded claim should produce when extended to a new case.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Is the Balinese lower-polysemy finding in 11.2 based on the same depth of source engagement as the Sanskrit material?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No, and that should be stated plainly rather than implied away: the Sanskrit findings throughout this document rest on named primary texts and commentarial argument (Bhartṛhari, Bharata, Abhinavagupta, Ānandavardhana, Nandikeśvara) engaged at the level of specific verses. The Noh, Balinese/Javanese, and Delsarte/Laban material in RQ11 is offered at the level of a documented structural comparison, not a verse-level textual argument — a genuinely useful external check, but a different and shallower evidentiary tier than the Sanskrit case studies elsewhere in this document, and readers doing further work in those traditions should treat RQ11 as a starting orientation rather than a citation-ready source.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Does RQ11's convergence finding mean gesture really is a "universal language" after all — the claim Part II (§2.3) of the white paper specifically warned against?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No, and this is worth being precise about because it's the exact overclaim this document has argued against from the start. What converges across traditions is a structural tendency (digital, non-generative, convention-governed organization) — not a shared vocabulary, not mutual intelligibility, and not the stronger claim that any trained performer's gestures would be spontaneously understood by an untrained observer from an unrelated tradition. A Balinese-trained spectator does not thereby understand Bharatanatyam hastas, and vice versa — the saṅketa (convention) each system requires is tradition-specific, even where the general shape of how such conventions get organized recurs.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Why include Delsarte at all, given his system's claims are largely discredited in contemporary performance theory?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>Precisely because its overreach is instructive by contrast. Delsarte claimed a stronger, more directly manifestational correspondence between body and emotion than this document's own evidence supports even for the Sanskrit tradition's most iconic hastas (§13–14 of the earlier case studies). Placing it alongside the Sanskrit findings makes concrete, by comparison, how much more disciplined the Sanskrit tradition's own commentarial argument is — Abhinavagupta's aupacārika prayoga (Ch. 2–3) is a narrow, textually specific licensing argument; Delsarte's system asserts a general natural law. The comparison is a control for overclaiming, not an endorsement.</p></div>
+  </div>
+</div>
+
+<h2 class="sx-h"><span class="sx-kicker">Extended Timeline</span>Where RQ10 and RQ11's Sources Sit in the Existing Lineage</h2>
+<div class="sx-timeline">
+  <div class="sx-tl-item"><div class="sx-tl-date">Core layer c. 200 BCE – 200 CE</div><div class="sx-tl-title">Bharata, Nāṭyaśāstra 6.22 (sāttvika enumeration)</div><p class="sx-tl-desc">The same core text already anchoring Ch. 26's fourfold definition also supplies RQ10's mūla śloka on the eight sāttvika bhāvas — one text, two separately tested claims.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">14th century CE onward</div><div class="sx-tl-title">Zeami and the codification of Noh kata</div><p class="sx-tl-desc">Developed with no documented textual contact with the Sanskrit dramaturgical tradition — the independence that makes §11.1's comparison a genuine external check rather than a derivative one.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">14th century CE, carried forward</div><div class="sx-tl-title">Viśvanātha, Sāhityadarpaṇa</div><p class="sx-tl-desc">Already cited in the existing Timeline for the fourfold-abhinaya verse; also carries forward the eight-sāttvika-bhāva enumeration RQ10 draws on, confirming the verse's transmission beyond Bharata's core text alone.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">19th century CE</div><div class="sx-tl-title">François Delsarte, expressive-gesture system</div><p class="sx-tl-desc">An independent Western attempt at systematizing codified expressive gesture, engaged in §11.3 as a control case for overclaiming rather than a corroborating source.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">20th century CE</div><div class="sx-tl-title">Rudolf Laban, Effort/Shape framework</div><p class="sx-tl-desc">A continuous, non-digital movement-analysis framework that independently corroborates RQ10's digital/continuous split between āṅgika and sāttvika (§11.3–11.4).</p></div>
+</div>
+
+</section>
+
+<!-- ============================================================
+     RQ 12 — The Rasasūtra: Where Āṅgika and Sāttvika Both Point
+     Continues directly from RQ10/RQ11 above. Same sx-* scope
+     conventions; no new CSS variables introduced.
+     ============================================================ -->
+<section id="site-extras-rq12">
+<style>
+#site-extras-rq12{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b; --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3; --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif; --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink); font-family:var(--sx-body); font-size:17px; line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq12 *{box-sizing:border-box;}
+#site-extras-rq12 h2.sx-h{font-family:var(--sx-display); font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem); color:var(--sx-ink); margin:3.6rem 0 0.5em; padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq12 .sx-kicker{font-family:var(--sx-mono); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sx-acoustic); margin-bottom:0.6rem;}
+#site-extras-rq12 h3{font-family:var(--sx-display); font-weight:600; font-size:1.15rem; color:var(--sx-ink); margin:1.8rem 0 0.6rem;}
+#site-extras-rq12 h4{font-family:var(--sx-display); font-weight:600; font-size:1.02rem; color:var(--sx-gold); margin:1.3rem 0 0.5rem;}
+#site-extras-rq12 p{margin:0 0 1.05em; font-size:0.98rem; color:var(--sx-ink);}
+#site-extras-rq12 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq12 .sx-intro{color:var(--sx-ink-dim); font-style:italic; max-width:720px;}
+#site-extras-rq12 dl.sx-glossary dt{font-family:var(--sx-display); font-weight:600; color:var(--sx-gold); margin-top:1rem;}
+#site-extras-rq12 dl.sx-glossary dd{margin:0.2rem 0 0; color:var(--sx-ink-dim); font-size:0.94rem;}
+#site-extras-rq12 ol.sx-refs{font-size:0.92rem; color:var(--sx-ink-dim); padding-left:1.3rem;}
+#site-extras-rq12 ol.sx-refs li{margin-bottom:0.6rem;}
+
+.sx-scorecard{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; padding:0.3em 0.7em; border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15); color:var(--sx-acoustic); border:1px solid var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15); color:var(--sx-gold); border:1px solid rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18); color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15); color:var(--sx-neuro); border:1px solid var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem; margin-bottom:0.9rem; background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-left:3px solid var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center; gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);} .sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n .sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b .sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto;}
+.sx-dot.a{background:var(--sx-acoustic);} .sx-dot.n{background:var(--sx-neuro);} .sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.55rem 0.75rem; border-bottom:2px solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-radius:6px; padding:1.3rem 1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display); font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-ink-faint);}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-acoustic); display:block; margin-bottom:0.15rem;}
+
+.sx-faq-item{border-bottom:1px solid var(--sx-line);}
+.sx-faq-q{width:100%; text-align:left; background:none; border:none; color:var(--sx-ink); font-family:var(--sx-display); font-weight:600; font-size:1rem; padding:1.1rem 0; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;}
+.sx-faq-q:hover{color:var(--sx-acoustic);}
+.sx-faq-q .sx-plus{font-family:var(--sx-mono); color:var(--sx-acoustic); transition:transform .2s; flex:0 0 auto;}
+.sx-faq-item.open .sx-plus{transform:rotate(45deg);}
+.sx-faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+.sx-faq-item.open .sx-faq-a{max-height:460px;}
+.sx-faq-a p{padding-bottom:1.1rem; color:var(--sx-ink-dim); font-size:0.94rem;}
+
+.shloka-box{background:linear-gradient(180deg, rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px solid rgba(201,162,75,0.35); border-radius:6px; padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem; color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic; color:var(--sx-ink-dim); margin:0 0 0.9rem; font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem; line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+</style>
+
+<!-- =================== 11. RQ12 — THE RASASŪTRA =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 12</span>The Rasasūtra: Where Āṅgika and Sāttvika Both Terminate</h2>
+<p class="sx-intro">Every earlier cluster has tested a channel or a mechanism in isolation — āṅgika's sign-type (RQ2, RQ6), its combinatorics (RQ4, RQ9), sāttvika's sign-type (RQ10), and cross-tradition structure (RQ11). None of them has yet asked the question the tradition itself treats as primary: what is all of this coordination <em>for</em>. The <em>Nāṭyaśāstra</em>'s own answer is the rasasūtra — the single most debated verse in the entire Sanskrit dramaturgical tradition. This cluster closes the document's arc by showing how RQ1–RQ11's separate findings about āṅgika and sāttvika are, on Abhinavagupta's own reading, two coordinated routes to the same destination.</p>
+
+<h3>12.1 The Verse Itself, and Why It Generated Four Centuries of Rival Theories</h3>
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse — The Rasasūtra</div>
+  <p class="shloka-dev">विभावानुभावव्यभिचारिसंयोगाद्रसनिष्पत्तिः</p>
+  <p class="shloka-iast">vibhāvānubhāvavyabhicārisaṃyogād rasaniṣpattiḥ</p>
+  <p><strong>Source:</strong> Nāṭyaśāstra 6.31 (numbering varies slightly by edition) — the single most extensively commented-on sūtra in the entire tradition, cited and re-glossed by nearly every major alaṃkāra-śāstra author from Bhaṭṭa Lollaṭa onward. Verify against the GOS or Kāvyamālā edition before citing the exact kārikā number.</p>
+  <p><strong>Translation:</strong> Rasa is accomplished (niṣpatti) through the coming-together (saṃyoga) of the determinants (vibhāva), the consequents (anubhāva), and the transitory states (vyabhicāribhāva).</p>
+  <p><strong>Prakriyā (how it works here):</strong> Note precisely which term is missing from this list: sāttvikabhāva is not named in the sūtra itself, even though Bharata treats it as one of the four constitutive abhinaya channels (Ch. 26) and devotes a full enumeration to it (RQ10's mūla śloka). This omission is exactly what generated centuries of commentarial dispute — is sāttvika bhāva folded into anubhāva (the visible consequents), or does it operate differently? RQ10's finding that sāttvika bhāva is structurally distinct from āṅgika (involuntary vs. trained, indexical vs. conventional) turns out to matter directly here: Abhinavagupta's own resolution, discussed in 12.3 below, depends on treating sāttvika bhāva as a privileged, especially reliable subtype of anubhāva — because its involuntary, non-conventional character (established independently in RQ10) makes it a more trustworthy sign of genuine inner state than a codified, conventionally-produced anubhāva like a hasta could ever be.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: the rasasūtra is where RQ2's sphoṭa-rejection, RQ6's linguistic-status finding, RQ10's indexical-sāttvika finding, and Ch. 37–39's dhvani proposal all have to answer to the same higher-order question at once — not whether gesture means something, but whether it can produce rasa, which the tradition treats as a stronger and different achievement than mere denotation.</p>
+</div>
+
+<h3>12.2 Four Rival Theories of How the Sūtra's "Coming-Together" Actually Works</h3>
+<p>The commentarial tradition on this single sūtra produced (at minimum) four distinct theories of the mechanism by which vibhāva-anubhāva-vyabhicāribhāva combination produces rasa, each with direct consequences for how āṅgika and sāttvika should be understood as signs.</p>
+<table class="sx-compare">
+<tr><th>Theorist</th><th>Core Claim</th><th>Consequence for This Document's Findings</th></tr>
+<tr><td class="hl">Bhaṭṭa Lollaṭa (utpattivāda)</td><td>Rasa is literally produced (utpatti) in the character portrayed, and secondarily inferred as present in the actor by resemblance</td><td>Would treat the actor's āṅgika/sāttvika as a resemblance-based (iconic) sign of the character's rasa — closer to Ch. 13's bounded iconic exception than to the general saṅketa finding of Ch. 12</td></tr>
+<tr><td class="hl">Śrī Śaṅkuka (anumitivāda)</td><td>Rasa is inferred (anumiti) by the spectator from the actor's signs, the way smoke is inferred to indicate fire</td><td>A direct, independently-arrived-at parallel to 10.4's Peircean indexical reading — inference-from-sign is exactly how an index is meant to function</td></tr>
+<tr><td class="hl">Bhaṭṭa Nāyaka (bhuktivāda / sādhāraṇīkaraṇa)</td><td>Rasa is neither produced nor inferred but tasted/relished (bhukti) through a process of generalization (sādhāraṇīkaraṇa) that lifts the portrayed emotion out of any particular person's situation</td><td>The theory that most directly requires a qualified perceiver (proto-sahṛdaya) as a precondition for the whole mechanism to function — the direct ancestor of dhvani theory's own sahṛdaya requirement (Ch. 37–39)</td></tr>
+<tr><td class="hl">Abhinavagupta (abhivyaktivāda)</td><td>Rasa is manifested (abhivyakti) — already latent as a saṃskāra (impression) in every sahṛdaya, and revealed rather than created or merely inferred by the performance's signs</td><td>The theory this document's dhvani proposal (Ch. 37) is built to be consistent with: manifestation-for-a-qualified-perceiver is structurally the same move dhvani makes for suggested meaning generally</td></tr>
+</table>
+<p>Abhinavagupta's own position — abhivyaktivāda, manifestation theory — is the one this document has been implicitly assuming throughout, since it is also his position in the Abhinavabhāratī, the very commentary Ch. 2 identifies as the documented locus of the aupacārika prayoga argument this entire document opens with. That is not a coincidence to smooth over; it means RQ1's finding and RQ12's finding come from the same authorial hand, applying the same underlying theoretical commitment (manifestation-for-a-qualified-perceiver) at two different levels of the system — once to how gesture relates to vaikharī, and once to how the whole performance relates to rasa.</p>
+
+<h3>12.3 Why Sāttvika Bhāva Is, on This Reading, the More Trustworthy Channel</h3>
+<p>Abhinavagupta's commentary on the rasasūtra gives sāttvika bhāva a privileged evidentiary status precisely because of the property RQ10 established independently: its involuntary, non-conventional production. A hasta can be produced by a performer with no corresponding inner state at all — nothing about producing Pātāka requires the performer to feel anything. A genuine tremor (vepathu) or genuine tears (aśru) are, by RQ10's own finding, much harder to produce without some corresponding absorption, which is exactly why Abhinavagupta treats sāttvika bhāva as the anubhāva category spectators find most convincing — not because it is more meaningful in the semantic sense RQ2–RQ9 tested, but because its causal, indexical relationship to inner state (established independently via Peirce in 10.4) makes it harder to fake and therefore more evidentially weighty within the rasa-production process specifically.</p>
+<p>This produces a genuinely interesting asymmetry worth stating precisely: āṅgika is the more linguistically sophisticated channel by every measure RQ2–RQ9 tested (closed inventory, digital categorization, some combinatorial structure, conventionally taught), while sāttvika is the evidentially more trustworthy channel specifically for rasa-production, for the opposite reason — because it resists exactly the kind of deliberate, trainable manipulation that gives āṅgika its structure. The two channels are not competing for the same job; they do different, complementary work within the fourfold coordination Ch. 26 established, and RQ10–RQ12 together explain why the tradition needed both rather than treating one as a redundant elaboration of the other.</p>
+
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Parallels the documented distinction in forensic voice analysis between a controllable acoustic cue (word choice, prosodic emphasis) and a harder-to-fake one (micro-tremor under genuine stress) — the harder-to-fake signal is weighted more heavily as evidence precisely because it resists deliberate manipulation.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Directly parallel to documented findings in deception research: involuntary autonomic leakage (micro-expressions, genuine pupil dilation) is treated as more diagnostic of true internal state than voluntarily controlled expressive behavior, for the identical reason Abhinavagupta gives sāttvika bhāva evidentiary priority.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to how a constitutive biomarker (one the organism cannot suppress on demand) is treated as more diagnostically reliable in a clinical assay than an inducible one that could in principle be triggered artificially — reliability tracks resistance to manipulation, not complexity of signal.</p></div>
+
+<h3>12.4 Closing the Loop: How RQ1 and RQ12 Meet</h3>
+<p>Ch. 1–8 established that abhinaya is licensed as vaikharī's further reach on one specific, narrow property: externalization-for-another. RQ12 closes the document's arc by showing what that externalization is ultimately in service of, on Abhinavagupta's own account: not communication in the narrow linguistic sense RQ2–RQ9 spent thirty-two chapters carefully bounding, but the manifestation of rasa in a prepared perceiver — a communicative act, yes, but one whose success condition is aesthetic relish (bhukti/āsvāda) rather than propositional understanding. This is precisely why the document's central finding — that gesture is dhvani-style suggestion rather than sphoṭa-style or fully linguistic denotation — was the theoretically appropriate model all along: dhvani theory and rasa theory are, in Abhinavagupta's own synthesis in the Locana, the same theoretical apparatus applied to poetry and to drama respectively. RQ12 is not a new argument bolted onto the first eleven; it is where they were always heading.</p>
+
+<h3>12.5 Cluster Synthesis: RQ 12 Closed</h3>
+<table class="sx-scorecard">
+<tr><th>Finding</th><th>Verdict</th></tr>
+<tr><td>Is sāttvika bhāva named in the rasasūtra itself?</td><td><span class="sx-badge no">No — its status had to be worked out by commentary, which is why RQ10's independent characterization matters here</span></td></tr>
+<tr><td>Which rasa-theory is consistent with this document's dhvani proposal (Ch. 37–39)?</td><td><span class="sx-badge yes">Abhinavagupta's abhivyaktivāda (manifestation theory) — the same authorial position as Ch. 1–8's source</span></td></tr>
+<tr><td>Does RQ10's finding that sāttvika is indexical/involuntary matter beyond RQ10 itself?</td><td><span class="sx-badge yes">Yes — it is the basis for sāttvika's privileged evidentiary status in rasa-production specifically</span></td></tr>
+<tr><td>Do āṅgika and sāttvika compete for the same communicative role?</td><td><span class="sx-badge no">No — complementary roles (structured signification vs. evidential trustworthiness)</span></td></tr>
+</table>
+
+<h2 class="sx-h" style="margin-top:2.2rem;"><span class="sx-kicker">Full-Arc Synthesis</span>How All Twelve Research Questions Fit Together</h2>
+<p class="sx-intro">With RQ12 closed, the complete argument this document (Ch. 1–40, plus the RQ5, RQ9, RQ10, RQ11, and RQ12 addenda) has built can be stated as a single connected chain rather than twelve separate verdicts.</p>
+<table class="sx-scorecard">
+<tr><th>Stage</th><th>What It Established</th><th>What It Handed to the Next Stage</th></tr>
+<tr><td class="hl">RQ1 (Ch. 1–8)</td><td>Gesture is licensed as vaikharī's further reach, narrowly, on externalization-for-another</td><td>A scoped license — not a blank check for every further property (Ch. 4)</td></tr>
+<tr><td class="hl">RQ2 (Ch. 9–16)</td><td>Sphoṭa's manifestation-relationship fails for āṅgika's general case</td><td>The need for a different explanatory model</td></tr>
+<tr><td class="hl">RQ4 / RQ9 (Ch. 17–24; §8 above)</td><td>Āṅgika is digital and closed like a phoneme inventory, but not combinatorially productive — confirmed even at the two-hand level</td><td>Evidence against generative-grammar status for āṅgika specifically</td></tr>
+<tr><td class="hl">RQ3 (Ch. 25–32)</td><td>Āṅgika is coordinated with, not independent of, the other abhinaya channels; sign-language linguistics shows channel isn't the limiting factor</td><td>A structural, not modal, explanation for why āṅgika falls short of full grammar</td></tr>
+<tr><td class="hl">RQ6 (Ch. 33–36)</td><td>Āṅgika satisfies conventionality (a necessary condition) but not the further conditions for full linguistic status</td><td>A precise, bounded "partial" verdict rather than a flat yes or no</td></tr>
+<tr><td class="hl">RQ7 (Ch. 37–39)</td><td>Dhvani fits āṅgika's evidence profile better than sphoṭa does</td><td>A replacement model, explicitly flagged as this document's own synthetic proposal</td></tr>
+<tr><td class="hl">RQ8 (Ch. 40)</td><td>No documented textual threshold marks where gesture "becomes" language</td><td>Honesty about the limits of what the sources themselves claim</td></tr>
+<tr><td class="hl">RQ5 (§5 above)</td><td>The hasta inventory varies by text and region without losing its finite, digital, closed character</td><td>A scope condition refining, not overturning, RQ4</td></tr>
+<tr><td class="hl">RQ10 (§9 above)</td><td>Sāttvika bhāva is the tradition's untested fourth channel, and it fails RQ2's conventionality test in the opposite direction from āṅgika</td><td>Proof that the document's negative sphoṭa-finding was correctly scoped to āṅgika, not abhinaya generally</td></tr>
+<tr><td class="hl">RQ11 (§10 above)</td><td>Independent, textually unrelated traditions (Noh, Balinese/Javanese, Delsarte/Laban) broadly corroborate the structural pattern, though not every specific claim (e.g. degree of polysemy)</td><td>External validation with an honestly reported limit on how far it generalizes</td></tr>
+<tr><td class="hl">RQ12 (§11 above)</td><td>Āṅgika and sāttvika are complementary routes to rasa, not competing candidates for the same communicative job, on Abhinavagupta's own abhivyaktivāda</td><td>The reason the whole system was built the way RQ1–RQ11 found it to be built</td></tr>
+</table>
+<p class="sx-dim">Read end to end, the chain does not argue that gesture is "basically language" or "basically not language." It argues something more precise and, this document maintains, more useful: gesture is a real, rigorously describable, partially-linguistic, dhvani-style suggestive system in its trained channel, and an indexical, evidentially privileged channel in its involuntary one — and both were built, on the tradition's own terms, in service of an aesthetic goal (rasa) that is not fully captured by asking only whether the system counts as a language.</p>
+
+<h2 class="sx-h"><span class="sx-kicker">Appendix</span>Expanded Glossary — Terms Introduced in RQ10–RQ12</h2>
+<dl class="sx-glossary">
+  <dt>Sattva</dt><dd>A state of undistracted mental absorption from which sāttvika bhāva is held to arise; not itself one of the eight bhāvas but their precondition.</dd>
+  <dt>Sāttvika Bhāva</dt><dd>The eight involuntary psychophysical states (stambha, sveda, romāñca, svarabheda, vepathu, vaivarṇya, aśru, pralaya) arising from genuine emotional absorption; one of the four constitutive abhinaya channels.</dd>
+  <dt>Lokadharmī / Nāṭyadharmī (as applied to sāttvika)</dt><dd>The distinction, tested in §10.3, between genuine/spontaneous sāttvika bhāva and its trained, staged approximation.</dd>
+  <dt>Index (Peircean)</dt><dd>A sign causally produced by what it signifies (smoke indexing fire); the classification §10.4 argues fits genuine sāttvika bhāva better than "symbol" does.</dd>
+  <dt>Symbol (Peircean)</dt><dd>A sign conventionally, arbitrarily paired with its meaning; the classification Ch. 12 already established for the general case of āṅgika.</dd>
+  <dt>Rasasūtra</dt><dd>Nāṭyaśāstra 6.31, the foundational verse stating that rasa is accomplished through the combination of vibhāva, anubhāva, and vyabhicāribhāva — the subject of RQ12.</dd>
+  <dt>Vibhāva / Anubhāva / Vyabhicāribhāva</dt><dd>The rasasūtra's three named components: the determinants (causes/circumstances), the consequents (visible effects, including gesture), and the transitory accompanying states.</dd>
+  <dt>Utpattivāda / Anumitivāda / Bhuktivāda / Abhivyaktivāda</dt><dd>The four rival theories (Bhaṭṭa Lollaṭa, Śrī Śaṅkuka, Bhaṭṭa Nāyaka, Abhinavagupta respectively) of how the rasasūtra's combination actually produces rasa, compared in §12.2.</dd>
+  <dt>Sādhāraṇīkaraṇa</dt><dd>"Generalization" — Bhaṭṭa Nāyaka's proposed process by which a portrayed emotion is lifted out of any one character's particular situation, making it available for aesthetic relish by any qualified spectator.</dd>
+  <dt>Jo-ha-kyū</dt><dd>The Noh theatre's own structuring principle of gradual intensification governing how kata are sequenced across a performance; compared in §11.1 to nāṭyadharmī convention-governed hasta sequencing.</dd>
+  <dt>Kata (Noh)</dt><dd>The fixed, named vocabulary of stylized movement patterns in Japanese Noh theatre, benchmarked in §11.1 as an independently developed parallel to the hasta system.</dd>
+</dl>
+
+<h2 class="sx-h"><span class="sx-kicker">Appendix</span>References Added for RQ10–RQ12</h2>
+<ol class="sx-refs">
+  <li>Bharata, <em>Nāṭyaśāstra</em> 6.22 (sāttvika bhāva enumeration) and 6.31 (rasasūtra); trans. Manomohan Ghosh.</li>
+  <li>Abhinavagupta, <em>Abhinavabhāratī</em> ad Nāṭyaśāstra 6, on the rasasūtra specifically — the locus of the abhivyaktivāda position discussed in §12.2–12.4.</li>
+  <li>Masson, J.L., and M.V. Patwardhan. <em>Śāntarasa and Abhinavagupta's Philosophy of Aesthetics</em> — the standard scholarly treatment of the four rival rasa theories.</li>
+  <li>Raghavan, V. <em>The Number of Rasas</em>.</li>
+  <li>De, Sushil Kumar. <em>History of Sanskrit Poetics</em>, vol. 2, on the rasasūtra commentarial tradition.</li>
+  <li>Peirce, Charles Sanders. <em>Collected Papers</em>, vol. 2, on the icon/index/symbol trichotomy referenced in §10.4.</li>
+  <li>Ekman, Paul, and Wallace V. Friesen. <em>Unmasking the Face</em>, on cross-cultural affect display and "display rules," referenced in §11.4.</li>
+  <li>Zeami Motokiyo. <em>Fūshikaden</em> (<em>Kadensho</em>), trans. Chuichi Sakurai and Roy E. Teele, on kata and jo-ha-kyū.</li>
+  <li>Zarrilli, Phillip B. (ed.). <em>Acting (Re)Considered</em>, for cross-tradition performance theory including Noh and Balinese material.</li>
+  <li>Bandem, I Made, and Fredrik Eugene deBoer. <em>Kaja and Kelod: Balinese Dance in Transition</em>.</li>
+  <li>Delsarte, François. <em>Delsarte System of Oratory</em> (compiled lecture material).</li>
+  <li>Laban, Rudolf, and Lisa Ullmann. <em>The Mastery of Movement</em>.</li>
+</ol>
+
+<h2 class="sx-h"><span class="sx-kicker">Extended FAQ</span>Objections Specific to RQ12 and the Full-Arc Synthesis</h2>
+<div id="sx-faq-rq12">
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Isn't it circular to use Abhinavagupta's rasa theory to validate a dhvani proposal that was itself built partly on Abhinavagupta's own commentarial authority elsewhere?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>It would be circular if RQ12 were offered as independent confirmation of Ch. 37–39's finding. It isn't offered that way — §12.4 says explicitly that RQ12 is "not a new argument bolted onto the first eleven; it is where they were always heading." The honest framing is that this document has been working within one coherent authorial position (Abhinavagupta's) throughout, and RQ12 makes that coherence visible rather than claiming it as fresh corroborating evidence from an independent source. Independent corroboration is what RQ11's cross-tradition benchmark is for, and that section is explicit about its more limited evidentiary weight.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Why does sāttvika bhāva get treated as more "trustworthy" than āṅgika — doesn't that undercut the whole aupacārika prayoga argument that licensed gesture in Ch. 1–8?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No, because §12.3 is explicit that trustworthiness-for-rasa-production and linguistic sophistication are different axes, not competing scores on the same one. Āṅgika remains the more structured, more closely vaikharī-like channel on every measure RQ2–RQ9 tested; sāttvika is more evidentially reliable specifically for the different question of whether genuine inner absorption is present. The rasasūtra needs anubhāva broadly, and sāttvika is simply the subtype of anubhāva least susceptible to being faked — that is a claim about evidential weight within rasa-production, not a demotion of āṅgika's linguistic standing.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Does treating rasa-production as the "real" purpose of gesture mean the entire RQ2–RQ9 linguistic analysis was beside the point?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No — the two questions are complementary, not competing, and both are worth asking precisely because they can come apart. A sign system can be a real, structured, partially-linguistic system (what RQ2–RQ9 tested) and also be ultimately deployed toward a non-linguistic aesthetic end (what RQ12 tested) without either finding canceling the other. Understanding the structure clarifies what tools a performer or scholar has available; understanding the purpose clarifies why that structure looks the way it does, including why it stops short of full generative grammar (RQ4, RQ9) rather than developing further in that direction the way natural sign languages did (Ch. 31).</p></div>
+  </div>
+</div>
+
+</section>
+<!-- =================== END RQ10 / RQ11 / RQ12 ADDENDUM =================== -->
 
 </body>
 </html>
