@@ -1184,6 +1184,206 @@ function selectTab(n){
 
 </section>
 <!-- =================== END SITE ADDENDUM =================== -->
+  <!-- ============================================================
+     ADDENDUM — paste this block immediately before </body>,
+     AFTER the existing #site-extras </section> closing tag.
+     RQ 9 — Saṃyukta Hastas: Two-Hand Coordination and Compositionality
+     Reuses the sx-* classes already defined in #site-extras — no new
+     CSS needed, this drops straight into the existing stylesheet scope.
+     Continues the numbering: this is "section 8" following the seven
+     numbered sections already in #site-extras (Scorecard through FAQ).
+     ============================================================ -->
+<section id="site-extras-rq9">
+<style>
+#site-extras-rq9{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b; --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3; --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif; --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink); font-family:var(--sx-body); font-size:17px; line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq9 *{box-sizing:border-box;}
+#site-extras-rq9 h2.sx-h{font-family:var(--sx-display); font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem); color:var(--sx-ink); margin:3.6rem 0 0.5em; padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq9 .sx-kicker{font-family:var(--sx-mono); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sx-acoustic); margin-bottom:0.6rem;}
+#site-extras-rq9 h3{font-family:var(--sx-display); font-weight:600; font-size:1.15rem; color:var(--sx-ink); margin:1.8rem 0 0.6rem;}
+#site-extras-rq9 p{margin:0 0 1.05em; font-size:0.98rem; color:var(--sx-ink); }
+#site-extras-rq9 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq9 .sx-intro{color:var(--sx-ink-dim); font-style:italic; max-width:720px;}
+
+.sx-scorecard{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; padding:0.3em 0.7em; border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15); color:var(--sx-acoustic); border:1px solid var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15); color:var(--sx-gold); border:1px solid rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18); color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15); color:var(--sx-neuro); border:1px solid var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem; margin-bottom:0.9rem; background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-left:3px solid var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center; gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);} .sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n .sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b .sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto;}
+.sx-dot.a{background:var(--sx-acoustic);} .sx-dot.n{background:var(--sx-neuro);} .sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.55rem 0.75rem; border-bottom:2px solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-radius:6px; padding:1.3rem 1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display); font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-ink-faint);}
+.sx-case-dev{font-family:var(--sx-deva); font-size:1.05rem; color:var(--sx-ink); margin:0 0 0.3rem;}
+.sx-case-iast{font-style:italic; color:var(--sx-ink-dim); font-size:0.9rem; margin:0 0 0.9rem;}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-acoustic); display:block; margin-bottom:0.15rem;}
+
+.sx-faq-item{border-bottom:1px solid var(--sx-line);}
+.sx-faq-q{width:100%; text-align:left; background:none; border:none; color:var(--sx-ink); font-family:var(--sx-display); font-weight:600; font-size:1rem; padding:1.1rem 0; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;}
+.sx-faq-q:hover{color:var(--sx-acoustic);}
+.sx-faq-q .sx-plus{font-family:var(--sx-mono); color:var(--sx-acoustic); transition:transform .2s; flex:0 0 auto;}
+.sx-faq-item.open .sx-plus{transform:rotate(45deg);}
+.sx-faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+.sx-faq-item.open .sx-faq-a{max-height:420px;}
+.sx-faq-a p{padding-bottom:1.1rem; color:var(--sx-ink-dim); font-size:0.94rem;}
+
+.shloka-box{background:linear-gradient(180deg, rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px solid rgba(201,162,75,0.35); border-radius:6px; padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem; color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic; color:var(--sx-ink-dim); margin:0 0 0.9rem; font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem; line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+</style>
+
+<!-- =================== 8. RQ9 — SAṂYUKTA HASTAS =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 9</span>Two-Hand Coordination: The Saṃyukta Hasta Layer</h2>
+<p class="sx-intro">Everything tested in RQ1–RQ8 above (Ch. 1–40) was argued from the <em>asaṃyukta</em> (single-hand) inventory. That is a real limitation, not a rounding error: a system built from one hand acting alone is a different compositional object than a system that lets two hands combine. This cluster asks the coordination question one level up — not speech-plus-gesture (RQ3), but hand-plus-hand within gesture itself — using the second half of the hasta inventory the earlier chapters set aside.</p>
+
+<h3>9.1 The Textual Count Problem, Reported Honestly</h3>
+<p>Before any structural claim, the count itself needs to be stated as contested, because it is. The <em>Nāṭyaśāstra</em> is standardly cited as naming 13 saṃyukta hastas; the <em>Abhinaya Darpaṇa</em> expands this to 23 (sometimes given as 24, depending on how a boundary case is counted in a given edition); the later <em>Nartananirnaya</em> gives 17. Three source texts, three different numbers, for what is nominally the same category. This is not a defect specific to saṃyukta hastas — RQ5 above documented the same kind of divergence for the asaṃyukta set (24 vs. 28) — but it is worth restating here explicitly rather than picking one number and presenting it as settled, because the saṃyukta count varies proportionally more across sources than the asaṃyukta count does.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>A category whose boundary is drawn differently by different transmitters, while the core members stay stable, is the ordinary signature of a dialect-bearing phonological inventory, not evidence the category itself is fictitious.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Category-boundary disagreement between trained observers, with the prototypical members agreed on by all, is the standard finding in categorical-perception research at a category's edges — disagreement concentrates at boundaries, not at cores.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to different taxonomic authorities disagreeing on species-count within a genus while agreeing on the genus's defining traits — a classification dispute, not a claim that the genus doesn't exist.</p></div>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse — The Saṃyukta Enumeration</div>
+  <p class="shloka-dev">अञ्जलिश्च कपोतश्च कर्कटः स्वस्तिकस्तथा । डोलहस्तः पुष्पपुटः उत्साहः शिवलिङ्गकः ॥ कटकावर्धनश्चैव कर्तरीस्वस्तिकस्तथा । शकटं शङ्खं चक्रे च सम्पुटः पाशकीलकौ ॥ मत्स्यः कूर्मो वराहश्च गरुडो नागबन्धकः । खट्वा बेरुण्ड अवहित्थः</p>
+  <p class="shloka-iast">añjaliś ca kapotaś ca karkaṭaḥ svastikas tathā | ḍolahastaḥ puṣpapuṭaḥ utsaṅgaḥ śivaliṅgakaḥ || kaṭakāvardhanaś caiva kartarīsvastikas tathā | śakaṭaṃ śaṅkhaṃ cakre ca sampuṭaḥ pāśakīlakau || matsyaḥ kūrmo varāhaś ca garuḍo nāgabandhakaḥ | khaṭvā beruṇḍa avahitthaḥ</p>
+  <p><strong>Source:</strong> The Abhinaya Darpaṇa's enumeration verse for the saṃyukta hastas, widely quoted across contemporary Bharatanatyam pedagogical sources; treat the transliteration here as a teaching-tradition transcription rather than a critically re-edited reading, and check word-division against Coomaraswamy/Duggirala's translation or Gairola's edition before citing in scholarly work.</p>
+  <p><strong>Translation:</strong> "Añjali and Kapota and Karkaṭa, and likewise Svastika; Ḍolahasta, Puṣpapuṭa, Utsaṅga, Śivaliṅga; Kaṭakāvardhana, and likewise Kartarīsvastika; Śakaṭa, Śaṅkha, Cakra, and Sampuṭa, Pāśa and Kīlaka; Matsya, Kūrma, and Varāha, Garuḍa, Nāgabandha; Khaṭvā, Beruṇḍa, Avahittha."</p>
+  <p><strong>Why it matters here:</strong> Note what this list is made of. A working majority of these names are not new primitives — Śivaliṅga, Nāgabandha, Matsya, Kūrma, Varāha, and Garuḍa are each built by holding two named asaṃyukta hastas (or asaṃyukta-derived shapes) in a fixed spatial relationship to one another. The saṃyukta layer is best read not as a second independent vocabulary but as a documented combination-rule operating on the first vocabulary — which is exactly the question 9.3 below tests directly against RQ4's productivity finding (Ch. 17–24).</p>
+</div>
+
+<h3>9.2 Two Compositional Types: Symmetric-Bilateral vs. Asymmetric-Combinatorial</h3>
+<p>Sorting the saṃyukta inventory by construction method reveals two structurally distinct subtypes, not one uniform "two-hand gesture" category.</p>
+<table class="sx-compare">
+<tr><th>Construction Type</th><th>What the Two Hands Do</th><th>Representative Hastas</th><th>Relation to RQ4's Productivity Finding</th></tr>
+<tr><td class="hl">Symmetric-Bilateral</td><td>Both hands take the <em>same</em> asaṃyukta shape and are placed in mirrored or joined position</td><td>Añjali (both Pātāka-like, palms joined), Svastika (both Kartarīmukha, wrists crossed), Kapota</td><td>Adds no new combinatorial information — this is repetition-with-placement, not composition. Confirms RQ4's non-productivity finding rather than complicating it.</td></tr>
+<tr><td class="hl">Asymmetric-Combinatorial</td><td>Each hand takes a <em>different</em> named asaṃyukta shape; the compound sign's meaning depends on which two are paired and how</td><td>Śivaliṅga (one flat hand + Śikhara hand above it), Nāgabandha, Matsya, Kūrma, Varāha, Garuḍa</td><td>This is the closer candidate for genuine combination — two independently meaningful units producing a third, distinct meaning. Tested directly in 9.3.</td></tr>
+</table>
+
+<h3>9.3 Testing the Asymmetric Subtype Against RQ4's Productivity Bar</h3>
+<p>RQ4 (Ch. 19–21) found the asaṃyukta inventory non-productive: individual hastas mostly signify directly, and sequences combine by audience-inferred concatenation rather than generative rule. The asymmetric saṃyukta subtype is the one real candidate in the whole hasta system for something closer to true composition — two independently named, independently meaningful units (say, a Śikhara hand and a flat palm) combining into a compound sign (Śivaliṅga) whose meaning is not simply the sum or sequence of its parts but a specific, third, culturally fixed referent.</p>
+<p>The test has to be precise about what would count as passing. Genuine combinatorial productivity, in the sense Ch. 30's design-features checklist requires, means the <em>rule</em> for combining is general and can generate meanings not individually pre-listed — the way syntax generates sentences never previously heard. What the saṃyukta inventory actually documents is different: each asymmetric compound is itself a separately named, separately taught, closed-list entry — Śivaliṅga is taught as its own item, not derived on the fly from a general two-hand combination rule the way a Sanskrit sentence is derived from general syntax. A student learns "Śikhara-hand-plus-flat-palm = Śivaliṅga" the same way they learn any single hasta's name and meaning — the compounding happened once, historically, and was then fixed and listed, rather than being available as a live, general productive operation a performer or audience could apply to unlisted combinations.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>This is the same distinction phonology draws between a productive morphological rule (any new noun takes a regular plural) and a lexicalized compound (a fixed idiom whose parts no longer combine freely with anything else) — saṃyukta hastas pattern with the latter.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels the documented distinction between rule-based combinatorial processing and item-based lexical retrieval — a fixed compound is retrieved as a whole from declarative memory, not assembled online from a general rule each time it's produced.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Comparable to a fixed protein complex assembled from two named subunits in one specific, evolutionarily fixed configuration, versus a truly combinatorial system like antibody diversity, which generates novel combinations on the fly from a general recombination rule.</p></div>
+<div class="sx-scorecard" style="margin-top:1rem;">
+<tr><th>Finding</th><th>Verdict</th></tr>
+<tr><td>Does the asymmetric saṃyukta subtype rescue RQ4's non-productivity finding?</td><td><span class="sx-badge no">No — closed-list compounding, not generative combination</span></td></tr>
+</table></div>
+<p class="sx-dim">This is, again, a genuinely informative negative result rather than a deflationary one: it is precisely the two-hand layer where a productivity claim would have been most plausible, and testing it directly — rather than assuming RQ4's single-hand finding simply carries over untested — is what makes the negative finding here worth reporting at all.</p>
+
+<h3>9.4 What the Saṃyukta Layer Adds to the Coordination Argument (RQ3)</h3>
+<p>Ch. 26–28 argued that gesture is constitutively coordinated with the other three abhinaya channels (vācika, āhārya, sāttvika), not independent of them. The saṃyukta layer shows a second, internal coordination running alongside that external one: within the bodily (āṅgika) channel itself, the two hands are coordinated with each other, not two independent single-hand signal streams running in parallel. Añjali's meaning depends on both hands being symmetric; Śivaliṅga's meaning depends on the specific asymmetric pairing. Neither hand's shape is independently interpretable as carrying the compound's meaning on its own — evidence that the coordination principle Ch. 26–28 established at the level of the four abhinaya channels also operates one level down, within the gestural channel's own bilateral structure.</p>
+
+<h2 class="sx-h" style="margin-top:2.2rem;"><span class="sx-kicker">Worked Examples</span>Case Studies — Six Saṃyukta Hastas Through the Full Method</h2>
+<p class="sx-intro">Same method as the asaṃyukta case studies above: Lakṣaṇa (defining characteristic) → Prakriyā (how the sign functions) → Udāharaṇa (a documented usage) → Phala (what this hasta demonstrates for the argument).</p>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Añjali — अञ्जलि — "Salutation"</span><span class="sx-case-lit">Symmetric-bilateral construction</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Both hands in a Pātāka-like open shape, palms pressed together, fingers extended and touching.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>The clearest symmetric-bilateral case in the whole saṃyukta set — both hands carry the identical shape, so no combinatorial information is introduced by the second hand at all. Its contribution is placement and doubling, not composition.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses include greeting, invocation of a deity, requesting permission to begin a performance, and general reverence — typically framing a performance's opening and closing.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Direct confirmation of 9.2's symmetric-bilateral category: meaning here is carried by the single-hand shape and its bilateral doubling, not by any asymmetric pairing rule — consistent with RQ4's non-productivity finding, not a counter-case to it.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Śivaliṅga — शिवलिङ्ग — "Śiva's Emblem"</span><span class="sx-case-lit">Asymmetric-combinatorial construction</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>The left hand held flat and cupped, palm upward; the right hand in Śikhara (fisted, thumb raised) placed above it.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>The clearest asymmetric-combinatorial case: two independently named, independently meaningful asaṃyukta shapes (a flat palm, and Śikhara) are combined into a third, specific, fixed referent. This is 9.3's central test case — the strongest candidate anywhere in the hasta system for genuine two-part composition.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses are narrow and specific: representing the Śivaliṅga as a devotional object, and by extension invoking Śiva directly in narrative or devotional contexts.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Despite being the best candidate for real composition, its meaning is not generatively derived — Śivaliṅga is taught and listed as its own fixed item, not produced live from a general "combine any two hastas" rule. The negative finding of 9.3 rests on cases exactly like this one.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Kapota — कपोत — "Dove"</span><span class="sx-case-lit">Symmetric-bilateral construction</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Both hands cupped and joined at the base, fingers slightly separated, resembling a bird's rounded body.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>A second symmetric case, structurally close to Añjali but with a rounder, more hollow hand-shape — the difference between the two symmetric hastas is a matter of hand-shape detail, not of compositional type.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses include gentle or submissive speech, an offering gesture, and — iconically — a dove or pair of doves.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Reinforces 9.2's category split with a second clean example: symmetric hastas cluster around affective/devotional register (salutation, softness, offering), while the asymmetric set clusters around specific iconographic reference (a particular deity's emblem, a particular animal) — a register distinction worth noting alongside the structural one.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Kartarīsvastika — कर्तरीस्वस्तिक — "Crossed Scissors"</span><span class="sx-case-lit">Symmetric-bilateral, crossed placement</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Both hands in Kartarīmukha shape, wrists crossed at the chest.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>A borderline case worth flagging honestly: it is symmetric in hand-shape (both hands identical) but introduces a genuine second parameter — the crossing of the wrists — that a simple doubling like Añjali does not have. This is the closest the symmetric category comes to carrying combinatorial information of its own.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses include a distinctly marked negative or emphatic sense in some regional traditions, and structural/architectural references (crossed beams) in others — usage is more regionally variable here than for Añjali or Kapota.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>An honest edge case for 9.2's typology: the crossing parameter is a real formal feature beyond simple bilateral doubling, but it is still a single fixed, listed configuration rather than a generatively combined one — it complicates the category boundary without overturning 9.3's negative productivity finding.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Sampuṭa — सम्पुट — "Casket"</span><span class="sx-case-lit">Symmetric-bilateral, enclosing placement</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Two hands in a rounded shape (commonly built from Padmakośa or Ardhacandra) held facing each other, enclosing a hollow space between the palms.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>Functions as a container-schema gesture — its compositional logic is spatial (an enclosed space between two matching hands) rather than combinatorial (two different named shapes producing a third meaning).</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses include a box or casket, concealment, a covered vessel, and — in narrative mime — holding a small enclosed object such as a jewel or bird.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>A useful third data point for the symmetric category: unlike Añjali and Kapota, its meaning depends on the enclosed spatial relation between the hands, not merely on the repeated hand-shape — showing that "symmetric" hastas are not all structurally identical to each other either, even though none of them pass 9.3's productivity test.</p>
+</div>
+
+<div class="sx-case">
+  <div class="sx-case-head"><span class="sx-case-name">Garuḍa — गरुड — "The Eagle-Vehicle"</span><span class="sx-case-lit">Asymmetric-combinatorial, iconographically fixed</span></div>
+  <p class="sx-case-row"><span class="lbl">Lakṣaṇa</span>Constructed from two differently configured hands, one representing a beak-like shape and the other a wing-like extension, held in a specific fixed spatial relation.</p>
+  <p class="sx-case-row"><span class="lbl">Prakriyā</span>A second asymmetric-combinatorial case alongside Śivaliṅga, this time referencing a specific deity's vehicle (Garuḍa, Viṣṇu's mount) rather than a devotional emblem — confirming that the asymmetric subtype's typical semantic domain is specific iconographic reference (a named deity, animal, or vehicle), not general-purpose composition.</p>
+  <p class="sx-case-row"><span class="lbl">Udāharaṇa</span>Documented uses are narrowly iconographic: depicting Garuḍa directly, or by extension referencing Viṣṇu through his vehicle in narrative sequences.</p>
+  <p class="sx-case-row"><span class="lbl">Phala</span>Alongside Śivaliṅga, Nāgabandha, Matsya, Kūrma, and Varāha, Garuḍa completes the pattern: the entire asymmetric-combinatorial subtype is built almost exclusively around fixed iconographic reference to specific deities, animals, or their emblems — a narrow, closed semantic domain, not the open-ended productivity a true combinatorial rule would license.</p>
+</div>
+
+<h2 class="sx-h"><span class="sx-kicker">Cluster Synthesis</span>RQ 9 Closed — Findings Added to the Scorecard</h2>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ9</td><td>Does two-hand (saṃyukta) combination rescue the productivity claim RQ4 rejected for single-hand hastas?</td><td><span class="sx-badge no">No — closed-list lexicalized compounding, not generative combination</span></td><td class="hl">New, above</td></tr>
+</table>
+<p>This closes the most natural remaining objection to RQ4's non-productivity finding (Ch. 19–24): that the single-hand inventory alone was too narrow a base to test productivity fairly, and that letting the two hands combine would surface the missing generative capacity. It does not. The symmetric-bilateral subtype (Añjali, Kapota, Sampuṭa, Kartarīsvastika) adds placement and spatial-relation information but no new combinatorial rule; the asymmetric-combinatorial subtype (Śivaliṅga, Nāgabandha, Matsya, Kūrma, Varāha, Garuḍa) is the strongest candidate for genuine composition in the entire hasta system and still resolves, on inspection, into a closed list of individually taught, historically fixed compounds rather than a live generative operation. The dhvani-over-sphoṭa proposal from Ch. 37–39 is, if anything, strengthened rather than complicated by this cluster: a fixed, context-anchored compound sign whose meaning must be learned item by item is a comfortable fit for dhvani's conventionally-coded, perceiver-dependent model, and an uncomfortable fit for any account that requires open-ended generative productivity.</p>
+
+<h2 class="sx-h"><span class="sx-kicker">Extended FAQ</span>Objections Specific to the Saṃyukta Layer</h2>
+<div id="sx-faq-rq9">
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">If two hands can combine at all, isn't that itself evidence of a generative grammar — just a small one?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>Combination alone isn't the bar; a productive <em>rule</em> is. A small, fixed, closed list of one-off compounds (Śivaliṅga, Garuḍa, Nāgabandha) is structurally different from a rule that could, in principle, combine any two asaṃyukta shapes and have the result be interpretable by a naive observer applying the rule for the first time. Nothing in the documented saṃyukta tradition works that second way — each compound had to be individually taught and fixed historically, the same way each single hasta was.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Doesn't the count disagreement (13 vs. 23 vs. 17) undermine citing any specific saṃyukta hasta with confidence?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>Not for the hastas actually used as case studies here. Añjali, Kapota, and Śivaliṅga appear, under those names and with substantially the same construction, across the Nāṭyaśāstra-descended tradition regardless of which text's total count you're using — the disagreement concentrates at the inventory's outer boundary (which rarer, more regionally specific compounds count as "in" the list), not at its well-attested core, exactly as 9.1's acoustic-lens analogy notes.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q" onclick="this.parentElement.classList.toggle('open')">Does this cluster change the white paper's central conclusion at all?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>It sharpens the conclusion rather than changing it. The white paper argues gesture is conventionally coded, coordinated, and dhvani-style rather than sphoṭa-style or fully generative. RQ9 tests the one remaining structural objection — that two-hand combination might supply the missing productivity — directly, on its own terms, and reports that it doesn't. That is additional, independently gathered support for the same conclusion, not a revision of it.</p></div>
+  </div>
+</div>
+
+</section>
+<!-- =================== END RQ9 ADDENDUM =================== -->
   
 </body>
 </html>
