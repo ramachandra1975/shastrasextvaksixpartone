@@ -1800,6 +1800,1506 @@ function selectTab(n){
 
 </section>
 <!-- =================== END RQ10 / RQ11 / RQ12 ADDENDUM =================== -->
+  <!-- ============================================================
+     ENHANCEMENT ADDENDUM — paste this block immediately before </body>,
+     AFTER the existing #site-extras-rq9 </section> closing tag.
+     RQ 10–13 — Four New Clusters Extending the Core Argument:
+       RQ10  Paśyantī and the Outer Limit of the Extension (silence,
+             held stillness, and where "externalization" stops meaning
+             anything at all)
+       RQ11  The Sphoṭa Controversy Outside Bhartṛhari's Own School
+             (Kumārila Bhaṭṭa's Mīmāṃsā rejection, the
+             Naiyāyika
+             counter-model, and what this cross-examination
+             does to
+             the vaikharī-extension argument's own
+             confidence)
+       RQ12  Rasa-Dhvani Integration: Why Suggested Meaning
+       Is Built
+             to Serve Aesthetic Emotion, Not Only Semantic
+             Content
+       RQ13  The Sāttvika Bhāvas Tested Against the Same
+       Evidentiary
+             Bars Applied to Āṅgika Throughout RQ1–RQ9
+     Reuses the sx-* classes already defined in
+     #site-extras — no new
+     CSS needed, this drops straight into the existing
+     stylesheet scope.
+     Continues the numbering: this is "section 9" through
+     "section 12"
+     following the eight numbered sections already present.
+============================================================
+     -->
+<section id="site-extras-rq10-13">
+<style>
+#site-extras-rq10-13{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b;
+  --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3;
+  --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif;
+  --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex
+  Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink);
+  font-family:var(--sx-body); font-size:17px;
+  line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq10-13 *{box-sizing:border-box;}
+#site-extras-rq10-13 h2.sx-h{font-family:var(--sx-display);
+font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem);
+color:var(--sx-ink); margin:3.6rem 0 0.5em;
+padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq10-13 .sx-kicker{font-family:var(--sx-mono);
+font-size:0.66rem; letter-spacing:0.22em;
+text-transform:uppercase; color:var(--sx-acoustic);
+margin-bottom:0.6rem;}
+#site-extras-rq10-13 h3{font-family:var(--sx-display);
+font-weight:600; font-size:1.15rem; color:var(--sx-ink);
+margin:1.8rem 0 0.6rem;}
+#site-extras-rq10-13 p{margin:0 0 1.05em;
+font-size:0.98rem; color:var(--sx-ink); }
+#site-extras-rq10-13 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq10-13 .sx-intro{color:var(--sx-ink-dim);
+font-style:italic; max-width:720px;}
+
+.sx-scorecard{width:100%; border-collapse:collapse;
+margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono);
+font-size:0.62rem; letter-spacing:0.1em;
+text-transform:uppercase; color:var(--sx-ink-faint);
+text-align:left; padding:0.6rem 0.8rem; border-bottom:1px
+solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px
+solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover
+td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono);
+font-size:0.64rem; letter-spacing:0.06em;
+text-transform:uppercase; padding:0.3em 0.7em;
+border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15);
+color:var(--sx-acoustic); border:1px solid
+var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15);
+color:var(--sx-gold); border:1px solid
+rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18);
+color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15);
+color:var(--sx-neuro); border:1px solid
+var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem;
+margin-bottom:0.9rem; background:var(--sx-panel-raised);
+border:1px solid var(--sx-line); border-left:3px solid
+var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center;
+gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem;
+letter-spacing:0.1em; text-transform:uppercase;
+margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);}
+.sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n
+.sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b
+.sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0
+auto;}
+.sx-dot.a{background:var(--sx-acoustic);}
+.sx-dot.n{background:var(--sx-neuro);}
+.sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse;
+margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono);
+font-size:0.62rem; letter-spacing:0.08em;
+text-transform:uppercase; color:var(--sx-ink-faint);
+text-align:left; padding:0.55rem 0.75rem; border-bottom:2px
+solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px
+solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px
+solid var(--sx-line); border-radius:6px; padding:1.3rem
+1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between;
+align-items:baseline; flex-wrap:wrap; gap:0.5rem;
+margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display);
+font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem;
+color:var(--sx-ink-faint);}
+.sx-case-dev{font-family:var(--sx-deva); font-size:1.05rem;
+color:var(--sx-ink); margin:0 0 0.3rem;}
+.sx-case-iast{font-style:italic; color:var(--sx-ink-dim);
+font-size:0.9rem; margin:0 0 0.9rem;}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono);
+font-size:0.6rem; letter-spacing:0.1em;
+text-transform:uppercase; color:var(--sx-acoustic);
+display:block; margin-bottom:0.15rem;}
+
+.shloka-box{background:linear-gradient(180deg,
+rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px
+solid rgba(201,162,75,0.35); border-radius:6px;
+padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem;
+letter-spacing:0.14em; text-transform:uppercase;
+color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem;
+color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic;
+color:var(--sx-ink-dim); margin:0 0 0.9rem;
+font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem;
+line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+
+.sx-faq-item{border-bottom:1px solid var(--sx-line);}
+.sx-faq-q{width:100%; text-align:left; background:none;
+border:none; color:var(--sx-ink);
+font-family:var(--sx-display); font-weight:600;
+font-size:1rem; padding:1.1rem 0; cursor:pointer;
+display:flex; justify-content:space-between;
+align-items:center; gap:1rem;}
+.sx-faq-q:hover{color:var(--sx-acoustic);}
+.sx-faq-q .sx-plus{font-family:var(--sx-mono);
+color:var(--sx-acoustic); transition:transform .2s; flex:0
+0 auto;}
+.sx-faq-item.open .sx-plus{transform:rotate(45deg);}
+.sx-faq-a{max-height:0; overflow:hidden;
+transition:max-height .25s ease;}
+.sx-faq-item.open .sx-faq-a{max-height:460px;}
+.sx-faq-a p{padding-bottom:1.1rem; color:var(--sx-ink-dim);
+font-size:0.94rem;}
+
+.sx-timeline{position:relative; margin:1.6rem 0;
+padding-left:1.6rem; border-left:2px solid var(--sx-line);}
+.sx-tl-item{position:relative; padding-bottom:1.5rem;}
+.sx-tl-item::before{content:''; position:absolute;
+left:-1.72rem; top:0.3rem; width:9px; height:9px;
+border-radius:50%; background:var(--sx-gold); box-shadow:0
+0 6px var(--sx-gold);}
+.sx-tl-date{font-family:var(--sx-mono); font-size:0.72rem;
+color:var(--sx-gold);}
+.sx-tl-title{font-family:var(--sx-display);
+font-weight:600; font-size:1.02rem; color:var(--sx-ink);
+margin:0.15rem 0 0.25rem;}
+.sx-tl-desc{font-size:0.9rem; color:var(--sx-ink-dim);
+margin:0;}
+</style>
+
+<!-- =================== 9. RQ10 — PAŚYANTĪ AND THE OUTER
+LIMIT =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ
+10</span>Paśyantī and the Outer Limit of the Extension</h2>
+<p class="sx-intro">Every cluster so far has tested how far
+codified gesture reaches <em>outward</em> — toward sphoṭa,
+toward productivity, toward sentence-level meaning. This
+cluster tests the opposite direction: how far the extension
+argument reaches <em>inward</em>, toward silence,
+stillness, and the pre-verbal stage the tradition calls
+paśyantī. If vaikharī's defining property is
+externalization-for-another, does that property have a
+floor — a point past which stillness is no longer
+externalizing anything, and the extension argument simply
+stops applying?</p>
+
+<h3>10.1 Why This Question Was Not Yet Asked</h3>
+<p>RQ1 (Ch. 1–8) established the extension on one property:
+perceptibility-for-another. RQ2 (Ch. 9–16) tested whether
+sphoṭa's three further features transfer. RQ10 asks
+something upstream of both: whether the vaikharī category
+itself, once handed to gesture, retains a coherent boundary
+— or whether "gesture" as a category quietly starts
+including states that are not externalization at all, but
+something closer to paśyantī's undifferentiated,
+pre-linguistic intuition rendered as physical repose.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">सा पश्यन्ती स्वरूपं यत्
+  पश्यन्तीत्युच्यते बुधैः । दर्शनाल्लोचनस्येव
+  तस्यास्तत्संज्ञिता मता ॥</p>
+  <p class="shloka-iast">sā paśyantī svarūpaṃ yat
+  paśyantīty ucyate budhaiḥ | darśanāl locanasyaiva tasyās
+  tat saṃjñitā matā ||</p>
+  <p><strong>Source:</strong> Widely cited within the
+  Vākyapadīya commentarial tradition on the paśyantī stage
+  (in the vicinity of the Vṛtti on Kāṇḍa I), glossing why
+  this stage is called "the seeing one" — verify exact
+  verse and pāda numbering against your working edition
+  before print.</p>
+  <p><strong>Translation:</strong> "That stage whose own
+  nature is called 'seeing' (paśyantī) by the learned is so
+  named because it resembles the direct perception
+  (darśana) of an eye — it is held to bear that designation
+  for this reason."</p>
+  <p><strong>Why it matters here:</strong> The verse names
+  paśyantī's defining property as a kind of direct,
+  undifferentiated seeing — prior to, and independent of,
+  any segmentation into sound-units at all. That is
+  precisely the property vaikharī's own defining property
+  (perceptibility-for-another, established in Ch. 1) does
+  <em>not</em> have. A held, stilled configuration that
+  communicates nothing to a second party — a meditative
+  hand at rest, a performer's stillness before the vocalist
+  begins — resembles paśyantī's undifferentiated seeing far
+  more than it resembles vaikharī's externalization. This
+  gives RQ10 its working test: does the specific instance
+  of gesture under examination externalize a graspable
+  content to another, or does it merely hold a state that
+  only the performer, in a paśyantī-like way, "sees"?</p>
+  <p><strong>Phala (result for this cluster):</strong>
+  Result: a principled boundary condition on the whole
+  extension argument — one this document's earlier chapters
+  used implicitly (in distinguishing nāṭyadharmī
+  stylization from mere repose) but never stated as its own
+  tested claim until now.</p>
+</div>
+
+<h3>10.2 Three Documented Test Cases, Ranked by Distance
+from Vaikharī</h3>
+<p>Three practices, all involving physical stillness in
+performance contexts, sit at different distances from the
+vaikharī-extension's defining property.</p>
+<table class="sx-compare">
+<tr><th>Practice</th><th>What Is Held
+Still</th><th>Distance from Vaikharī's Property</th></tr>
+<tr><td class="hl">Sthāyī-bhāva-anchored held
+mudrā</td><td>A codified hasta, sustained through a sung
+phrase, its meaning already established by
+context</td><td>Close. Perceptibility-for-another is intact
+— the audience continues to receive the established meaning
+through the hold, the way a sustained musical drone still
+functions as a pitch reference.</td></tr>
+<tr><td class="hl">Nṛtta's pure rhythmic pause
+(viśrama)</td><td>The body, mid-phrase, arrested on a
+rhythmic accent with no representational
+content</td><td>Further. The pause is perceptible, but what
+it externalizes is rhythmic structure, not a
+meaning-bearing sign in the sense RQ1–RQ9 tested.</td></tr>
+<tr><td class="hl">Pre-performance dhyāna
+stillness</td><td>The performer's own contemplative
+settling, before any audience-facing signal
+begins</td><td>Furthest. By the performer's own account and
+by the surrounding ritual framing, this stillness is not
+addressed to the audience at all — it is closer to
+paśyantī's self-directed "seeing" than to vaikharī's
+externalization.</td></tr>
+</table>
+
+<h3>10.3 Why the Boundary Matters More Than It First
+Appears</h3>
+<p>It would be easy to treat this as a merely definitional
+housekeeping question. It is not. If the vaikharī-extension
+argument is allowed to silently absorb pre-performance
+dhyāna stillness as "gesture," the entire evidentiary
+discipline this document opened with (the Method note) is
+compromised: a claim tested against one stated property
+(perceptibility-for-another) is being applied to cases that
+do not have that property. The cost of getting this wrong
+runs in exactly the direction Part II of the white paper
+already worried about — romantic overclaiming, where
+"everything the performer's body does is language."</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span
+class="sx-dot a"></span>Acoustic</div><p>This is
+structurally identical to the distinction between a signal
+and a noise floor: a communications engineer does not count
+the silence before a transmission begins as part of the
+message, even though it occurs in the same channel and by
+the same transmitter.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span
+class="sx-dot n"></span>Neuroscience</div><p>Parallels the
+documented distinction between an addressed communicative
+act and self-directed motor preparation — comparable to the
+difference between a pointing gesture aimed at a listener
+and the identical arm configuration occurring during
+private motor rehearsal, which recruits overlapping but not
+identical planning circuitry and carries no communicative
+intent.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span
+class="sx-dot b"></span>Biosynthesis</div><p>Comparable to
+distinguishing a secreted signaling molecule, released to
+act on a target cell, from the same molecule sitting
+unreleased inside its originating cell — identical
+structure, but only one of the two states is doing
+communicative work.</p></div>
+
+<h3>10.4 Cluster Synthesis: RQ 10 Closed</h3>
+<p>The vaikharī-extension argument holds cleanly for
+codified, audience-directed gesture, including sustained
+holds whose meaning is already contextually established. It
+does not extend, and was never argued by Abhinavagupta's
+own text to extend, to self-directed contemplative
+stillness that precedes or brackets performance rather than
+addressing it. Stating this boundary explicitly closes a
+gap the earlier RQ1–RQ9 clusters left implicit, and it does
+so in the same evidentiary spirit: a property-specific
+extension claim, tested against its own stated property,
+and reported as holding only where that property is
+actually present.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ10</td><td>Does the vaikharī-extension
+have a coherent inward boundary at paśyantī-like
+stillness?</td><td><span class="sx-badge yes">Yes — a real,
+stateable, and previously implicit boundary</span></td><td
+class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 10. RQ11 — THE SPHOTA CONTROVERSY
+OUTSIDE BHARTRHARI'S OWN SCHOOL =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ
+11</span>The Sphoṭa Controversy Outside Bhartṛhari's Own
+School</h2>
+<p class="sx-intro">RQ2 (Ch. 9–16) tested sphoṭa's three
+features against gesture and found two of them wanting.
+That test implicitly treated sphoṭa theory as settled
+ground within its own tradition — a fixed yardstick to
+measure gesture against. It was never settled ground.
+Sphoṭa was one of classical India's most contested
+theoretical claims, rejected outright by two entire schools
+of Sanskrit philosophy of language. This cluster examines
+that internal controversy directly, because it changes how
+confidently RQ2's negative finding should be read.</p>
+
+<h3>11.1 The Mīmāṃsā Rejection: Kumārila Bhaṭṭa's
+Counter-Model</h3>
+<p>Kumārila Bhaṭṭa, writing in the Mīmāṃsā tradition
+centuries after Bhartṛhari's foundational statement of
+sphoṭa theory, rejects the sphoṭa as an unnecessary posit.
+On the Mīmāṃsā account, the individual phonemes (varṇas)
+themselves — not some further, separately manifested unit —
+directly convey meaning through eternal, unauthored
+convention (nitya-śabda and autpattika-sambandha, the
+primordial, non-conventional connection between word and
+meaning the Mīmāṃsakas hold as foundational to Vedic
+authority). On this view, positing an additional sphoṭa
+"revealed by" the sequence of sounds is explanatorily
+redundant: if the sequence of varṇas can be shown to convey
+the meaning directly through memory-trace (saṃskāra)
+accumulated across the hearing of each successive sound, no
+further unified entity needs to be manifested at all.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">वर्णा एव पदं तेषां समुदायोऽर्थबोधकः
+  । नादतिरिक्तं तत्रान्यत् स्फोटाख्यं किं प्रकल्प्यते ॥</p>
+  <p class="shloka-iast">varṇā eva padaṃ teṣāṃ samudāyo
+  'rthabodhakaḥ | nātiriktaṃ tatrānyat sphoṭākhyaṃ kiṃ
+  prakalpyate ||</p>
+  <p><strong>Source:</strong> A representative
+  Mīmāṃsaka-style verse restating Kumārila's position from
+  the Ślokavārttika's Sphoṭavāda section
+  (Tantravārttika/Ślokavārttika tradition) — treat this as
+  a paraphrase-verse in the tradition's own idiom rather
+  than a verbatim, page-verified citation; check against
+  Gaṅgānātha Jhā's translation of the Ślokavārttika before
+  scholarly citation.</p>
+  <p><strong>Translation:</strong> "The phonemes themselves
+  are the word; their aggregate is what conveys the
+  meaning. Why should some further thing beyond the sound,
+  called 'sphoṭa,' be posited there?"</p>
+  <p><strong>Why it matters here:</strong> This is not a
+  peripheral objection — it is a direct rejection of the
+  very entity RQ2 (Ch. 9–16) tested gesture against. If a
+  major school within the same broader tradition denies
+  sphoṭa exists at all, RQ2's finding that "gesture fails
+  two of sphoṭa's three features" needs a qualifier:
+  gesture fails two of the three features <em>of a
+  theoretical entity whose reality is itself disputed
+  inside classical Sanskrit philosophy of language</em>,
+  not an uncontested fact about language that gesture then
+  additionally fails to meet.</p>
+  <p><strong>Phala (result for this cluster):</strong>
+  Result: RQ2's negative finding is reframed, not reversed.
+  Gesture still fails the sphoṭa test on Bhartṛhari's own
+  terms — but the document's confidence in <em>why that
+  failure matters</em> should be tempered by the fact that
+  sphoṭa's own status was a live dispute, not settled
+  doctrine, even among Sanskrit grammarians'
+  contemporaries.</p>
+</div>
+
+<h3>11.2 The Naiyāyika Counter-Model: Sequential Memory
+Without a Manifested Unit</h3>
+<p>The Nyāya school's rejection runs on a related but
+distinct track. Where Mīmāṃsā emphasizes eternal
+word-meaning connection, the Naiyāyikas emphasize a
+straightforwardly causal-cum-cognitive account: the
+last-heard phoneme in a sequence, combined with the
+memory-impressions (saṃskāra) left by each phoneme heard
+before it, is sufficient to produce a unified cognition of
+meaning (padajñāna) — again without needing a further
+manifested sphoṭa entity as an intermediate step. Gaṅgeśa's
+later Navya-Nyāya treatment sharpens this into a fully
+causal model: the auditory cognition of the final phoneme,
+occurring in a mind already holding the saṃskāras of the
+prior phonemes, is the direct cause of word-cognition.</p>
+
+<h3>11.3 What the Controversy Changes About RQ2's Method,
+and What It Doesn't</h3>
+<p>It is worth being precise about scope here, in the
+spirit of the Method note this whole document opened with.
+The controversy does not undo RQ2's finding that gesture,
+tested against Bhartṛhari's specific three features, fails
+two of them. Both the Mīmāṃsā and Nyāya rejections concern
+whether sphoṭa exists as a linguistic entity at all — they
+are not alternative accounts on which gesture would pass.
+If anything, both rival schools' emphasis on sequential
+memory-accumulation (saṃskāra) makes gesture's failure of
+feature (a) — the absence of a discretely sequenced
+manifesting cause in a held configuration — look even more
+decisive: whichever camp is right about how spoken meaning
+arises, all three (Bhartṛhari's sphoṭa camp, Mīmāṃsā, and
+Nyāya) agree that spoken meaning-cognition depends on a
+temporally ordered sequence of discrete sound-events. A
+held hasta has no such sequence to offer under any of the
+three competing accounts.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span
+class="sx-dot a"></span>Acoustic</div><p>Three rival
+theories of how a spectrogram's temporal structure yields a
+phoneme category would still all agree the spectrogram
+needs to have temporal structure in the first place — the
+controversy is about the mechanism, not about whether
+sequencing matters at all.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span
+class="sx-dot n"></span>Neuroscience</div><p>Comparable to
+competing computational models of speech perception (TRACE,
+Shortlist, cohort models) disagreeing sharply on mechanism
+while all requiring a temporally unfolding input signal —
+the disagreement never extends to whether time-ordering
+matters.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span
+class="sx-dot b"></span>Biosynthesis</div><p>Like competing
+kinetic models of an enzymatic cascade disagreeing about
+rate-limiting steps while agreeing the reaction is
+sequential rather than instantaneous — the controversy
+narrows mechanism, not the basic requirement of ordered
+steps.</p></div>
+
+<h3>11.4 Cluster Synthesis: RQ 11 Closed</h3>
+<p>The internal Sanskrit controversy over sphoṭa's very
+existence is real, well-documented, and worth stating
+plainly rather than leaving implicit. It reframes RQ2's
+finding as resting on a contested theoretical entity rather
+than settled fact — but because every rival account
+converges on the requirement RQ2 actually tested (a
+temporally sequenced string of sound-events as meaning's
+cause), gesture's failure of that requirement survives the
+controversy fully intact. This is the more honest, and
+ultimately the stronger, way to hold the finding: not
+"sphoṭa is true and gesture fails it," but "however
+classical Sanskrit philosophy of language explains spoken
+meaning, gesture's static, held signs do not meet the
+shared requirement all three schools agree spoken meaning
+depends on."</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ11</td><td>Does the internal sphoṭa
+controversy (Mīmāṃsā, Nyāya) weaken RQ2's negative
+finding?</td><td><span class="sx-badge partial">Reframed,
+not reversed — finding survives on convergent
+grounds</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 11. RQ12 — RASA-DHVANI INTEGRATION
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ
+12</span>Rasa-Dhvani Integration: Suggestion in the Service
+of Aesthetic Emotion</h2>
+<p class="sx-intro">Ch. 37–39 nominated dhvani as the
+better-fitting model for how gesture carries meaning,
+largely on structural grounds: no dependence on discrete
+sequencing, built-in accommodation of polysemy, an explicit
+qualified-perceiver requirement. What that discussion left
+underdeveloped is dhvani's own primary purpose within
+Ānandavardhana's system — it was not proposed as a general
+semiotic mechanism first and an aesthetic theory second. It
+was proposed specifically to explain how rasa, aesthetic
+emotion, is evoked in a receptive audience. This cluster
+tests whether gesture's use of dhvani-style suggestion is
+best understood on those original, rasa-centered terms,
+rather than as a semiotic borrowing stripped of its
+aesthetic purpose.</p>
+
+<h3>12.1 Rasa-Dhvani as Ānandavardhana's Central, Not
+Incidental, Case</h3>
+<p>Ānandavardhana's threefold division of dhvani —
+vastu-dhvani (suggested factual content), alaṃkāra-dhvani
+(suggested figures of speech), and rasa-dhvani (suggested
+aesthetic emotion) — is not a flat taxonomy of equal-weight
+cases. The <em>Dhvanyāloka</em> treats rasa-dhvani as the
+culminating, most refined case: a suggested sense that
+cannot, even in principle, be paraphrased into direct
+statement without destroying the very aesthetic experience
+it was meant to produce. Stating "the audience feels karuṇa
+(pathos)" is not the same event as an audience actually
+experiencing karuṇa through a suggestively evoked scene.
+This is a stronger claim than vastu-dhvani or
+alaṃkāra-dhvani make, both of which suggest content that
+could, awkwardly, be paraphrased without total loss.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">काव्येष्वेव तु ये तेषामर्थाः सन्ति
+  निबन्धनम् । वाच्यातिशयिनस्ते तु ध्वनिं रसमयं विदुः ॥</p>
+  <p class="shloka-iast">kāvyeṣv eva tu ye teṣām arthāḥ
+  santi nibandhanam | vācyātiśayinas te tu dhvaniṃ
+  rasamayaṃ viduḥ ||</p>
+  <p><strong>Source:</strong> A representative restatement,
+  in the idiom of the alaṃkāra-śāstra tradition, of the
+  Dhvanyāloka's ranking of rasa-dhvani above vastu- and
+  alaṃkāra-dhvani (compare Dhvanyāloka 2.4 and surrounding
+  kārikās) — verify exact numbering against
+  Ingalls/Masson/Patwardhan's edition before scholarly
+  citation.</p>
+  <p><strong>Translation:</strong> "But those meanings in
+  poetry that exceed what is literally stated and form its
+  very foundation — those the learned know as dhvani in its
+  rasa-filled form."</p>
+  <p><strong>Why it matters here:</strong> If rasa-dhvani
+  is the tradition's own most refined case of suggestion,
+  then modeling gesture's polysemy (Ch. 38's finding that
+  one hasta carries several context-resolved senses) purely
+  as a semantic-disambiguation mechanism undersells what
+  the tradition itself thought dhvani was ultimately
+  <em>for</em>. A hasta held during a karuṇa-rasa passage
+  is not merely disambiguating between "grief" and
+  "longing" the way a dictionary entry disambiguates
+  homonyms — it is functioning, on the tradition's own
+  terms, as one contributing factor (vibhāva/anubhāva, in
+  Nāṭyaśāstra's own rasa-sūtra vocabulary) toward a
+  rasa-experience that exceeds any single paraphrasable
+  content.</p>
+  <p><strong>Phala (result for this cluster):</strong>
+  Result: gesture's dhvani-style suggestion should be read,
+  wherever it occurs inside a rasa-oriented performance
+  context, as serving an aesthetic-emotional function first
+  and a narrower semantic-disambiguation function second —
+  a refinement of Ch. 38's claim, not a contradiction of
+  it.</p>
+</div>
+
+<h3>12.2 Testing the Refinement Against a Documented
+Case</h3>
+<p>Pātāka's polysemy (Ch. 38's central example, revisited
+in the Case Studies section above: flag, cloud, forest,
+denial, water, wind) illustrates the refinement cleanly. In
+a purely narrative-descriptive passage — a performer miming
+"clouds gathering" — Pātāka's suggested sense functions
+close to vastu-dhvani: a suggested factual content,
+paraphrasable without much loss ("it means clouds"). But
+the same hasta, held during a passage building toward
+bhaya-rasa (fear) as storm-clouds gather ominously before a
+calamity, functions closer to rasa-dhvani: what is
+suggested is not simply "clouds" but a contribution to a
+building dread that cannot be reduced to the word "clouds"
+without losing the aesthetic point entirely.</p>
+
+<h3>12.3 Why This Matters for the Coordination Finding
+(RQ3)</h3>
+<p>This refinement also sharpens RQ3's coordination finding
+(Ch. 25–32). If gesture's higher-order function, in
+rasa-oriented contexts, is to contribute toward a rasa the
+audience experiences through the coordinated action of all
+four abhinaya channels together (āṅgika, vācika, āhārya,
+sāttvika), then coordination is not merely a structural
+fact about how the four channels happen to co-occur — it is
+functionally necessary, because rasa-dhvani's very
+definition (an aesthetic sense exceeding literal statement)
+requires multiple simultaneous channels for that
+"exceeding" to have anything to exceed. A single isolated
+channel has less to work with; sustained coordination
+across channels is what gives dhvani room to operate in its
+fullest, rasa-oriented sense.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span
+class="sx-dot a"></span>Acoustic</div><p>Comparable to how
+a chord's emotional color exceeds what any single
+constituent note conveys — the "excess beyond the literal"
+that rasa-dhvani names has a direct acoustic analogue in
+how simultaneous frequencies combine into a perceptual
+whole irreducible to its parts.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span
+class="sx-dot n"></span>Neuroscience</div><p>Parallels
+documented multisensory emotion-processing research, where
+congruent affective cues across modalities (facial
+expression, prosody, gesture) produce a stronger,
+qualitatively richer emotional read than any single channel
+alone — a superadditive effect consistent with
+rasa-dhvani's own claim that the suggested whole exceeds
+any paraphrasable part.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span
+class="sx-dot b"></span>Biosynthesis</div><p>Like a
+signaling cascade where the physiological outcome (say, a
+coordinated stress response) depends on several hormones
+acting in concert, such that no single hormone's isolated
+effect predicts the combined, qualitatively distinct
+systemic outcome.</p></div>
+
+<h3>12.4 Cluster Synthesis: RQ 12 Closed</h3>
+<p>Dhvani-over-sphoṭa (Ch. 37–39) is confirmed and refined,
+not merely repeated, by attending to dhvani's own internal
+hierarchy. Gesture's suggested meanings are best modeled
+specifically as contributions toward rasa — the tradition's
+own most demanding case of suggestion — in performance
+contexts where rasa is the governing aim, and as simpler
+vastu-dhvani in more narrowly descriptive passages. This
+distinction was available in the source texts all along but
+had not yet been drawn out as its own tested claim.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ12</td><td>Is gesture's dhvani-style
+suggestion best modeled through rasa-dhvani specifically,
+not dhvani generically?</td><td><span class="sx-badge
+yes">Yes, in rasa-governed contexts — refines Ch.
+37–39</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 12. RQ13 — THE SATTVIKA BHAVAS
+TESTED =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ
+13</span>The Sāttvika Bhāvas Tested Against the Same Bars
+Applied to Āṅgika</h2>
+<p class="sx-intro">RQ1–RQ12 test āṅgika (bodily/gestural
+expression) almost exclusively. The Nāṭyaśāstra's fourfold
+division (Ch. 26's shloka box) names a fourth channel —
+sāttvika, involuntary psychophysical states — that has been
+mentioned as a coordination partner throughout but never
+independently tested against the same evidentiary bars
+(sphoṭa-style manifestation, productivity,
+conventional-vs-natural coding) this document applied so
+carefully to hasta. This cluster closes that gap.</p>
+
+<h3>13.1 The Documented Inventory: Eight Sāttvika
+Bhāvas</h3>
+<p>The Nāṭyaśāstra names eight sāttvika bhāvas, involuntary
+psychophysical responses an actor is trained to produce
+convincingly on cue: stambha (paralysis/freezing), sveda
+(perspiration), romāñca (horripilation, hair standing on
+end), svarabheda (voice-breaking), vepathu (trembling),
+vaivarṇya (change of complexion/pallor), aśru (tears), and
+pralaya (fainting/loss of composure). Unlike the hasta
+inventory, these are not named hand-configurations but
+named psychophysiological states — the actor's task is not
+to hold a discrete shape but to convincingly produce a
+bodily response ordinarily involuntary.</p>
+
+<h3>13.2 Testing Feature (c) First: Is Sāttvika
+Convention-Governed or Natural?</h3>
+<p>This is the most interesting reversal in the whole
+document. Feature (c) (Ch. 12) was decisive and negative
+for hasta: gesture-meaning pairings are documented as
+taught name-by-name, evidence of convention rather than
+natural manifestation. For sāttvika bhāvas, the
+relationship runs the other way. Tears, trembling, and
+pallor are not arbitrary, conventionally-assigned signs for
+grief or fear the way a hasta's shape is an arbitrary sign
+for "lotus." They are the same physiological responses that
+occur in ordinary, unstylized experience of those emotions
+— the actor's craft lies in convincingly reproducing a
+naturally-occurring response on cue, not in learning an
+arbitrary code. This means sāttvika bhāvas <em>pass</em> a
+version of the naturalness test hasta failed, but for
+exactly that reason they raise a new question RQ13.3
+addresses: does natural resemblance actually strengthen or
+weaken their claim to being part of a semiotic system at
+all?</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">स्तम्भः स्वेदोऽथ रोमाञ्चः
+  स्वरभेदोऽथ वेपथुः । वैवर्ण्यमश्रु प्रलय इत्यष्टौ
+  सात्त्विकाः स्मृताः ॥</p>
+  <p class="shloka-iast">stambhaḥ svedo 'tha romāñcaḥ
+  svarabhedo 'tha vepathuḥ | vaivarṇyam aśru pralaya ity
+  aṣṭau sāttvikāḥ smṛtāḥ ||</p>
+  <p><strong>Source:</strong> The standard enumeration
+  verse for the eight sāttvika bhāvas, carried through the
+  Nāṭyaśāstra and its later alaṃkāra-śāstra restatements
+  (compare Sāhityadarpaṇa 3.128 and surrounding verses) —
+  check exact chapter/verse against Ghosh's Nāṭyaśāstra
+  translation before scholarly citation.</p>
+  <p><strong>Translation:</strong> "Paralysis, then
+  perspiration, then horripilation, voice-breaking, then
+  trembling, discoloration, tears, and fainting — these
+  eight are remembered as the sāttvika bhāvas."</p>
+  <p><strong>Why it matters here:</strong> Every one of
+  these eight is a documented, ordinary human physiological
+  response to strong emotion — none is a stylized,
+  arbitrarily-assigned code the way a hasta's specific
+  finger-configuration is. This inverts RQ2/RQ6's finding
+  for hasta: where hasta cleared only the conventionality
+  bar and failed manifestation, sāttvika bhāvas plausibly
+  clear a resemblance/manifestation-type bar and raise the
+  opposite question about conventionality.</p>
+  <p><strong>Phala (result for this cluster):</strong>
+  Result: sāttvika bhāvas cannot be tested with the
+  identical instrument used for hasta, because the two
+  channels invert each other's relationship to convention
+  and resemblance. A fair test requires restating the
+  criteria specifically for a naturalistic-resemblance
+  channel, which 13.3 below does.</p>
+</div>
+
+<h3>13.3 Does Natural Resemblance Help or Hurt Sāttvika's
+Claim to Semiotic Status?</h3>
+<p>The honest answer cuts against the naive intuition that
+"more natural" means "more expressive" or "more
+linguistic." A signal that directly resembles what it
+signifies — tears resembling actual grief-tears — is, on
+the tradition's own lokadharmī/nāṭyadharmī distinction (Ch.
+33 above and §1.5 of the white paper), closer to lokadharmī
+(ordinary worldly behavior) than to nāṭyadharmī's stylized
+convention. And RQ6 (Ch. 33–36) established that
+conventional, not natural, coding is the necessary
+condition for linguistic status. By that same standard
+applied consistently, sāttvika bhāvas — precisely because
+they succeed at naturalistic resemblance — fail the
+conventionality bar that hasta, awkwardly, passed. The two
+channels are not comparable on a single scale from "less
+linguistic" to "more linguistic"; they occupy genuinely
+different positions relative to the same criterion, one
+passing where the other fails and vice versa.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span
+class="sx-dot a"></span>Acoustic</div><p>Comparable to
+distinguishing a genuinely natural acoustic cue (a person's
+real cry of pain) from a stylized theatrical cue built to
+resemble it (a sound-effect cry) — the natural one is not
+thereby "more of a code," it is arguably less of one,
+precisely because it isn't arbitrary.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span
+class="sx-dot n"></span>Neuroscience</div><p>Parallels
+documented findings that spontaneous, felt facial
+expressions (Duchenne smiles, genuine distress expressions)
+are processed via more automatic, less cortically-mediated
+pathways than deliberately produced, learned expressions —
+resemblance-based signals and convention-based signals
+recruit different systems, and "natural" does not mean
+"more communicative" in any simple sense.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span
+class="sx-dot b"></span>Biosynthesis</div><p>Like
+distinguishing a constitutive physiological stress response
+(cortisol release under real threat) from an engineered
+signaling analogue built to mimic it for a specific
+downstream effect — the natural response is not "more of a
+code" for that reason; if anything it is the pre-semiotic
+baseline a deliberate code would have to be built to
+imitate.</p></div>
+
+<h3>13.4 Testing Productivity: Do Sāttvika Bhāvas
+Combine?</h3>
+<p>RQ4 (Ch. 19–24) found hasta shares a phoneme inventory's
+finite, digital shape but not its combinatorial
+productivity. Sāttvika bhāvas fail even the shape-parallel:
+the eight bhāvas are not typically taught as combining into
+larger compound units the way saṃyukta hastas combine two
+asaṃyuta shapes (RQ9, Ch. site-extras-rq9 above).
+Documented performance practice does describe co-occurring
+bhāvas (trembling accompanied by tears, pallor accompanied
+by voice-breaking) but this is closer to RQ9's finding for
+symmetric-bilateral saṃyukta hastas: simultaneous
+co-occurrence without any documented combinatorial rule
+generating new, third meanings from the pairing. Two bhāvas
+occurring together intensify a single emotional reading;
+they do not compose into a distinct further bhāva the way
+(in RQ9's asymmetric case) two named hastas compose into
+Śivaliṅga's distinct third referent.</p>
+
+<h3>13.5 Cluster Synthesis: RQ 13 Closed</h3>
+<p>Sāttvika bhāvas, tested against the same evidentiary
+bars applied to hasta throughout RQ1–RQ9, occupy a
+genuinely different and in some respects inverse position:
+naturalistic rather than conventionally coded,
+non-combinatorial in a stronger sense than hasta (no
+documented compounding rule at all, not even the
+closed-list compounding RQ9 found), and functioning
+primarily as a direct physiological contribution to rasa
+rather than as a discrete, nameable sign carrying denotable
+content. This is not a weaker finding than RQ1–RQ9's
+hasta-focused results — it is a structurally different one,
+and stating it plainly prevents readers from assuming
+"sāttvika" simply behaves like a lower-fidelity version of
+āṅgika. The two channels are doing different kinds of
+semiotic work within the same fourfold coordinated
+system.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ13</td><td>Do the sāttvika bhāvas
+pattern like hasta against the same evidentiary
+bars?</td><td><span class="sx-badge no">No — inverse
+profile: naturalistic, non-combinatorial,
+rasa-direct</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 13. RQ14 — TANTRIC AND YOGIC MUDRA
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ
+14</span>Tantric and Yogic Mudrā: A Structurally Different
+System Worth Distinguishing</h2>
+<p class="sx-intro">Every prior cluster tests hasta as
+found in the Nāṭyaśāstra-descended dramaturgical tradition
+— a system built for audience-facing communication within
+performance. A second, historically distinct family of
+hand-configurations, also called mudrā, appears in Tantric
+ritual and haṭha-yogic practice. This cluster asks a
+scoping question the document has not yet made explicit:
+are these the same kind of system as dramaturgical hasta,
+such that findings about one transfer to the other, or are
+they different enough in function that treating them
+together would blur two genuinely separate semiotic
+phenomena?</p>
+
+<h3>14.1 Two Traditions, One Overlapping Vocabulary</h3>
+<p>Some mudrā names and even hand-shapes overlap between
+the dramaturgical and tantric-yogic traditions — Añjali
+(the salutation hasta tested in the saṃyukta case studies
+above) appears in devotional and yogic contexts as well as
+on stage. But the overlap in name and shape should not be
+read as overlap in function. A dramaturgical hasta is
+constitutively addressed to a perceiving audience (Ch. 1's
+shloka box: perceptibility-for-another is vaikharī's
+defining property, and RQ1 extends exactly that property to
+gesture). A tantric mudrā, by contrast, is frequently
+performed with no audience present at all, as part of a
+practitioner's own ritual or meditative practice — its
+documented function is to produce or channel an internal
+psychophysical or ritual effect for the practitioner, not
+to communicate a graspable content to a second party.</p>
+
+<h3>14.2 Testing Tantric Mudrā Against RQ1's Own Defining
+Property</h3>
+<p>This is a direct, clean application of RQ1's own test
+(Ch. 1–8): does the practice in question have vaikharī's
+defining property, perceptibility-for-another? For
+dramaturgical hasta, performed before an audience whose
+reception is the entire point, the answer is yes, which is
+exactly why Ch. 1–8's extension argument was built around
+that property in the first place. For a solitary tantric
+practitioner's mudrā, performed with no perceiving other
+present and no documented claim that its efficacy depends
+on being seen or understood by anyone, the answer is no —
+at least not in the sense RQ1 tested. This places solitary
+tantric mudrā practice in a position closely related to
+RQ10's paśyantī-boundary case (§10 above): both are
+instances where a hand-configuration exists, and is even
+named and taught, but the vaikharī-extension's own defining
+property is absent.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">मुद्रा देवस्य संतोषकारिणी
+  दुःखनाशिनी । स्वयमेव फलं दत्ते मुद्रितं कर्म यत्नतः ॥</p>
+  <p class="shloka-iast">mudrā devasya santoṣakāriṇī
+  duḥkhanāśinī | svayam eva phalaṃ datte mudritaṃ karma
+  yatnataḥ ||</p>
+  <p><strong>Source:</strong> A representative verse in the
+  idiom of the haṭha-yoga and tantric mudrā-nirūpaṇa
+  manuals (compare the mudrā chapters of the
+  Haṭhayogapradīpikā and Gheraṇḍasaṃhitā) — treat this as a
+  paraphrase-verse representative of the genre rather than
+  a page-verified citation from a specific edition; check
+  against Svātmārāma's or Gheraṇḍa's critical editions
+  before scholarly citation.</p>
+  <p><strong>Translation:</strong> "The mudrā, pleasing to
+  the deity, destroys suffering; the action sealed by it
+  yields its fruit of its own accord, through the
+  practitioner's own effort."</p>
+  <p><strong>Why it matters here:</strong> Note what this
+  verse does not claim: it makes no reference to a
+  perceiving audience, a communicated meaning, or a second
+  party grasping anything at all. The mudrā's stated effect
+  is direct — it "yields its fruit of its own accord"
+  through the practitioner's own sealed action. This is
+  about as far as a hand-configuration can get from
+  vaikharī's defining property while still being called, in
+  Sanskrit, a mudrā — which is precisely why treating
+  tantric and dramaturgical mudrā as a single
+  undifferentiated category would be a category error this
+  document is careful to avoid.</p>
+  <p><strong>Phala (result for this cluster):</strong>
+  Result: RQ1–RQ13's entire evidentiary apparatus was built
+  for, and should be scoped to, the dramaturgical hasta
+  tradition specifically. Tantric and yogic mudrā are a
+  related but structurally distinct phenomenon, best
+  analyzed on their own terms (ritual efficacy,
+  practitioner-internal psychophysical effect) rather than
+  folded into a semiotic framework built for
+  audience-facing communication.</p>
+</div>
+
+<h3>14.3 A Documented Exception: Mudrā in Devotional
+Performance Contexts</h3>
+<p>The scoping claim above needs one honest qualification.
+In devotional performance traditions — temple dance,
+bhajan-accompanying gesture, and ritual dance-drama
+performed before a congregation or a deity-image treated as
+a perceiving witness — tantric-style mudrā are sometimes
+performed in a context that does restore something like
+vaikharī's defining property, because the deity-image is
+ritually treated as a perceiver, and the human congregation
+is an actual perceiving audience even where the deity's
+perception is a matter of faith rather than empirical fact.
+This is a documented middle case: neither purely solitary
+tantric practice nor purely secular dramaturgical
+performance, but a hybrid that the document's binary
+framing (dramaturgical vs. tantric) does not cleanly
+capture.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span
+class="sx-dot a"></span>Acoustic</div><p>Comparable to the
+difference between a transmitted radio signal (built for a
+receiver) and an unbroadcast internal test-tone generated
+purely to calibrate an instrument — same underlying
+waveform-generating mechanism, entirely different
+functional status depending on whether a receiver is part
+of the design.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span
+class="sx-dot n"></span>Neuroscience</div><p>Parallels the
+documented distinction between communicative and
+non-communicative motor acts recruiting different networks
+even when the movements look identical — a wave to a friend
+and an anatomically identical private stretching motion are
+processed differently because intended audience, not motor
+form, is what the brain treats as decisive.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span
+class="sx-dot b"></span>Biosynthesis</div><p>Like a hormone
+that acts locally within the cell that produces it
+(autocrine signaling) versus the same molecule released to
+act on a distant target (endocrine signaling) — identical
+chemistry, entirely different classification depending on
+whether there is a genuine "receiver" downstream.</p></div>
+
+<h3>14.4 Cluster Synthesis: RQ 14 Closed</h3>
+<p>Dramaturgical hasta and tantric-yogic mudrā share
+vocabulary and sometimes shape, but differ on the exact
+property (perceptibility-for-another) this entire
+document's extension argument rests on. Solitary tantric
+practice lacks that property and should not be analyzed
+with the same instrument; devotional performance contexts
+occupy a documented middle position and deserve their own
+separate treatment rather than being silently absorbed into
+either category. This is a scoping clarification, not a new
+empirical finding about gesture's linguistic status — but
+scoping clarifications of this kind are exactly what the
+Method note (opening the white paper) commits this whole
+project to making explicit rather than leaving assumed.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ14</td><td>Does the vaikharī-extension
+argument (RQ1) apply equally to tantric-yogic
+mudrā?</td><td><span class="sx-badge no">No — lacks
+perceptibility-for-another in solitary practice; hybrid in
+devotional contexts</span></td><td class="hl">New,
+above</td></tr>
+</table>
+
+<!-- =================== 14. EXTENDED CROSS-TRADITION
+COMPARISON =================== -->
+<h2 class="sx-h"><span class="sx-kicker">Extended
+Benchmark</span>Cross-Tradition Comparison, Continued:
+Chomsky, Voloshinov, and Embodied Semiotics</h2>
+<p class="sx-intro">The original Cross-Tradition Comparison
+(Peirce, Saussure, Hockett, Gricean pragmatics) benchmarked
+the tradition's core claims against foundational Western
+semiotics and linguistics. This extension adds three
+further comparison points that bear specifically on the new
+clusters above: generative grammar's productivity
+criterion, Voloshinov's social-materialist critique of the
+sign, and embodied/enactive cognitive science's treatment
+of gesture as constitutive of thought rather than merely
+expressive of it.</p>
+<table class="sx-compare">
+<tr><th>Question</th><th>Sanskrit Framework (this
+document)</th><th>Western Framework</th></tr>
+<tr><td class="hl">What licenses calling a system
+"generative"?</td><td>Productive combination + formal
+marking + novel-proposition capacity (Ch. 30), tested and
+failed for hasta (Ch. 19–24) and sāttvika
+(RQ13.4)</td><td>Chomsky's recursive generativity criterion
+— a grammar's defining property is the capacity to generate
+an unbounded set of well-formed expressions from a finite
+base via recursive rules</td></tr>
+<tr><td class="hl">Is meaning inherent to the sign or
+constituted through social use?</td><td>Saṅketa
+(convention) as an agreed, socially transmitted pairing
+(Ch. 12, RQ11's Mīmāṃsā/Nyāya context) — convention is
+prior to and independent of any individual
+use-event</td><td>Voloshinov's claim that the sign's
+meaning is generated anew in each concrete social
+utterance, not fixed in advance — a materialist challenge
+to treating saṅketa as a static, pre-existing
+code</td></tr>
+<tr><td class="hl">Does gesture merely express pre-formed
+thought, or help constitute it?</td><td>Bhartṛhari's own
+paśyantī-to-vaikharī model (RQ10) treats externalization as
+a distinct, later stage — thought (in some sense) precedes
+its externalization</td><td>Embodied/enactive cognitive
+science (McNeill's growth-point theory,
+gesture-as-simulated-action accounts) treats gesture and
+thought as co-emergent, gesture sometimes shaping the
+thought it accompanies rather than following it</td></tr>
+<tr><td class="hl">Is a system's status as "language" a
+binary or a graded property?</td><td>This document's own
+working answer, tested across RQ1–RQ14: graded and
+property-specific — gesture clears some necessary
+conditions and fails others, yielding a qualified, not
+binary, verdict</td><td>Contemporary linguistic typology
+increasingly treats "full language" as a cluster of
+independently gradable properties (productivity,
+discreteness, displacement, arbitrariness) rather than a
+single yes/no threshold — convergent with this document's
+own method</td></tr>
+</table>
+<p class="sx-dim">The Voloshinov comparison deserves a
+caution the earlier Cross-Tradition Comparison did not
+need: it is not obviously compatible with the Mīmāṃsā and
+Nyāya positions surveyed in RQ11, both of which treat
+word-meaning connection as fixed prior to use (nitya-śabda,
+or a stable memory-trace mechanism) rather than newly
+constituted in each utterance. Where Voloshinov and the
+classical Sanskrit convention-theorists disagree, this
+document does not attempt to adjudicate between them — it
+simply notes that saṅketa, as documented in the source
+texts this project draws on, aligns more naturally with a
+fixed-code model than with a use-constituted one, and that
+this is itself a further place where "convention" in the
+Sanskrit sense and "convention" in contemporary
+sociolinguistics are not perfectly synonymous.</p>
+
+<!-- =================== 15. EXTENDED TEXTUAL LINEAGE
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">Extended Textual
+Lineage</span>Additional Figures and Texts Behind
+RQ10–RQ14</h2>
+<p class="sx-intro">The original Textual Lineage timeline
+(Ṛgveda through Viśvanātha) covered the sources behind
+RQ1–RQ9. RQ10–RQ14 draw on a wider, partly non-overlapping
+set of figures and texts. This extension places them on the
+same timeline for continuity.</p>
+<div class="sx-timeline">
+  <div class="sx-tl-item"><div class="sx-tl-date">c. 7th
+  century CE</div><div class="sx-tl-title">Kumārila Bhaṭṭa,
+  Ślokavārttika</div><p class="sx-tl-desc">Articulates the
+  Mīmāṃsā rejection of sphoṭa surveyed in RQ11 — varṇas
+  alone, aggregated, convey meaning, with no further
+  manifested entity required.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">c.
+  9th–10th century CE</div><div class="sx-tl-title">Later
+  Naiyāyika commentators on padajñāna</div><p
+  class="sx-tl-desc">Develop the causal, saṃskāra-based
+  account of word-cognition RQ11 contrasts with both sphoṭa
+  and Mīmāṃsā.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">c. 14th
+  century CE</div><div class="sx-tl-title">Gaṅgeśa,
+  Tattvacintāmaṇi</div><p class="sx-tl-desc">Sharpens the
+  Navya-Nyāya causal model of sentence-cognition into the
+  fully formalized version RQ11.2 references.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">c. 15th
+  century CE</div><div class="sx-tl-title">Svātmārāma,
+  Haṭhayogapradīpikā</div><p class="sx-tl-desc">One of the
+  two major haṭha-yoga manuals documenting mudrā in the
+  practitioner-internal, non-audience-facing sense RQ14
+  distinguishes from dramaturgical hasta.</p></div>
+  <div class="sx-tl-item"><div class="sx-tl-date">c. 17th
+  century CE</div><div class="sx-tl-title">Gheraṇḍa,
+  Gheraṇḍasaṃhitā</div><p class="sx-tl-desc">The second
+  major haṭha-yoga manual cited in RQ14's mudrā-nirūpaṇa
+  comparison.</p></div>
+  <div class="sx-tl-item"><div
+  class="sx-tl-date">1929</div><div
+  class="sx-tl-title">Valentin Voloshinov, Marxism and the
+  Philosophy of Language</div><p class="sx-tl-desc">Source
+  of the social-materialist critique of fixed sign-meaning
+  used as a comparison point in the Extended
+  Cross-Tradition table above.</p></div>
+  <div class="sx-tl-item"><div
+  class="sx-tl-date">1957</div><div
+  class="sx-tl-title">Noam Chomsky, Syntactic
+  Structures</div><p class="sx-tl-desc">Source of the
+  generative/recursive productivity criterion this document
+  has used, in less formal terms, throughout RQ4, RQ9, and
+  RQ13.4.</p></div>
+  <div class="sx-tl-item"><div
+  class="sx-tl-date">1992</div><div
+  class="sx-tl-title">David McNeill, growth-point theory
+  (refined from Hand and Mind)</div><p
+  class="sx-tl-desc">Develops the co-emergence model of
+  gesture and thought referenced in the Extended
+  Cross-Tradition table's embodied-cognition row.</p></div>
+</div>
+
+<!-- =================== 16. EXTENDED GLOSSARY
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">Extended
+Glossary</span>New Terms Introduced in RQ10–RQ14</h2>
+<dl class="glossary" style="color:var(--sx-ink);">
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Paśyantī</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">The
+  pre-verbal, undifferentiated "seeing" stage of speech in
+  Bhartṛhari's four-stage model, prior to madhyamā and
+  vaikharī — the inward boundary RQ10 tests the extension
+  argument against.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Dhyāna (in this context)</dt><dd
+  style="margin:0.2rem 0 0;
+  color:var(--sx-ink-dim);">Contemplative, self-directed
+  stillness preceding or bracketing performance,
+  distinguished in RQ10.2 from audience-directed gestural
+  stillness.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Nitya-śabda</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">The
+  Mīmāṃsā doctrine of the eternal, unauthored word —
+  foundational to Kumārila's rejection of sphoṭa surveyed
+  in RQ11.1.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Autpattika-sambandha</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">The
+  primordial, non-conventional word-meaning connection
+  Mīmāṃsā holds as foundational to Vedic authority,
+  distinguished in RQ11.1 from Bhartṛhari's manifestation
+  model.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Saṃskāra (in this context)</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">The
+  memory-impression left by each phoneme in a sequence,
+  central to both Mīmāṃsā's and Nyāya's rival, sphoṭa-free
+  accounts of word-cognition (RQ11.1–11.2).</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Padajñāna</dt><dd
+  style="margin:0.2rem 0 0;
+  color:var(--sx-ink-dim);">Word-cognition; the Naiyāyika
+  term for the unified understanding of a word's meaning,
+  produced causally rather than via a manifested sphoṭa
+  (RQ11.2).</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Vastu-dhvani / Alaṃkāra-dhvani /
+  Rasa-dhvani</dt><dd style="margin:0.2rem 0 0;
+  color:var(--sx-ink-dim);">Ānandavardhana's threefold
+  division of suggested sense — factual content, figurative
+  content, and aesthetic-emotional content respectively —
+  ranked and tested against gesture in RQ12.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Vibhāva / Anubhāva</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">The
+  Nāṭyaśāstra's own rasa-sūtra vocabulary for the
+  determinant causes and consequent physical expressions of
+  rasa, invoked in RQ12.1 to situate gesture's
+  rasa-contributing function.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Sāttvika Bhāva</dt><dd
+  style="margin:0.2rem 0 0; color:var(--sx-ink-dim);">One
+  of eight documented involuntary psychophysical responses
+  (stambha, sveda, romāñca, svarabheda, vepathu, vaivarṇya,
+  aśru, pralaya) tested against hasta's evidentiary bars in
+  RQ13.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Mudrā (tantric/yogic
+  sense)</dt><dd style="margin:0.2rem 0 0;
+  color:var(--sx-ink-dim);">A hand (or, more broadly,
+  bodily) configuration performed in ritual or meditative
+  practice for a practitioner-internal or ritual effect,
+  distinguished in RQ14 from the audience-facing
+  dramaturgical hasta this document otherwise studies.</dd>
+  <dt style="font-family:var(--sx-display);
+  font-weight:600; margin-top:1.1rem;
+  color:var(--sx-gold);">Karuṇa / Bhaya-rasa</dt><dd
+  style="margin:0.2rem 0 0;
+  color:var(--sx-ink-dim);">Pathos and fear, two of the
+  Nāṭyaśāstra's canonical rasas, used in RQ12.2 as worked
+  examples of how the same hasta's suggested sense shifts
+  register depending on the governing rasa.</dd>
+</dl>
+
+<!-- =================== 17. EXTENDED FAQ
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">Extended
+FAQ</span>Objections Specific to RQ10–RQ14</h2>
+<div id="sx-faq-rq10-14">
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">Doesn't
+    drawing a boundary at paśyantī-like stillness (RQ10)
+    just import a metaphysical distinction that can't
+    actually be observed from outside?<span
+    class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>The boundary RQ10 draws is
+    functional, not metaphysical: it tracks whether a given
+    instance of stillness is documented, contextually and
+    by the tradition's own ritual framing, as addressed to
+    a perceiving other. Pre-performance dhyāna is marked as
+    such by the surrounding ritual structure (invocatory
+    framing, absence of audience-facing staging)
+    independent of any claim about inner mental states —
+    the same kind of externally observable framing a
+    linguist uses to distinguish a rehearsed private
+    utterance from an addressed one.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">If
+    Kumārila and the Naiyāyikas reject sphoṭa outright, why
+    does this document keep using sphoṭa as its main
+    comparison point for gesture instead of one of their
+    models?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>Because Bhartṛhari's sphoṭa
+    theory is specifically the model Abhinavagupta's own
+    extension argument (RQ1, Ch. 1–8) was built alongside,
+    in the same broader grammarian lineage — testing
+    gesture against sphoṭa tracks the tradition's own
+    internal reasoning most directly. RQ11 adds the rival
+    schools precisely to check whether that choice of
+    comparison point was fair, and finds the negative
+    result survives regardless of which theory of spoken
+    meaning turns out to be correct (§11.3).</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">Isn't
+    it a stretch to bring Voloshinov and Chomsky into a
+    document about classical Sanskrit dramaturgy?<span
+    class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>They are included only as
+    comparison points, in exactly the spirit the original
+    Cross-Tradition Comparison used for Peirce and Saussure
+    — never as claims that the Sanskrit sources anticipated
+    or agreed with them. The value is diagnostic: seeing
+    where a modern framework's criterion (Chomsky's
+    recursive generativity, Voloshinov's use-constituted
+    meaning) lines up with or diverges from saṅketa and
+    sphoṭa sharpens exactly what the Sanskrit terms are and
+    are not claiming.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">Doesn't
+    finding that sāttvika bhāvas are naturalistic rather
+    than conventional (RQ13) undercut the whole document's
+    project of treating gesture as a semiotic system?<span
+    class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No — it sharpens the project's
+    scope rather than undercutting it. The document has
+    never claimed every channel of abhinaya is semiotic in
+    the same way. RQ13's finding is a positive result: it
+    shows precisely which channel (āṅgika) carries the
+    conventional coding a semiotic analysis requires, and
+    precisely why a different channel (sāttvika) does not,
+    rather than leaving that distinction
+    implicit.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">Why
+    does RQ14 bother separating tantric mudrā from
+    dramaturgical hasta if the hand-shapes can be
+    identical?<span class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>Because identical form does
+    not entail identical function, and this document's own
+    method (stated in the opening Method note) treats
+    function, not surface resemblance, as the deciding
+    factor throughout — the same discipline that let RQ13
+    separate sāttvika from āṅgika despite both belonging to
+    the fourfold abhinaya scheme. Two practices sharing a
+    name and a hand-shape can still be doing entirely
+    different semiotic (or non-semiotic) work.</p></div>
+  </div>
+  <div class="sx-faq-item">
+    <button class="sx-faq-q"
+    onclick="this.parentElement.classList.toggle('open')">Does
+    the rasa-dhvani refinement in RQ12 mean Ch. 38's
+    polysemy claim was wrong?<span
+    class="sx-plus">+</span></button>
+    <div class="sx-faq-a"><p>No — RQ12 explicitly frames
+    itself as a refinement, not a correction. Ch. 38's
+    claim (that one hasta carries several context-resolved
+    senses, best modeled by dhvani rather than sphoṭa)
+    still holds in full. RQ12 adds a further layer: which
+    specific kind of dhvani (vastu-, alaṃkāra-, or rasa-)
+    is operative depends on whether the governing context
+    is descriptive or rasa-oriented, a distinction Ch. 38
+    did not yet need to draw.</p></div>
+  </div>
+</div>
+
+<!-- =================== 18. FOURTEEN RESEARCH QUESTIONS:
+FULL SYNTHESIS =================== -->
+<h2 class="sx-h"><span class="sx-kicker">Grand
+Synthesis</span>Fourteen Research Questions: The Complete
+Scorecard</h2>
+<p class="sx-intro">RQ1–RQ9 (the original clusters) and
+RQ10–RQ14 (this enhancement) together form a single,
+cumulative test of the vaikharī-extension argument, its
+outer edges, its rival theoretical grounding, its aesthetic
+purpose, and its scope. Presented together, the full
+pattern is more informative than any individual finding:
+gesture is repeatedly shown to clear
+necessary-but-not-sufficient conditions, to depend on
+coordination rather than independence, and to occupy a
+real, bounded, non-arbitrary position between full
+linguistic status and mere ornament.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="rq-name">RQ1</td><td>Does the
+vaikharī-extension argument actually exist, and is it
+substantive?</td><td><span class="sx-badge yes">Confirmed,
+narrow</span></td><td class="rq-range">Ch. 1–8</td></tr>
+<tr><td class="rq-name">RQ2</td><td>Does sphoṭa theory
+transfer intact to codified gesture?</td><td><span
+class="sx-badge no">Fails — 2 of 3 features</span></td><td
+class="rq-range">Ch. 9–16</td></tr>
+<tr><td class="rq-name">RQ3</td><td>Can gesture carry full
+sentence-level meaning independently?</td><td><span
+class="sx-badge partial">Partial — coordinated, not
+independent</span></td><td class="rq-range">Ch.
+25–32</td></tr>
+<tr><td class="rq-name">RQ4</td><td>Does the hasta
+inventory parallel the phoneme inventory?</td><td><span
+class="sx-badge partial">Partial — shape yes, productivity
+no</span></td><td class="rq-range">Ch. 17–24</td></tr>
+<tr><td class="rq-name">RQ5</td><td>Is the
+gesture-inventory stable across textual and living
+traditions?</td><td><span class="sx-badge partial">Diverges
+— documented, not fatal</span></td><td
+class="rq-range">Site-extras §2</td></tr>
+<tr><td class="rq-name">RQ6</td><td>Does gesture qualify as
+fully linguistic?</td><td><span class="sx-badge
+partial">Partial — necessary condition only</span></td><td
+class="rq-range">Ch. 33–36</td></tr>
+<tr><td class="rq-name">RQ7</td><td>Is there a
+better-fitting classical model than sphoṭa?</td><td><span
+class="sx-badge proposal">Proposed — dhvani</span></td><td
+class="rq-range">Ch. 37–39</td></tr>
+<tr><td class="rq-name">RQ8</td><td>Is there a documented
+threshold where gesture "becomes" language?</td><td><span
+class="sx-badge no">Not documented — constructed
+inference</span></td><td class="rq-range">Ch. 40</td></tr>
+<tr><td class="rq-name">RQ9</td><td>Does two-hand
+(saṃyukta) combination rescue the productivity claim RQ4
+rejected?</td><td><span class="sx-badge no">No —
+closed-list compounding, not generative</span></td><td
+class="rq-range">Site-extras-rq9</td></tr>
+<tr><td class="rq-name">RQ10</td><td>Does the extension
+have a coherent inward boundary at paśyantī-like
+stillness?</td><td><span class="sx-badge yes">Yes — a real,
+previously implicit boundary</span></td><td
+class="rq-range">This section, §9</td></tr>
+<tr><td class="rq-name">RQ11</td><td>Does the internal
+sphoṭa controversy weaken RQ2's negative
+finding?</td><td><span class="sx-badge partial">Reframed,
+not reversed</span></td><td class="rq-range">This section,
+§10</td></tr>
+<tr><td class="rq-name">RQ12</td><td>Is gesture's
+suggestion best modeled through rasa-dhvani
+specifically?</td><td><span class="sx-badge yes">Yes, in
+rasa-governed contexts — refines Ch. 37–39</span></td><td
+class="rq-range">This section, §11</td></tr>
+<tr><td class="rq-name">RQ13</td><td>Do the sāttvika bhāvas
+pattern like hasta against the same bars?</td><td><span
+class="sx-badge no">No — inverse profile</span></td><td
+class="rq-range">This section, §12</td></tr>
+<tr><td class="rq-name">RQ14</td><td>Does the
+vaikharī-extension apply equally to tantric-yogic
+mudrā?</td><td><span class="sx-badge no">No — scoped to
+audience-facing dramaturgical hasta</span></td><td
+class="rq-range">This section, §13</td></tr>
+</table>
+<p>Read across all fourteen rows, a single pattern recurs:
+this tradition's own strongest claims about gesture survive
+honest testing only in qualified form, and the
+qualifications are not incidental caveats but the substance
+of what a rigorous account of gesture-as-semiotics actually
+looks like. Vaikharī's extension to gesture is real but
+property-specific (RQ1, RQ10, RQ14). Sphoṭa's manifestation
+model does not transfer, on any of the three rival Sanskrit
+accounts of spoken meaning (RQ2, RQ11). Productivity fails
+at every scale tested — single hasta, two-hand combination,
+and (a fortiori) the non-conventional sāttvika channel
+(RQ4, RQ9, RQ13). Dhvani, refined specifically toward its
+rasa-oriented core, is the tradition's own best-fitting
+replacement (RQ7, RQ12). And the whole system depends on
+coordination among four distinct channels that do not all
+behave alike (RQ3, RQ13, RQ14) — coordination, not a single
+unified "gesture-language," is the actual object under
+study.</p>
+<p class="sx-dim">This synthesis does not claim finality.
+Each of the fourteen verdicts above is stated at the same
+evidentiary standard the Method note opened with — a named
+term, a locatable passage, and an articulable argument —
+and each remains open to correction against primary
+critical editions and further fieldwork on living
+performance traditions. What the fourteen-row pattern
+offers is not a closed case but a demonstrated method: that
+classical Sanskrit semiotics of gesture rewards exactly
+this kind of patient, property-by-property testing, and
+resists exactly the kind of single-sentence verdict
+("gesture is/isn't a language") that popular treatments of
+the subject usually reach for.</p>
+
+<!-- =================== 19. EXTENDED REFERENCES
+=================== -->
+<h2 class="sx-h"><span class="sx-kicker">Extended
+References</span>Additional Sources for RQ10–RQ14</h2>
+<ol class="refs" style="color:var(--sx-ink-dim);
+padding-left:1.3rem;">
+  <li>Kumārila Bhaṭṭa, <em>Ślokavārttika</em>, Sphoṭavāda
+  section; trans. Gaṅgānātha Jhā.</li>
+  <li>Gaṅgeśa, <em>Tattvacintāmaṇi</em>, Śabdakhaṇḍa (on
+  padajñāna and saṃskāra).</li>
+  <li>Jhā, Gaṅgānātha (trans.). <em>Ślokavārttika of
+  Kumārila Bhaṭṭa</em>.</li>
+  <li>Matilal, B.K. <em>Perception: An Essay on Classical
+  Indian Theories of Knowledge</em> (for Nyāya cognition
+  theory background).</li>
+  <li>Svātmārāma, <em>Haṭhayogapradīpikā</em>, mudrā
+  chapters; trans. various.</li>
+  <li>Gheraṇḍa, <em>Gheraṇḍasaṃhitā</em>, mudrā-nirūpaṇa
+  section.</li>
+  <li>Ānandavardhana, <em>Dhvanyāloka</em>, Uddyota 2 (on
+  the threefold division of dhvani and rasa-dhvani's
+  priority).</li>
+  <li>Ingalls, Daniel H.H., Jeffrey Masson, and M.V.
+  Patwardhan (trans.). <em>The Dhvanyāloka of
+  Ānandavardhana with the Locana of
+  Abhinavagupta</em>.</li>
+  <li>Bharata, <em>Nāṭyaśāstra</em>, Ch. 7 (on the sāttvika
+  bhāvas and the rasa-sūtra).</li>
+  <li>Viśvanātha, <em>Sāhityadarpaṇa</em>, Ch. 3 (on bhāva
+  classification, including sāttvika bhāvas).</li>
+  <li>Voloshinov, V.N. <em>Marxism and the Philosophy of
+  Language</em>; trans. Matejka and Titunik.</li>
+  <li>Chomsky, Noam. <em>Syntactic Structures</em>.</li>
+  <li>McNeill, David. "Growth points, catchments, and
+  contexts." <em>Cognitive Studies</em> (on gesture-thought
+  co-emergence).</li>
+  <li>Peirce, Charles Sanders. <em>Collected Papers</em>,
+  Vol. 2 (on the icon/index/symbol trichotomy, referenced
+  throughout the Cross-Tradition sections).</li>
+  <li>White, David Gordon. <em>Kiss of the Yoginī</em> (for
+  tantric mudrā's ritual-efficacy context, distinguished in
+  RQ14 from dramaturgical hasta).</li>
+</ol>
+</section>
 
 </body>
 </html>
