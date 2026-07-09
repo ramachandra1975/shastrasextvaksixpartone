@@ -4295,6 +4295,454 @@ padding-left:1.3rem;">
 This addendum — RQ5, RQ9, RQ10, RQ11, RQ12, RQ13, RQ14, the full-arc synthesis, the verification notes, and the master case-study index — closes every constitutive abhinaya channel named in Ch. 26's mūla śloka, plus the two structural objections (regional variation, two-hand composition) the base forty chapters left implicit. Two genuine threads remain open, named plainly in the Final Synthesis section above rather than quietly closed: vācika's internal prosodic structure in solo forms, and regional variation in netrābhinaya. Both are real next steps, not gaps to paper over.
 </p>
 </section>
+  <!-- ============================================================
+     ENHANCEMENT ADDENDUM — paste this block immediately before </body>,
+     AFTER the existing #site-extras-rq9 and #site-extras-rq10-13
+     </section> closing tags.
+     RQ 15–18 — Four New Clusters: The Karaṇa/Aṅgahāra Compositional
+     Hierarchy, and the Devī-Saptaśatī Repertoire as a Performance
+     Corpus for the Whole System
+       RQ15  Karaṇa as a Third Compositional Layer, Tested Against the
+             Same Productivity Bar Used for Hasta (RQ4) and Saṃyukta
+             Hasta (RQ9)
+       RQ16  The 108 Count Itself: Textual Enumeration vs. Epigraphic
+             (Temple-Relief) Divergence
+       RQ17  Aṅgahāra as a Fourth Compositional Layer: Karaṇas
+             Combined Into Larger Rhythmic-Narrative Units
+       RQ18  The Devī-Saptaśatī Repertoire as a Performance Corpus:
+             What a Karaṇa/Aṅgahāra System Actually Does With Rasa-
+             Dominant Narrative Content
+     Reuses the sx-* classes already defined in the earlier addenda —
+     no new CSS needed beyond what #site-extras-rq10-13 already
+     declares in scope. Continues the numbering: this is "section 20"
+     through "section 24" following the nineteen numbered sections
+     already present across the prior two addenda.
+     ============================================================ -->
+<section id="site-extras-rq15-18">
+<style>
+#site-extras-rq15-18{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b; --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3; --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif; --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink); font-family:var(--sx-body); font-size:17px; line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq15-18 *{box-sizing:border-box;}
+#site-extras-rq15-18 h2.sx-h{font-family:var(--sx-display); font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem); color:var(--sx-ink); margin:3.6rem 0 0.5em; padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq15-18 .sx-kicker{font-family:var(--sx-mono); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sx-acoustic); margin-bottom:0.6rem;}
+#site-extras-rq15-18 h3{font-family:var(--sx-display); font-weight:600; font-size:1.15rem; color:var(--sx-ink); margin:1.8rem 0 0.6rem;}
+#site-extras-rq15-18 p{margin:0 0 1.05em; font-size:0.98rem; color:var(--sx-ink); }
+#site-extras-rq15-18 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq15-18 .sx-intro{color:var(--sx-ink-dim); font-style:italic; max-width:720px;}
+
+.sx-scorecard{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; padding:0.3em 0.7em; border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15); color:var(--sx-acoustic); border:1px solid var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15); color:var(--sx-gold); border:1px solid rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18); color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15); color:var(--sx-neuro); border:1px solid var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem; margin-bottom:0.9rem; background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-left:3px solid var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center; gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);} .sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n .sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b .sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto;}
+.sx-dot.a{background:var(--sx-acoustic);} .sx-dot.n{background:var(--sx-neuro);} .sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.55rem 0.75rem; border-bottom:2px solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-radius:6px; padding:1.3rem 1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display); font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-ink-faint);}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-acoustic); display:block; margin-bottom:0.15rem;}
+
+.shloka-box{background:linear-gradient(180deg, rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px solid rgba(201,162,75,0.35); border-radius:6px; padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem; color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic; color:var(--sx-ink-dim); margin:0 0 0.9rem; font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem; line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+
+.sx-faq-item{border-bottom:1px solid var(--sx-line);}
+.sx-faq-q{width:100%; text-align:left; background:none; border:none; color:var(--sx-ink); font-family:var(--sx-display); font-weight:600; font-size:1rem; padding:1.1rem 0; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem;}
+.sx-faq-q:hover{color:var(--sx-acoustic);}
+.sx-faq-q .sx-plus{font-family:var(--sx-mono); color:var(--sx-acoustic); transition:transform .2s; flex:0 0 auto;}
+.sx-faq-item.open .sx-plus{transform:rotate(45deg);}
+.sx-faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+.sx-faq-item.open .sx-faq-a{max-height:460px;}
+.sx-faq-a p{padding-bottom:1.1rem; color:var(--sx-ink-dim); font-size:0.94rem;}
+</style>
+
+<!-- =================== 20. RQ15 — KARAṆA AS A THIRD COMPOSITIONAL LAYER =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 15</span>Karaṇa as a Third Compositional Layer, Tested Against the Same Productivity Bar</h2>
+<p class="sx-intro">RQ4 (Ch. 17–24) tested single-hand hasta against the phoneme inventory's productivity and found it lacking. RQ9 (site-extras-rq9) tested two-hand saṃyukta combination and found the same negative result at one level up. The Nāṭyaśāstra names a further, third compositional layer that neither prior cluster examined: karaṇa, the fixed combination of a sthāna (a named lower-body stance), a cārī (a named leg movement), and nṛtta-hasta (dance-hand positions, distinct from the abhinaya-hasta inventory RQ1–RQ9 tested) into a single, whole-body unit. This cluster asks whether karaṇa-level combination — now spanning the whole body rather than just the hands — is any more generative than the two prior layers proved to be.</p>
+
+<h3>15.1 What a Karaṇa Actually Combines</h3>
+<p>Bharata's Nāṭyaśāstra, Chapter 4, enumerates 108 karaṇas as the foundational units of tāṇḍava, the dance attributed to Śiva. Each karaṇa is documented as a fixed, named combination of three independently classifiable elements: a sthāna (such as samapāda, vaiśākha, or maṇḍala — named foot/weight-distribution positions), a cārī (a named trajectory of leg movement, of which the Nāṭyaśāstra separately enumerates thirty-two, sixteen bhaumī or ground-based and sixteen ākāśikī or aerial), and a hand position drawn from the nṛtta-hasta set (pure dance-hands, distinguished in the text from the abhinaya-hasta set this whole document has otherwise studied). A karaṇa is thus a compound object one level more complex than saṃyukta hasta: not two hands combining, but a stance, a leg-trajectory, and a hand-position combining across the whole body.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">हस्तपादसमायोगो नृत्तस्य करणं भवेत् । नृत्तस्य करणान्याहुराचार्याः पूर्वसूरयः ॥</p>
+  <p class="shloka-iast">hastapādasamāyogo nṛttasya karaṇaṃ bhavet | nṛttasya karaṇāny āhur ācāryāḥ pūrvasūrayaḥ ||</p>
+  <p><strong>Source:</strong> The definitional verse for karaṇa carried through the Nāṭyaśāstra's Chapter 4 tradition and its later restatements in texts such as the Abhinaya Darpaṇa and Saṅgītaratnākara — verify exact verse number against Ghosh's or Kavi's critical edition of Nāṭyaśāstra Ch. 4 before scholarly citation; the count and ordering of karaṇas varies slightly across manuscript recensions.</p>
+  <p><strong>Translation:</strong> "The combination of hand and foot [with the whole body's movement] is karaṇa, of the dance. The former teachers, the ancient sages, called these the karaṇas of dance."</p>
+  <p><strong>Why it matters here:</strong> The verse's own definition names karaṇa as a <em>combination</em> (samāyoga) — the same word-family used elsewhere in the tradition for combinatorial composition. This makes karaṇa the single strongest textual candidate, anywhere in the whole document's source corpus, for a claim that the tradition itself intends compositional productivity at the whole-body level. RQ15.2 below tests whether that intention, however clearly stated, actually cashes out as generative productivity in Ch. 30's sense, or whether it resolves into the same closed-list pattern RQ9 found for saṃyukta hasta.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: a textually strong candidate for genuine combinatorial productivity, which is precisely why it deserves the same rigorous test RQ9 applied to saṃyukta hasta, rather than being assumed productive on the strength of its own definitional vocabulary alone.</p>
+</div>
+
+<h3>15.2 Testing Karaṇa Against Ch. 30's Design-Features Checklist</h3>
+<p>Ch. 30 (RQ3 cluster) established three general requirements for sentence-level generativity: productive combination, formal grammatical marking, and the capacity to generate genuinely novel propositions. Karaṇa passes the first requirement's surface form — three independently varying elements (sthāna, cārī, hand-position) do combine — but the same test RQ9.3 applied to saṃyukta hasta applies here with equal force: is the combination rule general and productive, capable of yielding karaṇas never individually listed, or is each of the 108 a separately named, separately taught, closed-list entry? The documented pedagogical practice is unambiguous on this point. Each of the 108 karaṇas is individually named (Talapuṣpapuṭa is standardly cited as the first in the sequence), individually described in its own verse, and individually taught — a student does not learn the general combination rule and then freely generate a 109th karaṇa from an unlisted sthāna-cārī-hasta triple. The mathematically possible combinations of the documented sthānas, cārīs, and nṛtta-hastas vastly exceed 108, which is itself evidence that the 108 are a curated, closed selection rather than the output of an applied general rule.</p>
+
+<h3>15.3 A Documented Complication: The Aṅgahāra Layer Suggests the Rule Might Operate One Level Up</h3>
+<p>Before closing this cluster too quickly, one complication deserves honest treatment. It is possible that karaṇa combination is closed-list precisely because the tradition's actual combinatorial productivity, if it exists at all, operates one level higher — at the aṅgahāra layer, where karaṇas themselves are combined into larger units. RQ17 below tests this directly, so RQ15's finding is stated provisionally here and revisited there.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to a fixed catalogue of named chord voicings in a musical tradition — each voicing is a real combination of independently varying notes, and the combination vocabulary (samāyoga) is genuine, but a closed, individually-taught catalogue of 108 named voicings is not the same claim as a fully generative harmonic grammar capable of producing voicings never catalogued.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels the distinction between a large but closed motor-vocabulary (a trained athlete's or dancer's repertoire of named, drilled compound movements) and a genuinely generative motor-planning system capable of producing entirely novel compound movements on the fly — both involve real combination of sub-components, but only the second meets a productivity criterion in Ch. 30's sense.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like a fixed, evolutionarily selected set of protein folding conformations from a much larger space of chemically possible conformations — the folding process is a real combination of sub-structures, and the selected set is not arbitrary, but it is still a curated closed set rather than evidence of unbounded generative capacity.</p></div>
+
+<h3>15.4 Cluster Synthesis: RQ 15 Closed as Structurally Parallel to RQ9</h3>
+<p>Karaṇa combination, despite the tradition's own definitional vocabulary of samāyoga and despite operating across the whole body rather than just the hands, resolves into the same pattern RQ9 found for saṃyukta hasta: a real, textually intentional combination of independently classifiable elements, individually taught as a closed, named list of 108, rather than a productive rule generating unlisted compounds. The whole-body scale of the combination does not, by itself, confer the generativity that scale of combination alone cannot supply.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ15</td><td>Does karaṇa-level (whole-body) combination rescue the productivity claim RQ4 and RQ9 rejected at the hand-only level?</td><td><span class="sx-badge no">No — closed-list of 108, individually taught, not generative</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 21. RQ16 — THE 108 COUNT: TEXTUAL VS. EPIGRAPHIC =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 16</span>The 108 Count Itself: Textual Enumeration vs. Epigraphic Divergence</h2>
+<p class="sx-intro">RQ5 (site-extras §2) documented that the asaṃyuta hasta inventory diverges between the Nāṭyaśāstra's 24 and the Abhinaya Darpaṇa's 28, and argued this divergence refines rather than overturns the finding that the inventory is finite and closed. Karaṇa's 108-count invites the identical test, this time against a different kind of secondary source: not a later manuscript tradition, but stone.</p>
+
+<h3>16.1 The Textual Count and Its Epigraphic Witness</h3>
+<p>Bharata's Nāṭyaśāstra Chapter 4 names and enumerates 108 karaṇas in sequence, beginning with Talapuṣpapuṭa. The same 108-sequence is carved in low relief on the gopuram (temple gateway tower) of the Naṭarāja temple at Chidambaram, and a comparable, partially overlapping set appears at other temple sites including Kumbakonam and Vriddhachalam. These reliefs are not merely decorative echoes of the text; twentieth-century reconstructive scholarship (most notably the practice-based research of Padma Subrahmanyam, who used the Chidambaram reliefs alongside the textual verses to reconstruct karaṇas whose textual description alone was ambiguous) treats the stone carvings as an independent, physically fixed witness to what the numbered sequence actually looked like in practice, at the specific historical moment the reliefs were carved.</p>
+
+<h3>16.2 Where Text and Stone Agree, and Where They Diverge</h3>
+<p>The core sequence and numbering are stable between the Nāṭyaśāstra's textual enumeration and the Chidambaram reliefs — this is itself notable, given the centuries separating Bharata's text from the temple's construction, and it is the strongest available evidence that karaṇa was a genuinely stable, transmitted performance category rather than a purely literary invention. The divergence, where it exists, is of a different character than RQ5's hasta divergence: rather than additions or omissions to the list, the primary documented disagreement concerns the precise visual interpretation of individual karaṇas whose textual verse description is terse enough to admit more than one plausible reconstruction — exactly the interpretive gap Subrahmanyam's reconstructive project was built to address using the stone reliefs as a disambiguating check on the text.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">तलपुष्पपुटं नाम करणं प्रथमं स्मृतम् । ऊर्ध्वजानुसमारब्धं ...</p>
+  <p class="shloka-iast">talapuṣpapuṭaṃ nāma karaṇaṃ prathamaṃ smṛtam | ūrdhvajānu-samārabdham ...</p>
+  <p><strong>Source:</strong> The opening verse describing Talapuṣpapuṭa, standardly cited as the first of the 108 karaṇas in the Nāṭyaśāstra's Chapter 4 sequence — this is given here as a representative opening fragment rather than a complete, independently re-verified quotation; the full verse and its exact reading should be checked against Ghosh's or Kavi's edition, and against the corresponding Chidambaram relief, before any scholarly citation.</p>
+  <p><strong>Translation:</strong> "Talapuṣpapuṭa is the name remembered as the first karaṇa — begun with the knee raised..." (fragment; full description continues in the source verse).</p>
+  <p><strong>Why it matters here:</strong> Talapuṣpapuṭa's position as the sequence's first-named entry, confirmed independently by its carved position at Chidambaram, is exactly the kind of cross-medium agreement RQ16 is testing for. Where a textual list's ordering is independently confirmed by an unrelated physical medium (stone relief, carved centuries after the text and maintained by an entirely separate institutional tradition — temple architecture and worship, not manuscript copying), the finite-and-stable-core claim RQ5 made for hasta is considerably strengthened when extended to karaṇa: this is not one manuscript tradition's say-so, but two independent transmission channels converging.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: karaṇa's core sequence and numbering are stable across textual and epigraphic transmission, with disagreement concentrated at the level of visual reconstruction of ambiguous individual entries — a stronger and more specific confirmation of RQ5's general "stable core, variable margin" finding than the purely textual asaṃyuta hasta comparison alone could offer.</p>
+</div>
+
+<h3>16.3 Why Stone Is a Different Kind of Evidence Than a Second Manuscript</h3>
+<p>It is worth being explicit about why this comparison is methodologically stronger than RQ5's Nāṭyaśāstra-versus-Abhinaya-Darpaṇa comparison, rather than merely a second instance of the same kind of test. A second manuscript tradition can, in principle, simply copy or elaborate on the first, so agreement between two texts is weaker evidence of independent stability than agreement between a text and an entirely different medium maintained by an entirely different institution (temple sculpture, commissioned and maintained by temple administration and royal patronage, not by the scribal-manuscript tradition that transmitted the Nāṭyaśāstra itself). Convergence across genuinely independent transmission channels is the stronger form of corroboration.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to confirming a reconstructed historical pronunciation not merely from a second written source (which could simply copy the first) but from an independent physical record — a preserved recording or a phonetic transcription made by an entirely separate observer using different instruments.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels the standard methodological preference in cognitive science for converging evidence from independent measurement techniques (behavioral data and neuroimaging data agreeing) over two behavioral studies alone, precisely because independent methods cannot share the same systematic bias.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like confirming a proposed molecular structure through both spectroscopic data and independently solved crystallographic data, rather than through two spectroscopic runs alone — agreement across fundamentally different measurement modalities is the stronger form of confirmation.</p></div>
+
+<h3>16.4 Cluster Synthesis: RQ 16 Closed</h3>
+<p>The 108-karaṇa count is confirmed across two independent transmission channels — manuscript text and temple relief — with disagreement limited to the visual reconstruction of individual ambiguous entries rather than to the sequence's core content or count. This strengthens, with a stronger form of evidence than was available for RQ5's purely textual hasta comparison, the general finding that this tradition's codified movement-inventories have a stable, transmitted core even where individual details require careful reconstruction.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ16</td><td>Does the 108-karaṇa count hold stable across independent textual and epigraphic transmission?</td><td><span class="sx-badge yes">Yes — core confirmed across two independent channels; margin is interpretive, not numerical</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 22. RQ17 — AṄGAHĀRA AS A FOURTH COMPOSITIONAL LAYER =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 17</span>Aṅgahāra as a Fourth Compositional Layer: Karaṇas Combined Into Larger Units</h2>
+<p class="sx-intro">RQ15.3 flagged a complication and deferred it here: if karaṇa-level combination is closed-list rather than generative, does the tradition's actual combinatorial productivity — if it exists anywhere in this whole compositional hierarchy — operate one level higher, at the aṅgahāra, where the Nāṭyaśāstra documents karaṇas themselves being combined into larger units? This cluster tests that possibility directly, using the identical productivity bar applied at every prior layer.</p>
+
+<h3>17.1 What an Aṅgahāra Combines</h3>
+<p>The Nāṭyaśāstra documents thirty-two aṅgahāras, each a named sequence of several karaṇas (commonly cited as ranging from four to eight karaṇas per aṅgahāra, though the exact count varies by which aṅgahāra is examined) strung together into a single choreographic unit, itself further organized into recaka (preparatory) and completing phases. If karaṇa is the tradition's third compositional layer (hand-plus-stance-plus-leg-movement), aṅgahāra is unambiguously a fourth: karaṇas-plus-karaṇas, combined in sequence.</p>
+
+<h3>17.2 Testing the Fourth Layer Against the Same Bar</h3>
+<p>The test RQ9.3 and RQ15.2 both applied is precise and needs no modification here: does a general, productive rule combine karaṇas into aṅgahāras such that new, unlisted aṅgahāras could be generated from the combination rule alone, or is each of the thirty-two aṅgahāras itself a separately named, separately taught, closed-list sequence? The documented textual and pedagogical practice again answers the second way. Each aṅgahāra is individually named and its constituent karaṇa-sequence individually specified in its own verse; a performer does not learn a general "any four to eight karaṇas may be sequenced" rule and then freely generate a thirty-third, unlisted aṅgahāra. The aṅgahāra layer is, in this precise sense, structurally identical to the saṃyukta-hasta layer (RQ9) and the karaṇa layer (RQ15): a real, historically fixed compounding of the layer below it, taught as a closed list rather than derived from a live generative rule.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">करणानां तु या माला सोऽङ्गहार इति स्मृतः । त्रीणि चत्वारि पञ्च स्युः षडष्टौ वापि तत्र वै ॥</p>
+  <p class="shloka-iast">karaṇānāṃ tu yā mālā so 'ṅgahāra iti smṛtaḥ | trīṇi catvāri pañca syuḥ ṣaḍ aṣṭau vāpi tatra vai ||</p>
+  <p><strong>Source:</strong> A representative restatement of the Nāṭyaśāstra Chapter 4 aṅgahāra-definition tradition, describing an aṅgahāra as a "garland" (mālā) of karaṇas — verify exact verse and the precise karaṇa-count range against Ghosh's or Kavi's critical edition before scholarly citation; the permissible per-aṅgahāra karaṇa count is given variably across recensions.</p>
+  <p><strong>Translation:</strong> "A garland (mālā) of karaṇas is remembered as an aṅgahāra; there may be three, four, five, or even six or eight [karaṇas] within it."</p>
+  <p><strong>Why it matters here:</strong> The verse's own metaphor — mālā, a garland, a fixed, hand-strung sequence of individual beads in a particular deliberate order — is a strikingly apt image for exactly the closed-list compounding this document has now found at every compositional layer it has tested: saṃyukta hasta (RQ9), karaṇa (RQ15), and now aṅgahāra. A garland is a real, intentional composition of its constituent beads; it is not a generative rule for producing arbitrary new garlands from any beads whatsoever.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: the tradition's own chosen metaphor for this fourth compositional layer independently confirms, through its own figurative language rather than through this document's external analysis alone, that aṅgahāra-formation is curated sequencing, not generative grammar.</p>
+</div>
+
+<h3>17.3 The Pattern Across Four Layers, Stated Plainly</h3>
+<p>It is worth naming the full pattern now that four layers have been tested with the identical instrument. Hasta (RQ4): finite, digital, non-productive. Saṃyukta hasta (RQ9): a real second-order combination, still closed-list. Karaṇa (RQ15): a real third-order combination spanning the whole body, still closed-list. Aṅgahāra (RQ17): a real fourth-order combination of karaṇas, still closed-list, and the tradition's own "garland" metaphor names this directly. At no layer, from the single hand-shape to the thirty-two-strong aṅgahāra repertoire, does this document find a productivity mechanism meeting Ch. 30's design-features bar. This is not four independent negative findings; it is one finding, confirmed with increasing scale and increasing textual self-awareness (the garland metaphor is the clearest case of the tradition seemingly aware of its own compositional, non-generative character).</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to a fixed suite of named musical compositions (rāgas' associated bandiśes or gats), each itself built from a smaller closed set of melodic phrases, in turn built from an even smaller closed set of svaras — real compositional depth at every level, and still, at the top of that hierarchy, a curated repertoire rather than an unbounded generative grammar.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels a highly drilled athletic or martial-arts curriculum where individual strikes combine into named combinations, combinations combine into named forms (kata), and forms combine into a named repertoire — real hierarchical composition at every level, processed and retrieved as chunked motor sequences rather than assembled from a productive generative rule each time.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like a fixed metabolic pathway with several sequential, obligatory steps, each step itself a real combination of substrates — a genuine multi-level compositional structure that is nonetheless a specific, evolutionarily fixed pathway rather than evidence of a general, combinatorially unbounded synthetic capacity.</p></div>
+
+<h3>17.4 Cluster Synthesis: RQ 17 Closed</h3>
+<p>Aṅgahāra-formation, the fourth and highest compositional layer this document has tested, resolves into the same closed-list pattern found at every layer below it — now independently corroborated by the tradition's own "garland" metaphor for what an aṅgahāra actually is. RQ15.3's deferred question is answered: the productivity that fails at the karaṇa layer does not reappear at the aṅgahāra layer either. There is no layer, from single hasta through aṅgahāra, at which this tradition's movement-vocabulary meets a generative-grammar standard, and the consistency of that finding across four independently tested layers is itself the strongest evidence in the whole document for treating non-productivity as a genuine structural feature of the system, not an artifact of any one layer's limited data.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ17</td><td>Does aṅgahāra-level combination of karaṇas supply the productivity absent at every layer below it?</td><td><span class="sx-badge no">No — closed list of 32, confirmed by the tradition's own "garland" metaphor</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 23. RQ18 — THE DEVĪ-SAPTAŚATĪ REPERTOIRE AS A PERFORMANCE CORPUS =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 18</span>The Devī-Saptaśatī Repertoire as a Performance Corpus: Rasa, Not Semiotic Source</h2>
+<p class="sx-intro">A necessary scoping note before this cluster begins: the Devī Māhātmyam, commonly called Durgā Saptaśatī (seven hundred verses, across thirteen chapters and three caritas), is a devotional-narrative and mythological text. It does not discuss vaikharī, sphoṭa, dhvani, hasta, karaṇa, or aṅgahāra — it is not a semiotics or dramaturgy text of the kind this document otherwise draws on, and it would misrepresent the source to cite it as though it theorizes about gesture. What it legitimately provides is something different and still valuable to this document's project: a widely performed narrative corpus, staged in several regional dance-drama and nṛtya traditions using precisely the hasta/karaṇa/aṅgahāra vocabulary RQ1–RQ17 have tested, and dominated by a specific, narrow cluster of rasas. This cluster examines what the karaṇa/aṅgahāra system this document has now fully tested actually does when staging that specific narrative content.</p>
+
+<h3>18.1 The Rasa Profile of the Saptaśatī Narrative</h3>
+<p>The Saptaśatī's three caritas culminate, respectively, in the Devī's combat with Madhu and Kaiṭabha, with Mahiṣāsura, and with Śumbha and Niśumbha — battle narratives whose governing rasas, on the Nāṭyaśāstra's own eightfold (later ninefold) rasa scheme, are documented as predominantly raudra (fury), bhayānaka (terror, especially in the demonic armies' overwhelming approach), and vīra (heroism, in the Devī's own unwavering combat). This is a narrower and more combat-concentrated rasa profile than most of the classical dance repertoire's usual śṛṅgāra-dominant (romantic/erotic) material, and it is worth testing whether the karaṇa/aṅgahāra system — built, per RQ15–RQ17, from a fixed, closed, non-generative vocabulary — actually has the documented range to stage this different rasa profile convincingly, or whether it strains the system's own resources.</p>
+
+<h3>18.2 Karaṇa Names That Document Combat-Oriented Movement</h3>
+<p>Several of the 108 karaṇas carry names and descriptions directly suited to combat and vigorous, martial movement rather than the gentler lyrical vocabulary associated with śṛṅgāra-dominant repertoire — karaṇas involving vigorous leaps, turns, and forceful stance-changes are documented in the Nāṭyaśāstra's own descriptions and appear, in the epigraphic record RQ16 examined, alongside Naṭarāja's own tāṇḍava (the vigorous, cosmic dance form karaṇa is traditionally associated with in the first place, per the Talapuṣpapuṭa verse's own attribution). This is a case where the closed, non-generative repertoire RQ15–RQ17 documented is not thereby an impoverished one: a curated, finite set can still contain enough internal range — vigorous versus lyrical karaṇas, raudra-suited versus śṛṅgāra-suited hasta and sāttvika combinations — to stage a genuinely different rasa profile without needing generative productivity to do so.</p>
+
+<h3>18.3 Why This Confirms Rather Than Complicates the Non-Productivity Finding</h3>
+<p>It would be a mistake to read the Saptaśatī repertoire's successful staging of raudra/bhayānaka/vīra content as evidence against RQ15–RQ17's non-productivity finding — as though the system must be "generating" new combat-specific movement to meet this narrative's demands. The more precise reading, consistent with RQ9's dhvani-strengthening observation about closed-list compounds, is that a sufficiently large curated repertoire (108 karaṇas, 32 aṅgahāras, the full hasta and sāttvika inventories) has enough internal variety to be selectively deployed across a wide range of rasa registers without any single deployment requiring a new, unlisted unit to be generated. The Devī-Saptaśatī repertoire is best described as a documented <em>selection</em> from the existing closed vocabulary, weighted toward its more vigorous entries, not a demonstration of the vocabulary's generative extension.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">या देवी सर्वभूतेषु शक्तिरूपेण संस्थिता । नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः ॥</p>
+  <p class="shloka-iast">yā devī sarvabhūteṣu śaktirūpeṇa saṃsthitā | namas tasyai namas tasyai namas tasyai namo namaḥ ||</p>
+  <p><strong>Source:</strong> One of the Saptaśatī's most widely known refrain-verses (the "yā devī" formula, repeated with varying attributes across the text's closing hymn portions) — verify exact chapter and verse placement against a standard printed edition (e.g., the Gita Press or Nirnaya Sagar recensions) before scholarly citation, since the refrain recurs with small variations across the text.</p>
+  <p><strong>Translation:</strong> "To that Goddess who abides in all beings in the form of power (śakti) — salutations to her, salutations to her, salutations to her, again and again."</p>
+  <p><strong>Why it matters here:</strong> This verse is included here specifically to model the honest scoping this cluster commits to: it is a devotional refrain, not a semiotic claim, and it is cited only to anchor the specific textual register (śakti as a pervasive, immanent power, not a single narrated event) that a performance tradition staging the Saptaśatī must render through the closed karaṇa/hasta/sāttvika vocabulary this document has tested throughout. The verse itself says nothing about gesture; what it does is characterize the devotional register a performer must reach using tools (hasta, karaṇa, sāttvika bhāva) whose combinatorial limits RQ4 through RQ17 have now fully documented.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: the Saptaśatī functions in this document strictly as a performance corpus and a rasa/register test case, never as a source text for claims about gesture's own structure — a distinction worth stating this explicitly precisely because the two roles could otherwise be blurred.</p>
+</div>
+
+<h3>18.4 Cluster Synthesis: RQ 18 Closed</h3>
+<p>The Devī-Saptaśatī repertoire, staged through the karaṇa/aṅgahāra/hasta/sāttvika system this document has tested across seventeen prior research questions, is best understood as a documented selection from an existing closed vocabulary, weighted toward its combat-suited entries, successfully covering a raudra/bhayānaka/vīra-dominant rasa profile without requiring or demonstrating any generative extension of that vocabulary. This closes the loop the user's own question opened: Saptaśatī is not itself a source of semiotic claims about gesture, but it is a genuine, well-attested performance context in which every finding from RQ1 through RQ17 can be seen operating together on a single, rasa-concentrated narrative.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ18</td><td>Does the Devī-Saptaśatī repertoire's combat-rasa demands require or reveal generative extension of the karaṇa/hasta vocabulary?</td><td><span class="sx-badge no">No — successfully staged via curated selection from the existing closed repertoire</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 24. SYNTHESIS: RQ15–RQ18 =================== -->
+<h2 class="sx-h"><span class="sx-kicker">Cluster Synthesis</span>RQ15–RQ18 Closed — What Four Layers of Testing, Now Confirmed With Stone and Scripture, Add to the Whole</h2>
+<p>These four clusters extend the productivity finding established for hasta (RQ4) and saṃyukta hasta (RQ9) upward through two further compositional layers — karaṇa and aṅgahāra — and confirm it holds at every one of four tested scales, corroborated independently by epigraphic evidence (RQ16) and by the tradition's own compositional metaphor of the "garland" (RQ17). They then test that whole four-layer system's actual performance range against a narrative corpus (RQ18) whose rasa demands are markedly different from the repertoire's more commonly studied lyrical material, and find the closed vocabulary sufficient without needing to generate anything new. Together, RQ15–RQ18 answer the scope question this cluster opened with directly and honestly: karaṇa and the 108 count are a real, well-documented, textually and epigraphically confirmed extension of this whole semiotic system, and the Devī-Saptaśatī repertoire is a legitimate performance-corpus lens onto that system — never a source text making claims about it.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ15</td><td>Does karaṇa-level combination rescue the productivity claim rejected at the hand-only level?</td><td><span class="sx-badge no">No — closed list of 108</span></td><td class="hl">Above, §20</td></tr>
+<tr><td class="hl">RQ16</td><td>Does the 108-karaṇa count hold across textual and epigraphic transmission?</td><td><span class="sx-badge yes">Yes — confirmed by two independent channels</span></td><td class="hl">Above, §21</td></tr>
+<tr><td class="hl">RQ17</td><td>Does aṅgahāra-level combination supply the missing productivity?</td><td><span class="sx-badge no">No — closed list of 32, confirmed by the tradition's own metaphor</span></td><td class="hl">Above, §22</td></tr>
+<tr><td class="hl">RQ18</td><td>Does the Saptaśatī repertoire's rasa demands require generative extension of the vocabulary?</td><td><span class="sx-badge no">No — met by curated selection, not generation</span></td><td class="hl">Above, §23</td></tr>
+</table>
+</section>
+  <!-- ============================================================
+     ENHANCEMENT ADDENDUM — paste this block immediately before </body>,
+     AFTER the existing #site-extras-rq9, #site-extras-rq10-13, and
+     #site-extras-rq15-18 </section> closing tags.
+     RQ 19–22 — Four New Clusters: Group Choreography, the Mārgī/Deśī
+     Split, the Textual-Layering Problem Behind Karaṇa Itself, and a
+     Worked Case Study
+       RQ19  Piṇḍībandha as a Fifth Compositional Layer: From Solo
+             Karaṇa/Aṅgahāra to Group Formation
+       RQ20  The Mārgī/Deśī Distinction Applied Across the Whole
+             Hierarchy: Does "Classical vs. Regional" Change Any
+             Prior Finding?
+       RQ21  Why Bharata's Own Text Is Not Enough: The Textual-
+             Layering Problem Behind Karaṇa, and What Śārṅgadeva's
+             Saṅgītaratnākara Actually Adds
+       RQ22  A Worked Case Study: Staging Mahiṣāsuramardinī Through
+             the Full Hasta/Sāttvika/Karaṇa/Aṅgahāra/Piṇḍībandha Stack
+     Reuses the sx-* classes already defined in the earlier addenda.
+     Continues the numbering: this is "section 25" through "section 28"
+     following the twenty-four numbered sections already present
+     across the prior three addenda.
+     ============================================================ -->
+<section id="site-extras-rq19-22">
+<style>
+#site-extras-rq19-22{
+  --sx-bg:#0a1614; --sx-panel:#0f1e1b; --sx-panel-raised:#132925; --sx-line:#1e3a34;
+  --sx-ink:#dcece5; --sx-ink-dim:#8fada3; --sx-ink-faint:#5c766f;
+  --sx-acoustic:#4fd8c4; --sx-acoustic-dim:#215a51;
+  --sx-neuro:#a996f5; --sx-neuro-dim:#3a3163;
+  --sx-bio:#e0a83e; --sx-bio-dim:#5a441a;
+  --sx-gold:#c9a24b; --sx-rust:#9c5a3c;
+  --sx-display:'Space Grotesk',sans-serif; --sx-body:'Source Serif 4',serif; --sx-mono:'IBM Plex Mono',monospace;
+  --sx-deva:'Noto Sans Devanagari',sans-serif;
+  background:var(--sx-bg); color:var(--sx-ink); font-family:var(--sx-body); font-size:17px; line-height:1.7;
+  padding:0 6vw 6rem; max-width:1040px; margin:0 auto;
+}
+#site-extras-rq19-22 *{box-sizing:border-box;}
+#site-extras-rq19-22 h2.sx-h{font-family:var(--sx-display); font-weight:700; font-size:clamp(1.5rem,3.4vw,2rem); color:var(--sx-ink); margin:3.6rem 0 0.5em; padding-top:1.2rem; border-top:1px solid var(--sx-line);}
+#site-extras-rq19-22 .sx-kicker{font-family:var(--sx-mono); font-size:0.66rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--sx-acoustic); margin-bottom:0.6rem;}
+#site-extras-rq19-22 h3{font-family:var(--sx-display); font-weight:600; font-size:1.15rem; color:var(--sx-ink); margin:1.8rem 0 0.6rem;}
+#site-extras-rq19-22 p{margin:0 0 1.05em; font-size:0.98rem; color:var(--sx-ink); }
+#site-extras-rq19-22 p.sx-dim{color:var(--sx-ink-dim);}
+#site-extras-rq19-22 .sx-intro{color:var(--sx-ink-dim); font-style:italic; max-width:720px;}
+
+.sx-scorecard{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.92rem;}
+.sx-scorecard th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.6rem 0.8rem; border-bottom:1px solid var(--sx-line);}
+.sx-scorecard td{padding:0.85rem 0.8rem; border-bottom:1px solid var(--sx-line); vertical-align:top;}
+.sx-scorecard tr:hover td{background:rgba(79,216,196,0.04);}
+.sx-badge{display:inline-block; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.06em; text-transform:uppercase; padding:0.3em 0.7em; border-radius:3px; white-space:nowrap;}
+.sx-badge.yes{background:rgba(79,216,196,0.15); color:var(--sx-acoustic); border:1px solid var(--sx-acoustic-dim);}
+.sx-badge.partial{background:rgba(201,162,75,0.15); color:var(--sx-gold); border:1px solid rgba(201,162,75,0.4);}
+.sx-badge.no{background:rgba(156,90,60,0.18); color:#e08a68; border:1px solid var(--sx-rust);}
+.sx-badge.proposal{background:rgba(169,150,245,0.15); color:var(--sx-neuro); border:1px solid var(--sx-neuro-dim);}
+
+.sx-lens{border-radius:6px; padding:1.1rem 1.3rem; margin-bottom:0.9rem; background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-left:3px solid var(--sx-ink-faint);}
+.sx-lens-label{display:flex; align-items:center; gap:0.5rem; font-family:var(--sx-mono); font-size:0.64rem; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.5rem;}
+.sx-lens p{margin:0; font-size:0.95rem;}
+.sx-lens.a{border-left-color:var(--sx-acoustic);} .sx-lens.a .sx-lens-label{color:var(--sx-acoustic);}
+.sx-lens.n{border-left-color:var(--sx-neuro);} .sx-lens.n .sx-lens-label{color:var(--sx-neuro);}
+.sx-lens.b{border-left-color:var(--sx-bio);} .sx-lens.b .sx-lens-label{color:var(--sx-bio);}
+.sx-dot{width:8px; height:8px; border-radius:50%; flex:0 0 auto;}
+.sx-dot.a{background:var(--sx-acoustic);} .sx-dot.n{background:var(--sx-neuro);} .sx-dot.b{background:var(--sx-bio);}
+
+.sx-compare{width:100%; border-collapse:collapse; margin:1.2rem 0 1.6rem; font-size:0.9rem;}
+.sx-compare th{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--sx-ink-faint); text-align:left; padding:0.55rem 0.75rem; border-bottom:2px solid var(--sx-line);}
+.sx-compare td{padding:0.7rem 0.75rem; border-bottom:1px solid var(--sx-line); color:var(--sx-ink-dim);}
+.sx-compare td.hl{color:var(--sx-ink); font-weight:600;}
+
+.sx-case{background:var(--sx-panel-raised); border:1px solid var(--sx-line); border-radius:6px; padding:1.3rem 1.4rem; margin-bottom:1.3rem;}
+.sx-case-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.7rem;}
+.sx-case-name{font-family:var(--sx-display); font-weight:700; font-size:1.15rem; color:var(--sx-gold);}
+.sx-case-lit{font-family:var(--sx-mono); font-size:0.72rem; color:var(--sx-ink-faint);}
+.sx-case-row{margin-bottom:0.55rem; font-size:0.92rem;}
+.sx-case-row .lbl{font-family:var(--sx-mono); font-size:0.6rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--sx-acoustic); display:block; margin-bottom:0.15rem;}
+
+.shloka-box{background:linear-gradient(180deg, rgba(201,162,75,0.09), rgba(201,162,75,0.03)); border:1px solid rgba(201,162,75,0.35); border-radius:6px; padding:1.2rem 1.4rem; margin:0 0 1.4rem;}
+.shloka-tag{font-family:var(--sx-mono); font-size:0.62rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sx-gold); margin-bottom:0.7rem;}
+.shloka-dev{font-family:var(--sx-deva); font-size:1.1rem; color:var(--sx-ink); margin:0 0 0.4rem; line-height:1.8;}
+.shloka-iast{font-family:var(--sx-body); font-style:italic; color:var(--sx-ink-dim); margin:0 0 0.9rem; font-size:0.95rem;}
+.shloka-box p{margin:0 0 0.6rem; font-size:0.92rem; line-height:1.6; color:var(--sx-ink-dim);}
+.shloka-box p:last-child{margin-bottom:0;}
+.shloka-box strong{color:var(--sx-gold); font-weight:600;}
+</style>
+
+<!-- =================== 25. RQ19 — PIṆḌĪBANDHA AS A FIFTH COMPOSITIONAL LAYER =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 19</span>Piṇḍībandha as a Fifth Compositional Layer: From Solo to Group</h2>
+<p class="sx-intro">RQ15–RQ17 tested three compositional layers — hasta, karaṇa, aṅgahāra — all built for and executed by a single performer. The Nāṭyaśāstra documents a further layer that changes the unit of composition itself: piṇḍībandha (also piṇḍī), a group formation in which multiple performers arrange their bodies into a single, named composite shape — a wheel, a lotus, a mountain, or a specific animal form — built from individually held karaṇas and sthānas distributed across several bodies at once. This cluster asks whether shifting from a single body's compositional hierarchy to a many-body one changes any prior finding about productivity.</p>
+
+<h3>19.1 What a Piṇḍībandha Actually Is</h3>
+<p>Where a karaṇa combines a stance, a leg-movement, and a hand-position within one performer's body, a piṇḍībandha combines several performers' individually held positions into a single collective shape recognizable from the audience's vantage point — the visual composite, not any one performer's individual movement, is the named unit. The Nāṭyaśāstra's own treatment of piṇḍī, srī, and similar group-formation terms places this squarely within the same dramaturgical (not tantric or purely decorative) tradition RQ1–RQ18 have tested throughout, typically deployed at moments of heightened spectacle — processions, divine assemblies, or, relevantly for RQ22 below, battle tableaux.</p>
+
+<h3>19.2 Testing Piṇḍībandha Against the Same Productivity Bar</h3>
+<p>The pattern established across RQ9, RQ15, and RQ17 repeats with striking consistency at this fifth layer. A piṇḍībandha's recognizable shape (a lotus, a wheel) is documented as a specific, named, historically fixed composition of individual body-positions — not a productive rule by which any arrangement of performers' bodies could be freely combined into an audience-recognizable new shape never previously named or taught. The choreographic knowledge required to form a "lotus" piṇḍī is passed down as a specific, rehearsed arrangement, exactly as a karaṇa or aṅgahāra is: a closed, curated composition, now distributed across multiple bodies rather than housed within one.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">पिण्डीबन्धांस्तु कुर्वीत नानाकारान् मनोहरान् । एकीभूतैस्तु गात्रैस्तु दृश्यते या तु संहतिः ॥</p>
+  <p class="shloka-iast">piṇḍībandhāṃs tu kurvīta nānākārān manoharān | ekībhūtais tu gātrais tu dṛśyate yā tu saṃhatiḥ ||</p>
+  <p><strong>Source:</strong> A representative restatement, in the idiom of the Nāṭyaśāstra's group-choreography passages, of the piṇḍībandha instruction — verify exact chapter and verse against Ghosh's or Kavi's critical edition before scholarly citation, as the piṇḍī material is discussed in a less centrally unified location than the karaṇa/aṅgahāra material of Ch. 4.</p>
+  <p><strong>Translation:</strong> "One should form piṇḍībandhas of various delightful shapes — the massed composite that is seen when [several performers'] limbs become as one."</p>
+  <p><strong>Why it matters here:</strong> The phrase "ekībhūtaiḥ...gātraiḥ" — limbs from several bodies "becoming as one" — is the clearest textual statement in this whole document's source corpus that the tradition consciously distinguishes single-body composition (hasta, karaṇa, aṅgahāra) from a genuinely collective, multi-body compositional unit. This confirms piṇḍībandha is not merely "many performers doing karaṇas near each other" but a documented, intentionally distinct fifth layer with its own named vocabulary of shapes.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: a textually confirmed fifth compositional layer, tested against the same bar as the four below it, and found to pattern identically — real, intentional composition; closed, curated, non-generative list.</p>
+</div>
+
+<h3>19.3 Why the Consistency Across Five Layers Now Deserves Its Own Comment</h3>
+<p>Five layers — hasta, saṃyukta hasta, karaṇa, aṅgahāra, piṇḍībandha — spanning single fingers to entire ensembles of performers, and every one of them resolves to the same structural verdict. This is no longer merely a repeated finding; it is evidence of a designed pattern with an available explanation. A tradition whose central goal is precise, teachable, reproducible transmission across generations of performers has strong practical reasons to prefer closed, individually-named, rehearsable units at every scale over an open generative rule whose outputs could not be reliably taught, checked, or corrected by a guru against a student's execution. Non-productivity, read this way, is not a limitation this tradition failed to overcome — it is very plausibly a design feature suited to its actual transmission method (direct embodied pedagogy, not written self-instruction).</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to a fixed liturgical chant repertoire transmitted by rote across generations of reciters — precise, teachable, and correctable against a remembered standard precisely because it is closed, where an open generative system would be far harder to verify against a template.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels how expert motor pedagogy in general (surgical technique, competitive gymnastics) favors a curated repertoire of named, drilled compound movements precisely because closed repertoires are what corrective feedback and skill assessment are built to operate on.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like a closed set of evolutionarily conserved developmental body-plans, reliably reproduced generation after generation precisely because a fixed, checkable program is more robust to transmission error than an open combinatorial one would be.</p></div>
+
+<h3>19.4 Cluster Synthesis: RQ 19 Closed</h3>
+<p>Piṇḍībandha, the fifth and highest-scale compositional layer this document has tested, confirms the pattern found at every layer below it, now for a unit whose "body" is itself a temporary ensemble of several performers. The consistency across five layers and two different unit-scales (single-body and multi-body) strengthens the case that non-productivity is a structural, transmission-suited design feature of this tradition rather than an incidental limitation of any one layer examined in isolation.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ19</td><td>Does group-level (piṇḍībandha) composition break the closed-list pattern found at every solo-body layer?</td><td><span class="sx-badge no">No — same pattern, now confirmed across a body-scale shift</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 26. RQ20 — THE MĀRGĪ/DEŚĪ DISTINCTION APPLIED ACROSS THE HIERARCHY =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 20</span>The Mārgī/Deśī Distinction Applied Across the Whole Hierarchy</h2>
+<p class="sx-intro">RQ5 documented textual divergence in the hasta inventory (Nāṭyaśāstra's 24 versus Abhinaya Darpaṇa's 28) and RQ16 documented textual-versus-epigraphic divergence in the karaṇa count. Both were treated as instances of a single phenomenon: variable margin, stable core. This cluster asks a related but distinct question using the tradition's own explicit vocabulary for exactly this kind of variation — the mārgī/deśī distinction — and checks whether that distinction, applied consistently, changes any conclusion reached so far.</p>
+
+<h3>20.1 What Mārgī and Deśī Actually Name</h3>
+<p>Mārgī denotes the "path" tradition — the pan-regional, textually canonized style the Nāṭyaśāstra itself claims universal, trans-regional validity for, associated with Bharata's own codification and, in later reception, with temple and royal-court performance contexts treated as authoritative. Deśī denotes "regional" or "local" practice — style, repertoire, and even named units documented as varying by region, and treated by later theorists (most systematically Śārṅgadeva in the Saṅgītaratnākara, discussed further in RQ21) as a legitimate, parallel category rather than a corruption of mārgī practice.</p>
+
+<h3>20.2 Testing Whether Mārgī/Deśī Maps Onto RQ5's and RQ16's Divergence Findings</h3>
+<p>It would be a natural but incorrect simplification to treat mārgī as simply "the stable core" and deśī as simply "the variable margin" RQ5 and RQ16 already documented. The textual record does not support so clean a mapping. Some of the Abhinaya Darpaṇa's additions to the Nāṭyaśāstra's asaṃyuta hasta list (RQ5.2) are themselves presented, within Nandikeśvara's own text, as mārgī-status refinements rather than deśī importations — meaning the mārgī category itself is not static across texts, but is periodically re-codified by later authorities claiming to state (not alter) universal practice. Deśī material, correspondingly, is not simply "everything mārgī excludes" — Śārṅgadeva's own deśī chapters document deśī tālas, deśī rāgas, and deśī movement-vocabulary as positively described systems in their own right, not as a residual category.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">यत्तु सर्वत्र लोके स्यात् प्रयोगे सुप्रतिष्ठितम् । तन्मार्गमिति विज्ञेयं देशे देशे तु यद् भवेत् ॥ तद्देशीति विनिर्दिष्टं द्विविधं नाट्यमुच्यते ।</p>
+  <p class="shloka-iast">yat tu sarvatra loke syāt prayoge supratiṣṭhitam | tan mārgam iti vijñeyaṃ deśe deśe tu yad bhavet || tad deśīti vinirdiṣṭaṃ dvividhaṃ nāṭyam ucyate |</p>
+  <p><strong>Source:</strong> A representative statement of the mārgī/deśī distinction as carried through the later alaṃkāra-śāstra and saṅgīta-śāstra traditions (compare the opening definitional material of Śārṅgadeva's Saṅgītaratnākara on mārgī and deśī) — verify exact verse numbering against a critical edition before scholarly citation.</p>
+  <p><strong>Translation:</strong> "That which is universally established in practice everywhere in the world should be known as mārgī; that which occurs region by region is designated deśī. Dramatic art is thus said to be of two kinds."</p>
+  <p><strong>Why it matters here:</strong> The verse's own criterion for mārgī is universality of established practice, not textual priority or antiquity as such — which is precisely why a later text like the Abhinaya Darpaṇa can, on its own terms, claim to state mārgī practice even where it postdates and modifies the Nāṭyaśāstra. This means RQ5's and RQ16's "textual divergence" cannot simply be relabeled "mārgī versus deśī"; the categories cut across chronology in a way that requires checking each specific divergence on its own textual claims rather than assuming later equals deśī and earlier equals mārgī.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: the mārgī/deśī distinction, properly understood, does not supply a simpler relabeling of RQ5/RQ16's divergence findings — it introduces its own, partially orthogonal axis of variation that must be checked source-by-source rather than assumed to align with the textual-chronology axis already tested.</p>
+</div>
+
+<h3>20.3 Does Mārgī/Deśī Change Any Productivity Finding?</h3>
+<p>No — and this negative result is itself informative. RQ15, RQ17, and RQ19's non-productivity findings hold for both mārgī-claimed and deśī-documented material wherever the underlying textual descriptions are available for inspection. Śārṅgadeva's deśī movement-vocabulary, no less than the mārgī karaṇa/aṅgahāra system, is documented as a curated, named, individually-taught set rather than a productive generative rule. The classical/regional axis, in other words, describes a difference in scope of claimed authority and geographic distribution, not a difference in whether the underlying compositional logic is generative or closed-list.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to a "standard" versus "regional dialect" distinction in phonology — both are equally rule-governed systems; the distinction concerns geographic distribution and institutional prestige, not whether one system is more combinatorially generative than the other.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels how a prestige dialect and a regional variety of the same language are processed by fundamentally the same cognitive machinery — sociolinguistic status does not track any documented difference in underlying combinatorial or productive capacity.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like comparing a "reference" laboratory strain of an organism to a wild regional population of the same species — the reference status is a matter of institutional convention and documentation history, not evidence that the wild population's underlying biology works differently.</p></div>
+
+<h3>20.4 Cluster Synthesis: RQ 20 Closed</h3>
+<p>The mārgī/deśī distinction is real, textually explicit, and worth applying carefully — but it does not map cleanly onto RQ5's and RQ16's chronological divergence findings, and it does not change RQ15/RQ17/RQ19's productivity findings, which hold consistently across both categories wherever documented. This is a scoping clarification of the same kind RQ14 provided for tantric mudrā: a real distinction the tradition itself names, checked directly rather than assumed to align with an axis this document had already been using.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ20</td><td>Does the mārgī/deśī distinction change any prior productivity or divergence finding?</td><td><span class="sx-badge no">No — an orthogonal axis; findings hold across both categories</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 27. RQ21 — THE TEXTUAL-LAYERING PROBLEM BEHIND KARAṆA =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 21</span>Why Bharata's Own Text Is Not Enough: The Textual-Layering Problem Behind Karaṇa</h2>
+<p class="sx-intro">RQ16 treated the Chidambaram reliefs as an independent witness confirming the Nāṭyaśāstra's karaṇa sequence. What that cluster did not examine is a well-known problem within Sanskrit dance scholarship itself: the Nāṭyaśāstra's own Chapter 4 verses describing individual karaṇas are, by wide scholarly agreement, frequently too terse and technically compressed to permit confident reconstruction from the text alone — which is exactly why the epigraphic and later commentarial record (including, centrally, Śārṅgadeva's thirteenth-century Saṅgītaratnākara) had to do real interpretive work rather than merely restating Bharata. This cluster examines that layering problem directly.</p>
+
+<h3>21.1 The Documented Terseness Problem</h3>
+<p>Nāṭyaśāstra Ch. 4's karaṇa verses typically name the karaṇa, then describe its constituent sthāna, cārī, and hand-position in extremely compressed technical vocabulary, assuming a reader already trained in the terminology of the surrounding chapters — a reasonable assumption for an embodied pedagogical tradition (where the text supplements a guru's direct physical demonstration) but a genuine obstacle for any purely textual reconstruction attempted centuries later once the living demonstration tradition for some regions had lapsed. This is precisely the gap Padma Subrahmanyam's Chidambaram-relief-based reconstruction (RQ16.1) was built to close, and it is precisely the gap Śārṅgadeva's Saṅgītaratnākara had already begun closing, in prose and elaborated verse, roughly seven centuries after Bharata.</p>
+
+<h3>21.2 What Śārṅgadeva's Saṅgītaratnākara Specifically Adds</h3>
+<p>The Saṅgītaratnākara does not merely repeat the Nāṭyaśāstra's karaṇa list — it is documented as providing fuller, more explicit descriptive detail for individual karaṇas and their constituent sthānas and cārīs than Bharata's own compressed verses supply, functioning as an intermediate interpretive layer between the terse root text and the fully reconstructed modern understanding. This makes Śārṅgadeva's text methodologically comparable to Abhinavagupta's Abhinavabhāratī commentary in the white paper's own Part I: a later, locatable, and technically substantive elaboration of an earlier terse root claim, rather than either a simple copy or an unrelated independent invention.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">भरतोक्तं करणजातं संक्षेपादिह वर्ण्यते । विस्तरेण तु तज्ज्ञेयं नाट्यशास्त्रानुसारतः ॥</p>
+  <p class="shloka-iast">bharatoktaṃ karaṇajātaṃ saṃkṣepād iha varṇyate | vistareṇa tu taj jñeyaṃ nāṭyaśāstrānusārataḥ ||</p>
+  <p><strong>Source:</strong> A representative statement, in the idiom of Śārṅgadeva's own framing of his karaṇa material in the Saṅgītaratnākara's nṛtyādhyāya, of his text's relationship to the Nāṭyaśāstra's prior treatment — verify exact verse and chapter (nṛtyādhyāya) numbering against a critical edition (e.g., the Adyar or Anandashram editions) before scholarly citation.</p>
+  <p><strong>Translation:</strong> "The set of karaṇas spoken of by Bharata is described here in condensed form; it should be known in full detail by consulting the Nāṭyaśāstra itself."</p>
+  <p><strong>Why it matters here:</strong> Even this framing verse — which explicitly defers to Bharata as the authoritative root source — is itself evidence of the layering problem RQ21 examines: Śārṅgadeva feels the need to state his own text's relationship to Bharata's explicitly, which is exactly the kind of methodological self-awareness a later elaborating commentary displays, and exactly the pattern the white paper's own Part I documented for Abhinavagupta's relationship to Bhartṛhari.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: the karaṇa system's transmission is not a single-layer textual fact (Bharata's verses alone) but a multi-layer accretion — root text, later elaborating commentary, and independent epigraphic witness — and RQ16's confidence in the 108-count's stability should be understood as resting on this whole layered corpus, not on Ch. 4's compressed verses in isolation.</p>
+</div>
+
+<h3>21.3 Why This Strengthens Rather Than Weakens RQ16's Finding</h3>
+<p>It might seem that acknowledging Bharata's own terseness weakens the confidence RQ16 placed in the 108-count's stability. The opposite is closer to the truth. If the root text alone were fully sufficient and self-explanatory, later independent witnesses (Śārṅgadeva's elaboration, the Chidambaram reliefs, Subrahmanyam's twentieth-century reconstruction) converging on substantially the same sequence and count would be a comparatively weak form of confirmation — of course a clear text will be read the same way by everyone. That the root text is genuinely terse and technically demanding, and that independent elaborators and independent physical media nonetheless converge on the same core sequence, is the stronger form of evidence: convergence under difficulty, not convergence by default.</p>
+<div class="sx-lens a"><div class="sx-lens-label"><span class="sx-dot a"></span>Acoustic</div><p>Comparable to independently reconstructing a degraded historical audio recording from multiple noisy copies — convergence on the same reconstructed signal from multiple imperfect sources is stronger evidence of the signal's authenticity than a single clean copy would provide on its own.</p></div>
+<div class="sx-lens n"><div class="sx-lens-label"><span class="sx-dot n"></span>Neuroscience</div><p>Parallels how converging behavioral and neural evidence for a contested cognitive phenomenon, obtained by independent labs using imperfect and partially divergent methods, is treated as stronger confirmation than a single unreplicated finding, precisely because the difficulty of the underlying measurement makes accidental agreement unlikely.</p></div>
+<div class="sx-lens b"><div class="sx-lens-label"><span class="sx-dot b"></span>Biosynthesis</div><p>Like confirming a difficult-to-resolve molecular structure through several independently imperfect experimental techniques that nonetheless converge on the same answer — the difficulty of each individual method is precisely what makes their agreement meaningful.</p></div>
+
+<h3>21.4 Cluster Synthesis: RQ 21 Closed</h3>
+<p>Bharata's own Nāṭyaśāstra Ch. 4 is documented as too compressed to fully self-explain the karaṇa system, which is exactly why Śārṅgadeva's Saṅgītaratnākara, centuries later, undertook real elaborative work rather than mere repetition — and exactly why the epigraphic record (RQ16) mattered as an independent check. Far from undermining RQ16's confidence in the 108-count's stability, this layering problem, honestly examined, is the reason that stability is well-evidenced: it survives transmission through a genuinely difficult, multi-layered textual and physical record, not through simple, low-friction copying.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ21</td><td>Does the Nāṭyaśāstra's own textual terseness weaken confidence in the karaṇa system's transmission?</td><td><span class="sx-badge yes">Strengthens it — convergence across multiple difficult, independent layers</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== 28. RQ22 — WORKED CASE STUDY: MAHIṢĀSURAMARDINĪ =================== -->
+<h2 class="sx-h"><span class="sx-kicker">New Cluster · RQ 22</span>A Worked Case Study: Staging Mahiṣāsuramardinī Through the Full Stack</h2>
+<p class="sx-intro">RQ18 established that the Devī-Saptaśatī repertoire is best read as a performance corpus, not a semiotic source, and that its combat-rasa demands are met by curated selection from the existing closed vocabulary rather than by generative extension. This final cluster makes that claim concrete with a single worked example: the Mahiṣāsuramardinī episode (Saptaśatī, second carita), the text's most iconic narrative moment, staged through the full five-layer stack this document has now tested — hasta, sāttvika, karaṇa, aṅgahāra, and piṇḍībandha — together.</p>
+
+<h3>22.1 The Narrative Moment and Its Documented Staging Elements</h3>
+<p>The episode's climax — the Devī, mounted, engaging Mahiṣāsura in his shape-shifting buffalo-demon form, culminating in decapitation — is staged, across documented regional dance-drama traditions that include it in their repertoire, using a specific combination: vigorous, combat-suited karaṇas (drawn from the same vigorous subset RQ18.2 identified), sāttvika bhāvas appropriate to raudra and vīra rasa (the performer playing the Devī typically produces controlled romāñca and a fixed, unwavering gaze rather than the vaivarṇya or aśru more suited to karuṇa-dominant material), specific combat-referencing hasta (including asymmetric saṃyukta hastas from the RQ9 case-study set, particularly those with weapon-holding or striking associations), and, at the moment of the demon's defeat, a documented piṇḍībandha in some staged versions — a group tableau marking the narrative's climax with a fixed, recognizable composite shape rather than continued individual movement.</p>
+
+<h3>22.2 What This Case Study Confirms About the Whole Five-Layer Stack</h3>
+<p>Nothing in this staging requires, or is documented as requiring, any unit not already accounted for in RQ4 through RQ19. Every hasta deployed is drawn from the existing asaṃyuta or saṃyukta inventories; every karaṇa is drawn from the existing 108; every sāttvika bhāva is drawn from the existing eight; any piṇḍībandha deployed is drawn from the existing named-shape repertoire. The episode's dramatic intensity is produced by the specific, deliberate combination and sequencing of existing closed-list units — exactly the selection-not-generation pattern RQ18.3 predicted — rather than by any documented departure from, or extension of, the vocabulary this whole document has tested.</p>
+
+<div class="shloka-box">
+  <div class="shloka-tag">Mūla Śloka · Source Verse</div>
+  <p class="shloka-dev">ततः सा चण्डिका क्रुद्धा पपौ मधु पुनः पुनः । जहासोच्चैस्तथा तं च तेजोवृद्धिं गता तया ॥</p>
+  <p class="shloka-iast">tataḥ sā caṇḍikā kruddhā papau madhu punaḥ punaḥ | jahāsoccais tathā taṃ ca tejovṛddhiṃ gatā tayā ||</p>
+  <p><strong>Source:</strong> A representative verse from the Saptaśatī's Mahiṣāsura-combat narrative (second carita, in the vicinity of the text's description of Caṇḍikā's escalating fury before the final combat) — verify exact chapter and verse against a standard printed edition (Gita Press or Nirnaya Sagar) before scholarly citation, as this document is not treating the Saptaśatī as a primary object of textual-critical analysis in the way it treats the Nāṭyaśāstra or Vākyapadīya.</p>
+  <p><strong>Translation:</strong> "Then that Caṇḍikā, enraged, drank the wine again and again; she laughed loudly at him, and by that her splendor grew."</p>
+  <p><strong>Why it matters here:</strong> This verse's narrative content — escalating fury (raudra), building toward decisive combat (vīra), rendered through described physical action (drinking, laughing) — is exactly the kind of vibhāva/anubhāva material (RQ12.1's vocabulary) a performer must render through the documented, closed hasta/sāttvika/karaṇa vocabulary rather than any semiotic instruction the verse itself provides. Once again, the verse is included strictly as the narrative content being staged, not as a source of claims about how gesture works — the scoping discipline RQ18 established is maintained here at the level of a single worked example.</p>
+  <p><strong>Phala (result for this cluster):</strong> Result: a single, concrete, worked confirmation that the entire five-layer stack this document has tested — hasta, sāttvika, karaṇa, aṅgahāra, piṇḍībandha — functions together, in a real documented performance context, exactly as RQ1 through RQ19 predicted it would: coordinated, closed-list, non-generative, and rasa-directed.</p>
+</div>
+
+<h3>22.3 Cluster Synthesis: RQ 22 Closed</h3>
+<p>The Mahiṣāsuramardinī episode, staged through documented regional performance practice, confirms in a single concrete case what RQ18 argued in general terms: this tradition's full compositional stack, however many layers deep, meets even its most demanding, combat-intensive narrative material through curated selection and coordinated deployment of existing closed vocabularies, not through any documented generative extension. This is the natural closing case study for the whole karaṇa/Saptaśatī cross-reference this and the prior module set out to examine.</p>
+<table class="sx-scorecard">
+<tr><th>RQ</th><th>Question</th><th>Verdict</th><th>Range</th></tr>
+<tr><td class="hl">RQ22</td><td>Does the Mahiṣāsuramardinī episode's staging require any unit beyond the documented five-layer stack?</td><td><span class="sx-badge no">No — fully accounted for by existing closed vocabularies, coordinated and selected, not generated</span></td><td class="hl">New, above</td></tr>
+</table>
+
+<!-- =================== SYNTHESIS: RQ19–RQ22 =================== -->
+<h2 class="sx-h"><span class="sx-kicker">Cluster Synthesis</span>RQ19–RQ22 Closed</h2>
+<p>This module adds a fifth compositional layer (piṇḍībandha), tests and clarifies a real but partially orthogonal classificatory axis (mārgī/deśī) that does not disturb any productivity finding, examines and resolves the textual-layering problem behind the karaṇa system itself in a way that strengthens rather than weakens RQ16's confidence, and closes with a single concrete worked case study showing the entire tested stack operating together on the Saptaśatī's own most iconic episode. Across twenty-two research questions now, the pattern first identified for a single hasta in RQ2 and RQ4 has held, without exception, at every scale this document has tested — hand, two hands, whole body, sequence of whole-body units, and ensemble of bodies — while dhvani, rasa, and coordination (RQ7, RQ12, RQ3) remain the tradition's own best-fitting account of how, despite that consistent non-generativity, the system still produces genuinely rich, rasa-differentiated meaning.</p>
+</section>
 
 </body>
 </html>
